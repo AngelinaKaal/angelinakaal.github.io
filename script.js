@@ -81,13 +81,28 @@ function restartAnimation(element) {
   element.classList.add('is-changing');
 }
 
+function formatProjectText(text) {
+  return text.split('\n').map((line) => {
+    if (!line) {
+      return '';
+    }
+
+    const firstColon = line.indexOf(':');
+    const highlightedEnd = firstColon === -1 ? line.length : firstColon + 1;
+    const highlighted = line.slice(0, highlightedEnd);
+    const remainder = line.slice(highlightedEnd);
+
+    return `<strong><u>${highlighted}</u></strong>${remainder}`;
+  }).join('<br>');
+}
+
 function renderProject(animateDescription = true) {
   if (!selectedProject) {
     return;
   }
 
   projectTitle.textContent = selectedProject.title;
-  projectText.textContent = selectedProject.text;
+  projectText.innerHTML = formatProjectText(selectedProject.text);
   projectImage.src = selectedProject.images[selectedImageIndex];
   projectImage.alt = `${selectedProject.title} project preview ${selectedImageIndex + 1}`;
   imageCounter.textContent = `${selectedImageIndex + 1} / ${selectedProject.images.length}`;

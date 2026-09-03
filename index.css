@@ -322,6 +322,10 @@ body.modal-open {
     .project-showcase {
         grid-template-columns: 1fr;
     }
+
+    .project-carousel {
+        order: -1;
+    }
 }
 
 .btn-BI {
@@ -467,6 +471,13 @@ body.modal-open {
     font-family: var(--font-primary);
 }
 
+@media (max-width: 768px) {
+    .btn-NAV {
+        width: calc(100% - 20px);
+        max-width: 350px;
+    }
+}
+
 /* ----------------- Bottom Navigation ----------------- */
 .bottomnav {
     background-color: var(--Color-1);
@@ -552,6 +563,15 @@ body.modal-open {
         box-sizing: border-box;
         border-top: 1px solid var(--Color-3);
         text-align: left;
+    }
+
+    .project-list {
+        flex-direction: column;
+    }
+
+    .project-list .btn-BI {
+        width: 100%;
+        flex: 0 0 auto;
     }
 
     .persoonsomschrijving {
