@@ -347,15 +347,21 @@ body.modal-open {
     width: 100%;
 }
 
-.btn-BI:hover {
+.project-list .btn-BI:hover {
+    --bs-btn-color: var(--txt-1);
+    --bs-btn-bg: var(--Color-5);
+    --bs-btn-border-color: var(--Color-2);
     background-color: var(--Color-5);
     border-color: var(--Color-2);
     color: var(--txt-1);
 }
 
-.btn-BI:focus,
-.btn-BI:active,
-.btn-BI[aria-pressed="true"] {
+.project-list .btn-BI:focus,
+.project-list .btn-BI:active,
+.project-list .btn-BI[aria-pressed="true"] {
+    --bs-btn-color: var(--Color-5);
+    --bs-btn-bg: var(--Color-3);
+    --bs-btn-border-color: var(--Color-3);
     background-color: var(--Color-3);
     border-color: var(--Color-3);
     box-shadow: none;
