@@ -329,18 +329,37 @@ body.modal-open {
 }
 
 .btn-BI {
+    --bs-btn-color: var(--txt-1);
+    --bs-btn-bg: var(--Color-4);
+    --bs-btn-border-color: var(--Color-5);
+    --bs-btn-hover-color: var(--txt-1);
+    --bs-btn-hover-bg: var(--Color-5);
+    --bs-btn-hover-border-color: var(--Color-2);
+    --bs-btn-active-color: var(--txt-2);
+    --bs-btn-active-bg: var(--Color-3);
+    --bs-btn-active-border-color: var(--Color-3);
+    --bs-btn-disabled-color: var(--txt-1);
+    --bs-btn-disabled-bg: var(--Color-4);
+    --bs-btn-disabled-border-color: var(--Color-5);
     background-color: var(--Color-4);
     border-color: var(--Color-5);
+    color: var(--txt-1);
     width: 100%;
 }
 
-.btn-BI.btn-primary:hover,
-.btn-BI.btn-primary:focus,
-.btn-BI.btn-primary:active {
-    background-color: var(--Color-4);
-    border-color: var(--Color-4);
-    box-shadow: none;
+.btn-BI:hover {
+    background-color: var(--Color-5);
+    border-color: var(--Color-2);
     color: var(--txt-1);
+}
+
+.btn-BI:focus,
+.btn-BI:active,
+.btn-BI[aria-pressed="true"] {
+    background-color: var(--Color-3);
+    border-color: var(--Color-3);
+    box-shadow: none;
+    color: var(--Color-5);
 }
 
 .btn-PO.btn-primary:hover,

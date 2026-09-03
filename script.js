@@ -43,7 +43,7 @@ const projectData = {
   'finals-duo': {
     title: 'Finals - DUO',
     text: 'Assignment start: July 2026\nMade for: DAATlab\nTime spent: a few weeks\nProject finished: Not yet\n\nWhat I\'m proud of: I am proud that the visual is very inclusive; it shows what it needs to and allows for drillthrough, using a total of six pages.\n\nWhat I could have improved: I could have improved the visual by using more DAX formulas, which will still be changed.\n\nCustomer requirements: The customer wanted a visual that shows the average grade of students per school, region, or subject. It also needed to show development over time in each category.\n\nHow I worked: I made a wireframe of the visual to get a general idea of how it should look and which DAX formulas I would need to use. I then made sure to import and clean the data before creating the visual. While working on it, I realised some of my plans were not feasible or were redundant.\n\nConclusion: There is still a lot of improvement to be made, but it is a good start.',
-    images: ['Images/Microsoft-Power-BI-Logo.png', 'Images/ArtImage.png', 'Images/html.png', 'Images/unitylogo.jpg']
+    images: ['Images/Examens-1.png', 'Images/Examens-2.png']
   },
   'monthly-report': {
     title: 'Monthly Report',
