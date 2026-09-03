@@ -35,4 +35,22 @@
 /* Show the section that has the 'active' class */
 .tab-content.active {
   display: block;
+  animation: tab-content-in 280ms ease both;
+}
+
+@keyframes tab-content-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tab-content.active {
+    animation: none;
+  }
 }

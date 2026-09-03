@@ -1,5 +1,16 @@
 const buttons = document.querySelectorAll('.PersoonsButtons button');
 const contents = document.querySelectorAll('.tab-content');
+const topnavToggle = document.querySelector('.topnav-toggle');
+const topnavLinks = document.getElementById('topnav-links');
+
+if (topnavToggle && topnavLinks) {
+  topnavToggle.addEventListener('click', () => {
+    const isOpen = topnavToggle.getAttribute('aria-expanded') === 'true';
+    topnavToggle.setAttribute('aria-expanded', String(!isOpen));
+    topnavLinks.classList.toggle('is-open', !isOpen);
+    topnavToggle.querySelector('span').textContent = isOpen ? 'Open navigation' : 'Close navigation';
+  });
+}
 
 if (document.getElementById('profile')) {
   document.getElementById('profile').classList.add('active');
@@ -45,6 +56,7 @@ const projectButtons = document.querySelectorAll('.project-list [data-project]')
 const projectTitle = document.getElementById('project-title');
 const projectText = document.getElementById('project-text');
 const projectImage = document.getElementById('project-image');
+const projectDescription = document.querySelector('.project-description');
 const imageCounter = document.getElementById('image-counter');
 const previousImage = document.getElementById('previous-image');
 const nextImage = document.getElementById('next-image');
@@ -59,7 +71,17 @@ const fullscreenNext = document.getElementById('fullscreen-next');
 let selectedProject;
 let selectedImageIndex = 0;
 
-function renderProject() {
+function restartAnimation(element) {
+  if (!element) {
+    return;
+  }
+
+  element.classList.remove('is-changing');
+  void element.offsetWidth;
+  element.classList.add('is-changing');
+}
+
+function renderProject(animateDescription = true) {
   if (!selectedProject) {
     return;
   }
@@ -70,11 +92,17 @@ function renderProject() {
   projectImage.alt = `${selectedProject.title} project preview ${selectedImageIndex + 1}`;
   imageCounter.textContent = `${selectedImageIndex + 1} / ${selectedProject.images.length}`;
 
+  if (animateDescription) {
+    restartAnimation(projectDescription);
+  }
+  restartAnimation(projectImage);
+
   if (fullscreenImage) {
     fullscreenTitle.textContent = selectedProject.title;
     fullscreenImage.src = projectImage.src;
     fullscreenImage.alt = projectImage.alt;
     fullscreenCounter.textContent = imageCounter.textContent;
+    restartAnimation(fullscreenImage);
   }
 }
 
@@ -95,17 +123,17 @@ if (projectButtons.length && projectTitle && projectText && projectImage) {
 
   previousImage.addEventListener('click', () => {
     selectedImageIndex = (selectedImageIndex - 1 + selectedProject.images.length) % selectedProject.images.length;
-    renderProject();
+    renderProject(false);
   });
 
   nextImage.addEventListener('click', () => {
     selectedImageIndex = (selectedImageIndex + 1) % selectedProject.images.length;
-    renderProject();
+    renderProject(false);
   });
 
   function changeFullscreenImage(direction) {
     selectedImageIndex = (selectedImageIndex + direction + selectedProject.images.length) % selectedProject.images.length;
-    renderProject();
+    renderProject(false);
   }
 
   openFullscreen.addEventListener('click', () => {

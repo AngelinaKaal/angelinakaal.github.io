@@ -37,6 +37,14 @@ body {
 .topnav a { color: var(--Color-5); }
 .topnav a { float: right; }
 
+.topnav-toggle {
+    display: none;
+}
+
+.topnav-links {
+    display: contents;
+}
+
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: var(--Color-6);
@@ -138,6 +146,10 @@ body {
     margin-bottom: 1rem;
 }
 
+.project-description.is-changing {
+    animation: project-description-in 320ms ease both;
+}
+
 .project-description p:last-child {
     margin-bottom: 0;
     line-height: 1.7;
@@ -164,6 +176,41 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.carousel-frame img.is-changing,
+.fullscreen-content img.is-changing {
+    animation: project-image-in 360ms ease both;
+}
+
+@keyframes project-description-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes project-image-in {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .project-description.is-changing,
+    .carousel-frame img.is-changing,
+    .fullscreen-content img.is-changing {
+        animation: none;
+    }
 }
 
 .image-fullscreen-button {
@@ -445,6 +492,116 @@ body.modal-open {
     cursor: pointer;
     font-size: var(--nav-font-size);
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .topnav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: visible;
+    }
+
+    .topnav h1 {
+        float: none;
+        flex: 1;
+        min-width: 0;
+        padding: 12px;
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    .topnav > a {
+        float: none;
+        flex: 0 0 auto;
+        padding: 12px 14px;
+    }
+
+    .topnav-toggle {
+        display: block;
+        flex: 0 0 auto;
+        padding: 10px 14px;
+        border: 0;
+        background: transparent;
+        color: var(--Color-5);
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    .topnav-toggle:focus-visible {
+        outline: 2px solid var(--Color-5);
+        outline-offset: -2px;
+    }
+
+    .topnav-links {
+        display: none;
+        flex-basis: 100%;
+        flex-direction: column;
+        background-color: var(--Color-2);
+    }
+
+    .topnav-links.is-open {
+        display: flex;
+    }
+
+    .topnav-links a {
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+        border-top: 1px solid var(--Color-3);
+        text-align: left;
+    }
+
+    .persoonsomschrijving {
+        flex-direction: column;
+    }
+
+    .PersoonsButtons,
+    .Persoonsomschrijvingcontainer {
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    .PersoonsButtons {
+        padding-bottom: 1rem !important;
+        align-items: stretch !important;
+    }
+
+    .Persoonsomschrijvingcontainer {
+        padding-top: 1rem !important;
+    }
+
+    .bottomnav {
+        align-items: stretch !important;
+        flex-direction: column;
+        padding: 0 !important;
+    }
+
+    .bottomnav a,
+    .bottomnav .copy-contact {
+        float: none;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.75rem 1rem !important;
+        border-top: 1px solid var(--Color-2);
+    }
+
+    .Medianav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Medianav a {
+        float: none;
+        flex: 1 1 0;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 0.75rem 0.5rem !important;
+    }
 }
 
 /* -------------------- Copy phone number or email notice ------------------- */
