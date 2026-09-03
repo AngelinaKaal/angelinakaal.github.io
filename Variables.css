@@ -1,4 +1,9 @@
 :root { 
+  --font-primary: Font_1;
+  --nav-padding: 14px 16px;
+  --nav-font-size: 17px;
+  --table-cell-padding: 0.85rem 1rem;
+  --competencies-cell-padding: 0.75rem 1rem;
     --Color-1: #283618;
     --Color-2: #445128;
     --Color-3: #606C38;

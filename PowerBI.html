@@ -25,10 +25,73 @@
     </div>
     <!-- Main Content -->
     <div class="container project-list">
-        <button class="btn btn-BI">Art Sales</button>
-        <button class="btn btn-BI">Finals - DUO</button>
-        <button class="btn btn-BI">Monthly Report</button>
+        <button class="btn btn-BI" type="button" data-project="art-sales" aria-pressed="true">Art Sales</button>
+        <button class="btn btn-BI" type="button" data-project="CBS" aria-pressed="false">CBS</button>
+        <button class="btn btn-BI" type="button" data-project="finals-duo" aria-pressed="false">Finals - DUO</button>
+        <button class="btn btn-BI" type="button" data-project="monthly-report" aria-pressed="false">Monthly Report</button>
     </div>
+
+    <main class="container project-showcase" aria-live="polite">
+        <section class="project-description" aria-labelledby="project-title">
+            <p class="project-eyebrow">Selected project</p>
+            <h1 id="project-title">Art Sales</h1>
+            <p id="project-text"></p>
+        </section>
+
+        <section class="project-carousel" aria-label="Project screenshots">
+            <div class="carousel-frame">
+                <img id="project-image" src="Images/ArtImage.png" alt="Art Sales project preview">
+                <button id="open-fullscreen" class="carousel-arrow image-fullscreen-button" type="button"
+                    aria-label="Open image fullscreen">
+                    <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="carousel-controls">
+                <button id="previous-image" class="carousel-arrow" type="button" aria-label="Previous project image">
+                    <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                </button>
+                <span id="image-counter" aria-live="polite">1 / 4</span>
+                <button id="next-image" class="carousel-arrow" type="button" aria-label="Next project image">
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <div id="image-modal" class="image-modal" role="dialog" aria-modal="true" aria-labelledby="fullscreen-title" hidden>
+        <div class="fullscreen-viewer">
+            <div class="fullscreen-header">
+                <h2 id="fullscreen-title">Project image</h2>
+                <button id="close-fullscreen" class="carousel-arrow" type="button" aria-label="Close fullscreen image">
+                    <i class="bi bi-x-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="fullscreen-content">
+                <button id="fullscreen-previous" class="carousel-arrow" type="button" aria-label="Previous project image">
+                    <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                </button>
+                <img id="fullscreen-image" src="Images/ArtImage.png" alt="Art Sales project preview">
+                <button id="fullscreen-next" class="carousel-arrow" type="button" aria-label="Next project image">
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
+            <span id="fullscreen-counter" class="fullscreen-counter" aria-live="polite">1 / 4</span>
+        </div>
+    </div>
+
+        <!-- Social Media Links -->
+    <div class="bottomnav align-items-center d-flex justify-content-center py-3">
+        <a class="px-5" href="https://www.linkedin.com/in/angelina-r-kaal/" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+        <a class="px-5" href="https://github.com/AngelinaKaal" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span class="copy-contact px-5" role="button" tabindex="0"
+            data-copy-value="angelina.r.kaal@gmail.com">Email</span>
+        <span class="copy-contact px-5" role="button" tabindex="0" data-copy-value="+31 6 29876217">Phone</span>
+        <a class="px-5" href="https://gamejolt.com/@JamesWitch/games" target="_blank" rel="noopener noreferrer">GameJolt</a>
+    </div>
+
+    <div id="copyNotice" class="copy-notice" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
 </body>
 
 </html>
