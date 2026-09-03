@@ -1,0 +1,349 @@
+/*------------------------------------ TOPNAV -------------------------------------------- */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: var(--Color-8);
+    overflow: hidden;
+    font-family: Font_1; /* use font */
+}
+
+.topnav h1 {
+    float: left;
+    color: var(--Color-5);
+    margin: 0;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: var(--Color-5);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: var(--Color-6);
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: var(--Color-7);
+    color: white;
+}
+
+/* ---------------- Main Body ------------------ */
+
+.main {
+    background-color: var(--Color-6);
+    color: var(--txt-2);
+    font-family: Font_1; /* use font */
+}
+
+/* ---------- Persoonsomschrijving -------------- */
+.PersoonsButtons{
+    background-color: var(--Color-3);
+    font-family: Font_1; /* use font */
+}
+
+.Persoonsomschrijvingcontainer{
+    background-color: var(--Color-4);
+    color: var(--txt-1);
+    font-family: Font_1; /* use font */
+}
+
+#ProfileSketch {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#ProfileSketch > img {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
+    #ProfileSketch {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.btn-PO {
+    background-color: var(--Color-7);
+    border-color: var(--Color-6);
+    width: 100%;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.project-list .btn-BI {
+    width: auto;
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.btn-BI {
+    background-color: var(--Color-4);
+    border-color: var(--Color-5);
+    width: 100%;
+}
+
+.btn-BI.btn-primary:hover,
+.btn-BI.btn-primary:focus,
+.btn-BI.btn-primary:active {
+    background-color: var(--Color-4);
+    border-color: var(--Color-4);
+    box-shadow: none;
+    color: var(--txt-1);
+}
+
+.btn-PO.btn-primary:hover,
+.btn-PO.btn-primary:focus,
+.btn-PO.btn-primary:active {
+    background-color: var(--Color-5);
+    border-color: var(--Color-5);
+    box-shadow: none;
+    color: var(--txt-2);
+}
+
+.how-i-work-container {
+    margin-top: 1.5rem;
+    overflow-x: auto;
+}
+
+.how-i-work-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--txt-1);
+    background-color: var(--Color-5);
+}
+
+.how-i-work-table th,
+.how-i-work-table td {
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--Color-2);
+    text-align: left;
+    vertical-align: top;
+}
+
+.how-i-work-table th {
+    background-color: var(--Color-2);
+    color: var(--Color-5);
+    font-weight: bold;
+}
+
+.how-i-work-table tbody tr:nth-child(even) {
+    background-color: var(--Color-4);
+}
+
+.how-i-work-table .phase-cell {
+    width: 35%;
+    font-weight: bold;
+}
+
+.how-i-work-table .phase-number {
+    display: inline-block;
+    margin-right: 0.35rem;
+    color: var(--Color-8);
+}
+
+.competencies-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--txt-1);
+    background-color: var(--Color-5);
+}
+
+.competencies-table th,
+.competencies-table td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--Color-2);
+    text-align: left;
+    vertical-align: top;
+}
+
+.competencies-table th {
+    width: 25%;
+    background-color: var(--Color-2);
+    color: var(--Color-5);
+    font-weight: bold;
+}
+
+.competencies-table tbody tr:nth-child(even) {
+    background-color: var(--Color-4);
+}
+
+/* ------------------- Navigation ------------------- */
+.btn-NAV {
+    width: 350px;
+    height: 170px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    border-radius: var(--bs-btn-border-radius);
+    font-family: Font_1; /* use font */
+}
+
+.btn-NAV:focus {
+    box-shadow: none;
+}
+
+.btn-NAV::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 42px;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.btn-NAV img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-NAV span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+}
+
+.Navigation {
+    background-color: var(--Color-6);
+    text-align: center;
+    font-family: Font_1; /* use font */
+}
+
+/* ----------------- Bottom Navigation ----------------- */
+.bottomnav {
+    background-color: var(--Color-1);
+    overflow: hidden;
+    font-family: Font_1; /* use font */
+}
+
+.bottomnav h1 {
+    float: left;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+/* Style the links inside the navigation bar */
+.bottomnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.bottomnav .copy-contact {
+    color: #f2f2f2;
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+}
+
+/* -------------------- Copy phone number or email notice ------------------- */
+
+.copy-notice {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    z-index: 1050;
+    padding: 0.75rem 1.25rem;
+    background-color: #198754;
+    border-radius: 0.25rem;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -1rem);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.copy-notice.show {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+/* -------------- Quick Navigation Header -------------- */
+.QuickNavHeader {
+    background-color: var(--Color-8);
+    color: var(--Color-5);
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-family: Font_1; /* use font */
+}
+
+/* -------------- Medi Navigation -------------- */
+.Medianav {
+    background-color: var(--Color-2);
+    overflow: hidden;
+    text-align: center;
+    font-family: Font_1; /* use font */
+}
+
+.Medianav h1 {
+    float: left;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+/* Style the links inside the navigation bar */
+.Medianav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.Medianav a:hover {
+    background-color: var(--Color-6);
+    color: var(--txt-1);
+}
+
+/* Add a color to the active/current link */
+.Medianav a.active {
+    background-color: var(--Color-6);
+    color: white;
+}
+
+/* ------------ Power BI -------------- */
+.PowerBIBody {
+    background-color: var(--Color-6);
+    color: var(--txt-2);
+    font-family: Font_1; /* use font */
+}

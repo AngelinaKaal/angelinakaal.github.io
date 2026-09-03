@@ -1,0 +1,33 @@
+:root { 
+    --Color-1: #283618;
+    --Color-2: #445128;
+    --Color-3: #606C38;
+    --Color-4: #D0D6B6;
+    --Color-5: #FEFAE0;
+    --Color-6: #DDA15E;
+    --Color-7: #CD8742;
+    --Color-8: #BC6C25;
+    --txt-1: #151C0D;
+    --txt-2: #4F3017
+}
+
+@font-face {
+  font-family: Font_1; /* set name */
+  src: url(./Fonts/MonospaceTypewriter.ttf); /* url of the font */
+}
+
+@font-face {
+  font-family: Font_2; /* set name */
+  src: url(./Fonts/Times\ New\ Normal\ Regular.ttf); /* url of the font */
+}
+
+/* ---------------------- hide interactive tabs ---------------- */
+/* Hide all sections by default */
+.tab-content {
+  display: none;
+}
+
+/* Show the section that has the 'active' class */
+.tab-content.active {
+  display: block;
+}

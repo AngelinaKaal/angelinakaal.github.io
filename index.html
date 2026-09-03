@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Variables.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Top Navigation -->
+    <div class="topnav">
+        <h1 class="float-left">Portfolio - Angelina Kaal</h1>
+        <a href="index.html" aria-label="Home">
+            <i class="bi bi-house-fill" aria-hidden="true"></i>
+        </a>
+        <a href="#news">Art</a>
+        <a href="#contact">HTML</a>
+        <a href="#about">Unity</a>
+        <a href="PowerBI.html">Power BI</a>
+    </div>
+    <!-- Main Content -->
+    <main id="main" class="main py-5">
+        <!-- Place body in here -->
+        <div id="ProfileSketch" class="container">
+            <img src="ProfileSketch.png" alt="Image of me" class="img-fluid rounded-circle">
+            <div>
+                <h2>Angelina Kaal - Data Specialist</h2>
+                <p>My interests lie in data analysis and visualization, as well as web development and game design.<br>
+                    I have followed a course for Power BI, and have a diploma in Software Development - MBO4.<br>
+                    Some of my hobbies include drawing, 3D-modeling, playing video games, reading and crafts like
+                    sewing,
+                    crocheting and many more.</p>
+            </div>
+        </div>
+    </main>
+    <!-- Social Media Links -->
+    <div class="Medianav">
+        <a href="https://www.linkedin.com/in/angelina-r-kaal/" target="_blank" rel="noopener noreferrer">linkedIn</a>
+        <a class="copy-contact px-5" role="button" tabindex="0" data-copy-value="+31 6 29876217">Phone</a>
+        <a class="copy-contact px-5" role="button" tabindex="0" data-copy-value="angelina.r.kaal@gmail.com">E-mail</a>
+    </div>
+    <!-- profiel, competenties, interesses -->
+    <div class="persoonsomschrijving d-flex">
+        <div class="PersoonsButtons container col-sm-1 flex-fill d-flex flex-column align-items-start gap-2 pb-5 pt-3">
+            <!-- Add data-target attributes pointing to the corresponding IDs -->
+            <button class="btn my-1 py-2 btn-PO btn-primary" type="button" data-target="profile">Profile</button>
+            <button class="btn my-1 py-2 btn-PO btn-primary" type="button"
+                data-target="competencies">Competencies</button>
+            <button class="btn my-1 py-2 btn-PO btn-primary" type="button" data-target="interests">Interests</button>
+        </div>
+        <div class="Persoonsomschrijvingcontainer container flex-fill col-sm-8 pt-3 pb-5">
+            <!-- Wrap each section in a div with an ID and a shared class -->
+            <div id="profile" class="tab-content">
+                <h2>Profile</h2>
+                <h5>Core Focus & Technical Stack</h5>
+                <p>
+                    <strong><u>Specialty:</u></strong> Business Intelligence, Data Pipelines & Analytics Engineering
+                    <br>
+                    <strong><u>Core Toolkit:</u></strong> SQL (Complex Queries, Optimization), Power BI (DAX, Data
+                    Modeling), Python (Pandas,
+                    ETL Scripts)
+                    <br>
+                    <strong><u>Focus Areas:</u></strong> Turning messy raw data into automated pipelines, reliable data
+                    models, and actionable
+                    executive dashboards
+                </p>
+
+                <div class="how-i-work-container">
+                    <table class="how-i-work-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Phase</th>
+                                <th scope="col">My Role &amp; Key Deliverables</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="phase-cell">
+                                    <span class="phase-number">01.</span> Ingestion &amp; Transformation
+                                </td>
+                                <td>Extracting raw data from disparate sources using Python &amp; SQL pipelines.</td>
+                            </tr>
+                            <tr>
+                                <td class="phase-cell">
+                                    <span class="phase-number">02.</span> Data Modeling
+                                </td>
+                                <td>Structuring clean, efficient data schemas built for scalability and fast query
+                                    performance.</td>
+                            </tr>
+                            <tr>
+                                <td class="phase-cell">
+                                    <span class="phase-number">03.</span> Visualization &amp; Insights
+                                </td>
+                                <td>Building intuitive, interactive Power BI dashboards that drive data-backed business
+                                    decisions.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h5 class="pt-3">Key Highlights</h5>
+
+                    End-to-End Delivery: Proficient in the entire lifecycle — from querying backend databases to
+                    presenting polished front-end BI reports.
+                    <br>
+                    Automation First: Replacing manual spreadsheets with scheduled Python scripts and automated data
+                    workflows.
+                    <br>
+                    Business-Oriented: Translating complex technical data models into clear metrics non-technical
+                    stakeholders actually understand.
+
+
+                </div>
+            </div>
+
+            <div id="competencies" class="tab-content">
+                <h2>Competencies</h2>
+                <table class="competencies-table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Languages</th>
+                            <td>Dutch, English</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Data &amp; BI</th>
+                            <td>Power BI dashboards and reporting, data analysis, data modeling, database management,
+                                Python, SQL</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Design</th>
+                            <td>UI/UX, wireframes, visual design</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Development</th>
+                            <td>HTML, CSS, Bootstrap, Unity game development, C#</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="interests" class="tab-content">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Data analysis/organisation</li>
+                    <li>Coding</li>
+                    <li>Playing/creating video games</li>
+                    <li>Drawing/3D-modeling</li>
+                    <li>Reading</li>
+                    <li>Crocheting/knitting/sewing</li>
+                    <li>Cosplay</li>
+                    <li>Movies</li>
+                    <li>Dungeons and Dragons</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- header seperator -->
+    <div>
+        <h2 class="QuickNavHeader">Quick navigation</h2>
+    </div>
+    <!-- Navigation Buttons -->
+    <div class="Navigation py-3">
+        <button class="btn btn-NAV btn-primary" type="button">
+            <img src="Images/Microsoft-Power-BI-Logo.png" alt="Power BI">
+            <span>Power BI</span>
+        </button>
+        <button class="btn btn-NAV btn-primary" type="button">
+            <img src="Images/unitylogo.jpg" alt="Unity">
+            <span>Unity</span>
+        </button>
+        <br>
+        <button class="btn btn-NAV btn-primary" type="button">
+            <img src="Images/html.png" alt="HTML">
+            <span>HTML</span>
+        </button>
+        <button class="btn btn-NAV btn-primary" type="button">
+            <img src="Images/ArtImage.png" alt="Art">
+            <span>Art</span>
+        </button>
+    </div>
+    <!-- Social Media Links -->
+    <div class="bottomnav align-items-center d-flex justify-content-center py-3">
+        <a class="px-5" href="https://www.linkedin.com/in/angelina-r-kaal/" target="_blank"
+            rel="noopener noreferrer">linkedIn</a>
+        <a class="px-5" href="https://github.com/AngelinaKaal" target="_blank" rel="noopener noreferrer">Github</a>
+        <span class="copy-contact px-5" role="button" tabindex="0"
+            data-copy-value="angelina.r.kaal@gmail.com">E-mail</span>
+        <span class="copy-contact px-5" role="button" tabindex="0" data-copy-value="+31 6 29876217">Phone</span>
+        <a class="px-5" href="https://gamejolt.com/@JamesWitch/games" target="_blank" rel="noopener noreferrer">Gamejolt</a>
+    </div>
+
+    <div id="copyNotice" class="copy-notice" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
