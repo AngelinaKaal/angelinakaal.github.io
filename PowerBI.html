@@ -23,42 +23,46 @@
             <span class="visually-hidden">Open navigation</span>
         </button>
         <nav id="topnav-links" class="topnav-links" aria-label="Primary navigation">
-            <a href="#news">Art</a>
-            <a href="#contact">HTML</a>
-            <a href="#about">Unity</a>
-            <a href="PowerBI.html">Power BI</a>
+            <a href="Art.html" data-en="Art" data-nl="Kunst">Art</a>
+            <a href="HTML.html" data-en="HTML" data-nl="HTML">HTML</a>
+            <a href="Unity.html" data-en="Unity" data-nl="Unity">Unity</a>
+            <a href="PowerBI.html" data-en="Power BI" data-nl="Power BI">Power BI</a>
         </nav>
+        <div class="language-switch" role="group" aria-label="Language selection">
+            <button type="button" data-language="nl" aria-pressed="false">NL</button>
+            <button type="button" data-language="en" aria-pressed="true">EN</button>
+        </div>
     </div>
     <!-- Main Content -->
     <div class="container project-list">
-        <button class="btn btn-BI" type="button" data-project="art-sales" aria-pressed="true">Art Sales</button>
-        <button class="btn btn-BI" type="button" data-project="CBS" aria-pressed="false">CBS</button>
-        <button class="btn btn-BI" type="button" data-project="finals-duo" aria-pressed="false">Finals - DUO</button>
-        <button class="btn btn-BI" type="button" data-project="monthly-report" aria-pressed="false">Monthly Report</button>
-        <h3>The projects listed here are fictional, they were made as assignments for my traineeship at DAATlab.</h3>
+        <button class="btn btn-BI" type="button" data-project="art-sales" aria-pressed="true" data-en="Art Sales" data-nl="Kunstverkoop">Art Sales</button>
+        <button class="btn btn-BI" type="button" data-project="CBS" aria-pressed="false" data-en="CBS" data-nl="CBS">CBS</button>
+        <button class="btn btn-BI" type="button" data-project="finals-duo" aria-pressed="false" data-en="Finals - DUO" data-nl="Eindexamens - DUO">Finals - DUO</button>
+        <button class="btn btn-BI" type="button" data-project="monthly-report" aria-pressed="false" data-en="Monthly Report" data-nl="Maandrapport">Monthly Report</button>
+        <h3 data-en="The projects listed here are fictional, they were made as assignments for my traineeship at DAATlab." data-nl="De projecten op deze pagina zijn fictief en gemaakt als opdrachten tijdens mijn traineeship bij DAATlab.">The projects listed here are fictional, they were made as assignments for my traineeship at DAATlab.</h3>
     </div>
 
     <main class="container project-showcase" aria-live="polite">
         <section class="project-description" aria-labelledby="project-title">
-            <p class="project-eyebrow">Selected project</p>
+            <p class="project-eyebrow" data-en="Selected project" data-nl="Geselecteerd project">Selected project</p>
             <h1 id="project-title">Art Sales</h1>
             <p id="project-text"></p>
         </section>
 
-        <section class="project-carousel" aria-label="Project screenshots">
+        <section class="project-carousel" aria-label="Project screenshots" data-en-aria="Project screenshots" data-nl-aria="Schermafbeeldingen van projecten">
             <div class="carousel-frame">
                 <img id="project-image" src="Images/ArtImage.png" alt="Art Sales project preview">
                 <button id="open-fullscreen" class="carousel-arrow image-fullscreen-button" type="button"
-                    aria-label="Open image fullscreen">
+                    aria-label="Open image fullscreen" data-en-aria="Open image fullscreen" data-nl-aria="Afbeelding schermvullend openen">
                     <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="carousel-controls">
-                <button id="previous-image" class="carousel-arrow" type="button" aria-label="Previous project image">
+                <button id="previous-image" class="carousel-arrow" type="button" aria-label="Previous project image" data-en-aria="Previous project image" data-nl-aria="Vorige projectafbeelding">
                     <i class="bi bi-arrow-left" aria-hidden="true"></i>
                 </button>
                 <span id="image-counter" aria-live="polite">1 / 4</span>
-                <button id="next-image" class="carousel-arrow" type="button" aria-label="Next project image">
+                <button id="next-image" class="carousel-arrow" type="button" aria-label="Next project image" data-en-aria="Next project image" data-nl-aria="Volgende projectafbeelding">
                     <i class="bi bi-arrow-right" aria-hidden="true"></i>
                 </button>
             </div>
@@ -68,17 +72,17 @@
     <div id="image-modal" class="image-modal" role="dialog" aria-modal="true" aria-labelledby="fullscreen-title" hidden>
         <div class="fullscreen-viewer">
             <div class="fullscreen-header">
-                <h2 id="fullscreen-title">Project image</h2>
-                <button id="close-fullscreen" class="carousel-arrow" type="button" aria-label="Close fullscreen image">
+                <h2 id="fullscreen-title" data-en="Project image" data-nl="Projectafbeelding">Project image</h2>
+                <button id="close-fullscreen" class="carousel-arrow" type="button" aria-label="Close fullscreen image" data-en-aria="Close fullscreen image" data-nl-aria="Schermvullende afbeelding sluiten">
                     <i class="bi bi-x-lg" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="fullscreen-content">
-                <button id="fullscreen-previous" class="carousel-arrow" type="button" aria-label="Previous project image">
+                <button id="fullscreen-previous" class="carousel-arrow" type="button" aria-label="Previous project image" data-en-aria="Previous project image" data-nl-aria="Vorige projectafbeelding">
                     <i class="bi bi-arrow-left" aria-hidden="true"></i>
                 </button>
                 <img id="fullscreen-image" src="Images/ArtImage.png" alt="Art Sales project preview">
-                <button id="fullscreen-next" class="carousel-arrow" type="button" aria-label="Next project image">
+                <button id="fullscreen-next" class="carousel-arrow" type="button" aria-label="Next project image" data-en-aria="Next project image" data-nl-aria="Volgende projectafbeelding">
                     <i class="bi bi-arrow-right" aria-hidden="true"></i>
                 </button>
             </div>
@@ -92,8 +96,8 @@
             rel="noopener noreferrer">LinkedIn</a>
         <a class="px-5" href="https://github.com/AngelinaKaal" target="_blank" rel="noopener noreferrer">GitHub</a>
         <span class="copy-contact px-5" role="button" tabindex="0"
-            data-copy-value="angelina.r.kaal@gmail.com">Email</span>
-        <span class="copy-contact px-5" role="button" tabindex="0" data-copy-value="+31 6 29876217">Phone</span>
+            data-copy-value="angelina.r.kaal@gmail.com" data-en="Email" data-nl="E-mail">Email</span>
+        <span class="copy-contact px-5" role="button" tabindex="0" data-copy-value="+31 6 29876217" data-en="Phone" data-nl="Telefoon">Phone</span>
         <a class="px-5" href="https://gamejolt.com/@JamesWitch/games" target="_blank" rel="noopener noreferrer">GameJolt</a>
     </div>
 

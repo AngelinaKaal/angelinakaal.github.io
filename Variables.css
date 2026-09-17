@@ -1,19 +1,15 @@
 :root { 
-  --font-primary: Font_1;
+  --font-primary: Font_2;
   --nav-padding: 14px 16px;
   --nav-font-size: 17px;
   --table-cell-padding: 0.85rem 1rem;
   --competencies-cell-padding: 0.75rem 1rem;
-    --Color-1: #283618;
-    --Color-2: #445128;
-    --Color-3: #606C38;
-    --Color-4: #D0D6B6;
-    --Color-5: #FEFAE0;
-    --Color-6: #DDA15E;
-    --Color-7: #CD8742;
-    --Color-8: #BC6C25;
-    --txt-1: #151C0D;
-    --txt-2: #4F3017
+    --Color-1: #1A1D0B;
+    --Color-2: #5B6452;
+    --Color-3: #CCD798;
+    --Color-4: #EDF1DA;
+    --Color-8: #CF903E;
+    --txt-1: #1A1D0B;
 }
 
 @font-face {

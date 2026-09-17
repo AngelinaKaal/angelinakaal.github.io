@@ -1,3 +1,37 @@
+const languageButtons = document.querySelectorAll('[data-language]');
+const translatableElements = document.querySelectorAll('[data-en][data-nl]');
+const accessibleElements = document.querySelectorAll('[data-en-aria][data-nl-aria]');
+let currentLanguage = localStorage.getItem('portfolio-language') || 'en';
+
+function setLanguage(language) {
+  const selectedLanguage = language === 'nl' ? 'nl' : 'en';
+  currentLanguage = selectedLanguage;
+
+  translatableElements.forEach((element) => {
+    element.innerHTML = element.dataset[selectedLanguage];
+  });
+
+  accessibleElements.forEach((element) => {
+    element.setAttribute('aria-label', element.dataset[`${selectedLanguage}Aria`]);
+  });
+
+  document.documentElement.lang = selectedLanguage;
+  localStorage.setItem('portfolio-language', selectedLanguage);
+
+  languageButtons.forEach((button) => {
+    const isSelected = button.dataset.language === selectedLanguage;
+    button.setAttribute('aria-pressed', String(isSelected));
+  });
+
+  document.dispatchEvent(new CustomEvent('languagechange'));
+}
+
+languageButtons.forEach((button) => {
+  button.addEventListener('click', () => setLanguage(button.dataset.language));
+});
+
+setLanguage(currentLanguage);
+
 const buttons = document.querySelectorAll('.PersoonsButtons button');
 const contents = document.querySelectorAll('.tab-content');
 const topnavToggle = document.querySelector('.topnav-toggle');
@@ -8,7 +42,9 @@ if (topnavToggle && topnavLinks) {
     const isOpen = topnavToggle.getAttribute('aria-expanded') === 'true';
     topnavToggle.setAttribute('aria-expanded', String(!isOpen));
     topnavLinks.classList.toggle('is-open', !isOpen);
-    topnavToggle.querySelector('span').textContent = isOpen ? 'Open navigation' : 'Close navigation';
+    topnavToggle.querySelector('span').textContent = isOpen
+      ? (currentLanguage === 'nl' ? 'Navigatie openen' : 'Open navigation')
+      : (currentLanguage === 'nl' ? 'Navigatie sluiten' : 'Close navigation');
   });
 }
 
@@ -51,6 +87,33 @@ const projectData = {
     images: ['Images/Maandrapport-1.png', 'Images/Maandrapport-2.png'],
   }
 };
+
+const projectTranslations = {
+  'art-sales': {
+    title: 'Kunstverkoop',
+    text: 'Opdracht gestart: juni 2026\nGemaakt voor: DAATlab\nTijd besteed: een paar dagen\nOpdracht afgerond: Ja\n\nWaar ik trots op ben: Dit is de eerste visual die ik heb gemaakt. Hoewel deze zeker verbeterd kan worden, laat hij de benodigde informatie zien en ziet hij er aantrekkelijk uit. Ik ben trots dat ik deze visual vanaf nul heb kunnen maken en er goed uit heb laten zien.\n\nWat beter kon: Ik had de visual kunnen verbeteren met drillthroughs, bookmarks en meerdere pagina\'s, zodat deze uitgebreider en eenvoudiger te navigeren zou zijn. Ook had ik geavanceerdere DAX-formules kunnen gebruiken om de visual dynamischer en interactiever te maken.\n\nKlantwensen: De klant wilde een visual die de verkoop van kunstwerken door de tijd heen toont, met filters voor kunstenaar en kunstwerk. De visual moest ook de totale verkoop, winst/verlies en de prestaties van de kunstwerken en kunstenaars tonen.\n\nWerkwijze: Ik maakte een wireframe om een algemeen idee te krijgen van de indeling en de benodigde DAX-formules. Daarna importeerde en bewerkte ik de data voordat ik de visual maakte. Tijdens het werken merkte ik dat sommige plannen niet haalbaar of overbodig waren.\n\nConclusie: Ik ben trots op de visual die ik heb gemaakt. Hoewel deze zeker verbeterd kan worden, toont hij de nodige informatie en ziet hij er aantrekkelijk uit.',
+  },
+  CBS: {
+    title: 'CBS',
+    text: 'Opdracht gestart: juni 2026\nGemaakt voor: DAATlab\nTijd besteed: een paar weken\nOpdracht afgerond: augustus 2026\n\nWaar ik trots op ben: Ik ben trots op hoe de visual eruitziet. Hoewel het moeite kostte om de indeling te bepalen, heb ik alle informatie kunnen tonen waar de klant om vroeg. Na enkele aanpassingen keurde mijn coach bij DAATlab de opdracht goed. Bij de presentatie werd gezegd dat het dashboard er goed uitzag en had niemand verdere suggesties.\n\nWat beter kon: Misschien waren er andere manieren om de informatie efficiënter te tonen.\n\nKlantwensen: De klant wilde een visual die de ontwikkeling van CBS in Nederland toont, verdeeld over mensen op basis van geslacht, afkomst en leeftijdsgroep. Ze wilden snel kunnen zien welke groep de grootste invloed had op het aantal mensen met CBS in Nederland.\n\nWerkwijze: Eerst maakte ik een wireframe. Daarna controleerde ik welke data ik nodig had en noteerde ik welke kolommen en verbindingen belangrijk waren. Vervolgens maakte ik de data schoon voordat ik het dashboard bouwde.\n\nConclusie: Destijds vond ik dit een vrij eenvoudige opdracht, maar de volgende opdracht, Finals - DUO, liet zien dat ik nog veel moest leren, vooral over het importeren en opschonen van data.',
+  },
+  'finals-duo': {
+    title: 'Finals - DUO',
+    text: 'Opdracht gestart: juli 2026\nGemaakt voor: DAATlab\nTijd besteed: een paar weken\nOpdracht afgerond: Nog niet\n\nWaar ik trots op ben: Ik ben trots dat de visual erg inclusief is. De visual toont wat nodig is en biedt drillthrough met in totaal zes pagina\'s.\n\nWat beter kon: Ik had meer DAX-formules kunnen gebruiken. Daar wordt nog aan gewerkt.\n\nKlantwensen: De klant wilde een visual die het gemiddelde cijfer van leerlingen per school, regio of vak toont. Ook moest de ontwikkeling door de tijd heen in elke categorie zichtbaar zijn.\n\nWerkwijze: Ik maakte een wireframe om een algemeen idee te krijgen van de indeling en de benodigde DAX-formules. Daarna importeerde en bewerkte ik de data voordat ik de visual maakte. Tijdens het werken merkte ik dat sommige plannen niet haalbaar of overbodig waren.\n\nConclusie: Er is nog veel ruimte voor verbetering, maar dit is een goed begin.',
+  },
+  'monthly-report': {
+    title: 'Maandrapport',
+    text: 'Opdracht gestart: augustus 2026\nGemaakt voor: DAATlab\nTijd besteed: 3 dagen\nOpdracht afgerond: Ja\n\nWaar ik trots op ben: De opdracht was duidelijk en ziet er aantrekkelijk uit.\n\nWat beter kon: Ik had beter kunnen controleren wat er precies aangepast moest worden. Ik was vergeten het datatype van verschillende kolommen te wijzigen, wat problemen veroorzaakte toen ik het dashboard ging bouwen.\n\nKlantwensen: Een maandoverzicht van de veranderingen gedurende een maand. Dit moest alleen de meest recente maand bevatten en de informatie moest snel beschikbaar zijn.\n\nWerkwijze: Er was een stapsgewijs document dat gevolgd moest worden. Sommige informatie was onduidelijk of ontbrak, maar toch kon ik de meeste dingen uitzoeken. Wanneer ik een grotere fout tegenkwam, probeerde ik die zelf op te lossen; wanneer dat niet lukte, vroeg ik mijn coach om hulp.\n\nConclusie: Een eenvoudige opdracht die me een paar nieuwe technieken leerde en fouten liet zien die ik vaak maak. Nu weet ik beter waar ik op moet letten.',
+  }
+};
+
+function getProjectValue(project, property) {
+  if (currentLanguage === 'nl' && projectTranslations[project]) {
+    return projectTranslations[project][property];
+  }
+
+  return projectData[project][property];
+}
 
 const projectButtons = document.querySelectorAll('.project-list [data-project]');
 const projectTitle = document.getElementById('project-title');
@@ -101,10 +164,14 @@ function renderProject(animateDescription = true) {
     return;
   }
 
-  projectTitle.textContent = selectedProject.title;
-  projectText.innerHTML = formatProjectText(selectedProject.text);
+  const selectedProjectId = document.querySelector('.project-list [aria-pressed="true"]')?.dataset.project;
+  const projectId = selectedProjectId || Object.keys(projectData).find((key) => projectData[key] === selectedProject);
+  projectTitle.textContent = getProjectValue(projectId, 'title');
+  projectText.innerHTML = formatProjectText(getProjectValue(projectId, 'text'));
   projectImage.src = selectedProject.images[selectedImageIndex];
-  projectImage.alt = `${selectedProject.title} project preview ${selectedImageIndex + 1}`;
+  projectImage.alt = currentLanguage === 'nl'
+    ? `${getProjectValue(projectId, 'title')} projectvoorbeeld ${selectedImageIndex + 1}`
+    : `${getProjectValue(projectId, 'title')} project preview ${selectedImageIndex + 1}`;
   imageCounter.textContent = `${selectedImageIndex + 1} / ${selectedProject.images.length}`;
 
   if (animateDescription) {
@@ -113,7 +180,7 @@ function renderProject(animateDescription = true) {
   restartAnimation(projectImage);
 
   if (fullscreenImage) {
-    fullscreenTitle.textContent = selectedProject.title;
+    fullscreenTitle.textContent = getProjectValue(projectId, 'title');
     fullscreenImage.src = projectImage.src;
     fullscreenImage.alt = projectImage.alt;
     fullscreenCounter.textContent = imageCounter.textContent;
@@ -124,6 +191,8 @@ function renderProject(animateDescription = true) {
 if (projectButtons.length && projectTitle && projectText && projectImage) {
   selectedProject = projectData[projectButtons[0].dataset.project];
   renderProject();
+
+  document.addEventListener('languagechange', () => renderProject(false));
 
   projectButtons.forEach((button) => {
     button.addEventListener('click', () => {
@@ -197,7 +266,7 @@ function copyContact(contact) {
   }
 
   navigator.clipboard.writeText(text).then(() => {
-    copyNotice.textContent = `${text} copied`;
+    copyNotice.textContent = currentLanguage === 'nl' ? `${text} gekopieerd` : `${text} copied`;
     copyNotice.classList.add("show");
     setTimeout(() => copyNotice.classList.remove("show"), 2000);
   });
