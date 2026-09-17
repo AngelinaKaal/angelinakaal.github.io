@@ -5,6 +5,14 @@
     "collection": "Other",
     "dateDrawn": "17 September 2026",
     "timeSpent": "4 hours",
-    "description": "Describe what is shown in the image, the process, or the idea behind it."
+    "description": "Describe what is shown in the image, the process, or the idea behind it.",
+    "nl": {
+      "title": "Titel van het kunstwerk",
+      "artist": "Angelina Kaal",
+      "collection": "Overig",
+      "dateDrawn": "17 september 2026",
+      "timeSpent": "4 uur",
+      "description": "Beschrijf wat er op de afbeelding staat, het proces of het idee erachter."
+    }
   }
 }

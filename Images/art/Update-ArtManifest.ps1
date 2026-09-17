@@ -17,6 +17,7 @@ $items = @(Get-ChildItem $artFolder -File |
         $fileName = $_.Name
         $metadataProperty = $metadata.PSObject.Properties[$fileName]
         $details = if ($metadataProperty) { $metadataProperty.Value } else { [PSCustomObject]@{} }
+        $nlDetails = if ($details.nl) { $details.nl } else { [PSCustomObject]@{} }
         $defaultTitle = [System.IO.Path]::GetFileNameWithoutExtension($fileName) -replace '[-_]+', ' '
 
         [ordered]@{
@@ -27,6 +28,14 @@ $items = @(Get-ChildItem $artFolder -File |
             dateDrawn = if ($details.dateDrawn) { $details.dateDrawn } else { '' }
             timeSpent = if ($details.timeSpent) { $details.timeSpent } else { '' }
             description = if ($details.description) { $details.description } else { '' }
+            nl = [ordered]@{
+                title = if ($nlDetails.title) { $nlDetails.title } else { '' }
+                artist = if ($nlDetails.artist) { $nlDetails.artist } else { '' }
+                collection = if ($nlDetails.collection) { $nlDetails.collection } else { '' }
+                dateDrawn = if ($nlDetails.dateDrawn) { $nlDetails.dateDrawn } else { '' }
+                timeSpent = if ($nlDetails.timeSpent) { $nlDetails.timeSpent } else { '' }
+                description = if ($nlDetails.description) { $nlDetails.description } else { '' }
+            }
         }
     })
 

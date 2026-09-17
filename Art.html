@@ -51,18 +51,24 @@
 				<i class="bi bi-x-lg" aria-hidden="true"></i>
 			</button>
 			<div class="art-modal-image-wrap">
-				<img id="art-modal-image" src="" alt="">
+				<img id="art-modal-image" src="" alt="" draggable="false">
+			</div>
+			<div class="art-modal-tools" aria-label="Image controls">
+				<label for="art-zoom">Zoom</label>
+				<input id="art-zoom" type="range" min="1" max="3" step="0.05" value="1">
+				<span id="art-zoom-value">100%</span>
+				<button id="art-zoom-reset" type="button">Reset</button>
 			</div>
 			<div class="art-modal-details">
 				<h2 id="art-modal-title"></h2>
 				<dl class="art-modal-meta">
-					<div><dt>Artist</dt><dd id="art-modal-artist"></dd></div>
-					<div><dt>Collection</dt><dd id="art-modal-collection"></dd></div>
-					<div><dt>Date drawn</dt><dd id="art-modal-date"></dd></div>
-					<div><dt>Time spent</dt><dd id="art-modal-time"></dd></div>
+					<div><dt data-en="Artist" data-nl="Kunstenaar">Artist</dt><dd id="art-modal-artist"></dd></div>
+					<div><dt data-en="Collection" data-nl="Collectie">Collection</dt><dd id="art-modal-collection"></dd></div>
+					<div><dt data-en="Date drawn" data-nl="Datum getekend">Date drawn</dt><dd id="art-modal-date"></dd></div>
+					<div><dt data-en="Time spent" data-nl="Tijd besteed">Time spent</dt><dd id="art-modal-time"></dd></div>
 				</dl>
 				<div class="art-modal-description">
-					<h3>Image description</h3>
+					<h3 data-en="Image description" data-nl="Beschrijving van de afbeelding">Image description</h3>
 					<p id="art-modal-description"></p>
 				</div>
 			</div>

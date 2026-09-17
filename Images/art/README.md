@@ -19,7 +19,15 @@ For example, after adding `sunset.jpg`, update `art-metadata.json` like this:
 		"collection": "Personal work",
 		"dateDrawn": "17 September 2026",
 		"timeSpent": "4 hours",
-		"description": "A short description of the artwork."
+		"description": "A short description of the artwork.",
+		"nl": {
+			"title": "Zonsondergang",
+			"artist": "Angelina Kaal",
+			"collection": "Persoonlijk werk",
+			"dateDrawn": "17 september 2026",
+			"timeSpent": "4 uur",
+			"description": "Een korte beschrijving van het kunstwerk."
+		}
 	}
 }
 ```
@@ -75,6 +83,7 @@ The action regenerates and commits `art-data.js`. The first run may require Acti
 - `dateDrawn`: date the artwork was drawn or created.
 - `timeSpent`: approximate time spent making the artwork.
 - `description`: description shown below the artwork details.
+- `nl`: optional Dutch translations for any of the fields above. Missing translations fall back to the English value.
 
 The filename in `art-metadata.json` must match the image filename exactly, including capitalization and extension. Supported formats are JPG, JPEG, PNG, WebP, and GIF.
 

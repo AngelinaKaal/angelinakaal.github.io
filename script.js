@@ -324,7 +324,47 @@ const artModalCollection = document.getElementById('art-modal-collection');
 const artModalDate = document.getElementById('art-modal-date');
 const artModalTime = document.getElementById('art-modal-time');
 const artModalDescription = document.getElementById('art-modal-description');
+const artModalImageWrap = document.querySelector('.art-modal-image-wrap');
+const artZoom = document.getElementById('art-zoom');
+const artZoomValue = document.getElementById('art-zoom-value');
+const artZoomReset = document.getElementById('art-zoom-reset');
 let lastArtTrigger;
+let artPanX = 0;
+let artPanY = 0;
+let artIsPanning = false;
+let artPanStartX = 0;
+let artPanStartY = 0;
+
+function getArtValue(item, property) {
+  if (currentLanguage === 'nl' && item.nl?.[property]) {
+    return item.nl[property];
+  }
+
+  return item[property];
+}
+
+function clampArtPan() {
+  const zoom = Number(artZoom.value);
+  const maximumPanX = Math.max(0, (zoom - 1) * artModalImageWrap.clientWidth);
+  const maximumPanY = Math.max(0, (zoom - 1) * artModalImageWrap.clientHeight);
+  artPanX = Math.min(maximumPanX, Math.max(-maximumPanX, artPanX));
+  artPanY = Math.min(maximumPanY, Math.max(-maximumPanY, artPanY));
+}
+
+function renderArtZoom() {
+  const zoom = Number(artZoom.value);
+  clampArtPan();
+  artModalImage.style.transform = `translate(${artPanX}px, ${artPanY}px) scale(${zoom})`;
+  artZoomValue.textContent = `${Math.round(zoom * 100)}%`;
+  artModalImageWrap.classList.toggle('is-zoomed', zoom > 1);
+}
+
+function resetArtZoom() {
+  artZoom.value = '1';
+  artPanX = 0;
+  artPanY = 0;
+  renderArtZoom();
+}
 
 function renderArtGallery() {
   if (!artGrid) {
@@ -333,13 +373,13 @@ function renderArtGallery() {
 
   const query = artFilter.value.trim().toLowerCase();
   const visibleItems = artItems.filter((item) =>
-    `${item.title} ${item.collection} ${item.artist}`.toLowerCase().includes(query)
+    `${getArtValue(item, 'title')} ${getArtValue(item, 'collection')} ${getArtValue(item, 'artist')}`.toLowerCase().includes(query)
   );
 
   artGrid.innerHTML = visibleItems.map((item, index) => `
-    <button class="art-card" type="button" data-art-index="${artItems.indexOf(item)}" aria-label="Open ${item.title}">
+    <button class="art-card" type="button" data-art-index="${artItems.indexOf(item)}" aria-label="Open ${getArtValue(item, 'title')}">
       <span class="art-thumbnail"><img src="${item.image}" alt="" loading="lazy"></span>
-      <span class="art-card-title">${item.title}</span>
+      <span class="art-card-title">${getArtValue(item, 'title')}</span>
     </button>
   `).join('');
   artEmpty.hidden = visibleItems.length > 0;
@@ -352,13 +392,14 @@ function renderArtGallery() {
 function openArtModal(item, trigger) {
   lastArtTrigger = trigger;
   artModalImage.src = item.image;
-  artModalImage.alt = item.title;
-  artModalTitle.textContent = item.title;
-  artModalArtist.textContent = item.artist || 'Not provided';
-  artModalCollection.textContent = item.collection || 'Other';
-  artModalDate.textContent = item.dateDrawn || 'Not provided';
-  artModalTime.textContent = item.timeSpent || 'Not provided';
-  artModalDescription.textContent = item.description || 'No description provided.';
+  artModalImage.alt = getArtValue(item, 'title');
+  artModalTitle.textContent = getArtValue(item, 'title');
+  artModalArtist.textContent = getArtValue(item, 'artist') || 'Not provided';
+  artModalCollection.textContent = getArtValue(item, 'collection') || 'Other';
+  artModalDate.textContent = getArtValue(item, 'dateDrawn') || 'Not provided';
+  artModalTime.textContent = getArtValue(item, 'timeSpent') || 'Not provided';
+  artModalDescription.textContent = getArtValue(item, 'description') || 'No description provided.';
+  resetArtZoom();
   artModal.hidden = false;
   document.body.classList.add('modal-open');
   artModalClose.focus();
@@ -372,8 +413,47 @@ function closeArtModal() {
 
 if (artGrid && artFilter && artModal) {
   renderArtGallery();
+  document.addEventListener('languagechange', () => {
+    renderArtGallery();
+    if (!artModal.hidden) {
+      const selectedIndex = Number(lastArtTrigger?.dataset.artIndex);
+      if (artItems[selectedIndex]) {
+        openArtModal(artItems[selectedIndex], lastArtTrigger);
+      }
+    }
+  });
   artFilter.addEventListener('input', renderArtGallery);
   artModalClose.addEventListener('click', closeArtModal);
+  artZoom.addEventListener('input', renderArtZoom);
+  artZoomReset.addEventListener('click', resetArtZoom);
+  artModalImageWrap.addEventListener('wheel', (event) => {
+    event.preventDefault();
+    const nextZoom = Math.min(3, Math.max(1, Number(artZoom.value) - event.deltaY * 0.001));
+    artZoom.value = nextZoom.toFixed(2);
+    renderArtZoom();
+  }, { passive: false });
+  artModalImageWrap.addEventListener('pointerdown', (event) => {
+    if (event.button !== 0 || Number(artZoom.value) === 1) {
+      return;
+    }
+
+    event.preventDefault();
+    artIsPanning = true;
+    artPanStartX = event.clientX - artPanX;
+    artPanStartY = event.clientY - artPanY;
+    artModalImageWrap.setPointerCapture(event.pointerId);
+  });
+  artModalImageWrap.addEventListener('pointermove', (event) => {
+    if (!artIsPanning) {
+      return;
+    }
+
+    artPanX = event.clientX - artPanStartX;
+    artPanY = event.clientY - artPanStartY;
+    renderArtZoom();
+  });
+  artModalImageWrap.addEventListener('pointerup', () => { artIsPanning = false; });
+  artModalImageWrap.addEventListener('pointercancel', () => { artIsPanning = false; });
   artModal.addEventListener('click', (event) => {
     if (event.target === artModal) {
       closeArtModal();

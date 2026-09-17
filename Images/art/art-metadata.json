@@ -5,7 +5,15 @@
     "collection": "Personal work",
     "dateDrawn": "30 June 2026",
     "timeSpent": "1 hour roughly",
-    "description": "The image depicts James and Richard, holding a paper in front of half their faces. Richard(the blonde guy) was drawn by my friend Richard and eh drew half of James' (the guy with red hair) face on the paper. I did the same for his character."
+    "description": "The image depicts James and Richard, holding a paper in front of half their faces. Richard(the blonde guy) was drawn by my friend Richard and eh drew half of James' (the guy with red hair) face on the paper. I did the same for his character.",
+    "nl": {
+      "title": "James en Richard",
+      "artist": "Angelina Kaal en Richard Cosar",
+      "collection": "Persoonlijk werk",
+      "dateDrawn": "30 juni 2026",
+      "timeSpent": "1 uur ongeveer",
+      "description": "Op de afbeelding staan James en Richard, die een papier voor de helft van hun gezicht houden. Richard, de blonde persoon, heeft Richard getekend en de helft van James, de persoon met rood haar, op het papier gezet. Ik heb hetzelfde gedaan voor zijn personage."
+    }
   },
 
     "BrogsCard.png": {
@@ -14,6 +22,14 @@
     "collection": "Personal work",
     "dateDrawn": "23 June 2026",
     "timeSpent": "2 hours roughly",
-    "description": "The image depicts Liliya from the outlast trials attacking Dr. Easterman from the outlast trials. This image was drawn as a birthday card for a friend who really likes this game. I drew this image digitally using a drawing tablet and the program Krita. I used a reference image of Liliya and Dr. Easterman to create the characters in my own style."
+    "description": "The image depicts Liliya from the outlast trials attacking Dr. Easterman from the outlast trials. This image was drawn as a birthday card for a friend who really likes this game. I drew this image digitally using a drawing tablet and the program Krita. I used a reference image of Liliya and Dr. Easterman to create the characters in my own style.",
+    "nl": {
+      "title": "Verjaardagskaart voor een vriend",
+      "artist": "Angelina Kaal",
+      "collection": "Persoonlijk werk",
+      "dateDrawn": "23 juni 2026",
+      "timeSpent": "2 uur ongeveer",
+      "description": "Op de afbeelding valt Liliya uit The Outlast Trials Dr. Easterman uit The Outlast Trials aan. Ik maakte deze afbeelding digitaal met een tekentablet en het programma Krita als verjaardagskaart voor een vriend die dit spel erg leuk vindt. Ik gebruikte referentiebeelden van Liliya en Dr. Easterman en tekende de personages in mijn eigen stijl."
+    }
   }
 }
