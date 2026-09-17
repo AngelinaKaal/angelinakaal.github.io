@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<body class="PowerBIBody art-page">
 	<div class="topnav">
 		<h1 class="float-left">Portfolio - Angelina Kaal</h1>
 		<a href="index.html" aria-label="Home">
@@ -33,9 +33,42 @@
 		</div>
 	</div>
 
-	<main class="main flex-grow-1">
-		<div><h1 data-en="This page will contain art projects. It will show my skill in different art forms. It will be updated in the future." data-nl="Op deze pagina komen kunstprojecten te staan. De pagina laat mijn vaardigheden in verschillende kunstvormen zien en wordt in de toekomst bijgewerkt.">This page will contain art projects. it will show my skill in different art forms. It will be updated in the future.</h1></div>
+	<main class="main art-main flex-grow-1">
+		<section class="art-gallery" aria-labelledby="art-heading">
+			<div class="art-toolbar">
+				<h2 id="art-heading">Art</h2>
+				<label for="art-filter">Filter <span class="visually-hidden">artwork</span></label>
+				<input id="art-filter" type="search" placeholder="all/neurophase/jesse jester/other" autocomplete="off">
+			</div>
+			<div id="art-grid" class="art-grid" aria-live="polite"></div>
+			<p id="art-empty" class="art-empty" hidden>No artwork matches this filter.</p>
+		</section>
 	</main>
+
+	<div id="art-modal" class="art-modal" hidden>
+		<div class="art-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="art-modal-title">
+			<button id="art-modal-close" class="art-modal-close" type="button" aria-label="Close artwork details">
+				<i class="bi bi-x-lg" aria-hidden="true"></i>
+			</button>
+			<div class="art-modal-image-wrap">
+				<img id="art-modal-image" src="" alt="">
+			</div>
+			<div class="art-modal-details">
+				<h2 id="art-modal-title"></h2>
+				<dl class="art-modal-meta">
+					<div><dt>Artist</dt><dd id="art-modal-artist"></dd></div>
+					<div><dt>Collection</dt><dd id="art-modal-collection"></dd></div>
+					<div><dt>Date drawn</dt><dd id="art-modal-date"></dd></div>
+					<div><dt>Time spent</dt><dd id="art-modal-time"></dd></div>
+				</dl>
+				<div class="art-modal-description">
+					<h3>Image description</h3>
+					<p id="art-modal-description"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="Images/art/art-data.js"></script>
 	<script src="script.js"></script>
 </body>
 

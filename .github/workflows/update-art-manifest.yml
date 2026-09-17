@@ -1,0 +1,35 @@
+name: Update art manifest
+
+on:
+  push:
+    paths:
+      - 'Images/art/**'
+      - '.github/workflows/update-art-manifest.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Generate art manifest
+        shell: pwsh
+        run: ./Images/art/Update-ArtManifest.ps1
+
+      - name: Commit updated manifest
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Images/art/art-data.js
+          if git diff --cached --quiet; then
+            echo "The art manifest is already up to date."
+          else
+            git commit -m "Update art manifest"
+            git push
+          fi

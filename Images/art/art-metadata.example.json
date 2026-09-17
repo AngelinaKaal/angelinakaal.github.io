@@ -1,0 +1,10 @@
+{
+  "my-artwork.jpg": {
+    "title": "Artwork title",
+    "artist": "Angelina Kaal",
+    "collection": "Other",
+    "dateDrawn": "17 September 2026",
+    "timeSpent": "4 hours",
+    "description": "Describe what is shown in the image, the process, or the idea behind it."
+  }
+}

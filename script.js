@@ -310,6 +310,82 @@ if (projectButtons.length && projectTitle && projectText && projectImage) {
 
 const copyNotice = document.getElementById("copyNotice");
 
+const artItems = window.artItems || [];
+
+const artGrid = document.getElementById('art-grid');
+const artFilter = document.getElementById('art-filter');
+const artEmpty = document.getElementById('art-empty');
+const artModal = document.getElementById('art-modal');
+const artModalClose = document.getElementById('art-modal-close');
+const artModalImage = document.getElementById('art-modal-image');
+const artModalTitle = document.getElementById('art-modal-title');
+const artModalArtist = document.getElementById('art-modal-artist');
+const artModalCollection = document.getElementById('art-modal-collection');
+const artModalDate = document.getElementById('art-modal-date');
+const artModalTime = document.getElementById('art-modal-time');
+const artModalDescription = document.getElementById('art-modal-description');
+let lastArtTrigger;
+
+function renderArtGallery() {
+  if (!artGrid) {
+    return;
+  }
+
+  const query = artFilter.value.trim().toLowerCase();
+  const visibleItems = artItems.filter((item) =>
+    `${item.title} ${item.collection} ${item.artist}`.toLowerCase().includes(query)
+  );
+
+  artGrid.innerHTML = visibleItems.map((item, index) => `
+    <button class="art-card" type="button" data-art-index="${artItems.indexOf(item)}" aria-label="Open ${item.title}">
+      <span class="art-thumbnail"><img src="${item.image}" alt="" loading="lazy"></span>
+      <span class="art-card-title">${item.title}</span>
+    </button>
+  `).join('');
+  artEmpty.hidden = visibleItems.length > 0;
+
+  artGrid.querySelectorAll('[data-art-index]').forEach((card) => {
+    card.addEventListener('click', () => openArtModal(artItems[card.dataset.artIndex], card));
+  });
+}
+
+function openArtModal(item, trigger) {
+  lastArtTrigger = trigger;
+  artModalImage.src = item.image;
+  artModalImage.alt = item.title;
+  artModalTitle.textContent = item.title;
+  artModalArtist.textContent = item.artist || 'Not provided';
+  artModalCollection.textContent = item.collection || 'Other';
+  artModalDate.textContent = item.dateDrawn || 'Not provided';
+  artModalTime.textContent = item.timeSpent || 'Not provided';
+  artModalDescription.textContent = item.description || 'No description provided.';
+  artModal.hidden = false;
+  document.body.classList.add('modal-open');
+  artModalClose.focus();
+}
+
+function closeArtModal() {
+  artModal.hidden = true;
+  document.body.classList.remove('modal-open');
+  lastArtTrigger?.focus();
+}
+
+if (artGrid && artFilter && artModal) {
+  renderArtGallery();
+  artFilter.addEventListener('input', renderArtGallery);
+  artModalClose.addEventListener('click', closeArtModal);
+  artModal.addEventListener('click', (event) => {
+    if (event.target === artModal) {
+      closeArtModal();
+    }
+  });
+  document.addEventListener('keydown', (event) => {
+    if (!artModal.hidden && event.key === 'Escape') {
+      closeArtModal();
+    }
+  });
+}
+
 function copyContact(contact) {
   const text = contact.dataset.copyValue;
 
