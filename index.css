@@ -15,9 +15,16 @@ body {
     font-family: var(--font-primary);
 }
 
+.topnav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .topnav h1,
 .bottomnav h1,
 .Medianav h1 {
+    display: none;
     float: left;
     margin: 0;
     padding: var(--nav-padding);
@@ -35,21 +42,35 @@ body {
 
 .topnav h1,
 .topnav a { color: var(--Color-4); }
-.topnav a { float: right; }
+.topnav a { float: none; }
+
+.topnav > a {
+    order: 1;
+}
+
+.topnav h1 {
+    flex: 1 1 auto;
+    order: 2;
+    text-align: center;
+}
 
 .topnav-toggle {
     display: none;
 }
 
 .topnav-links {
-    display: contents;
+    display: flex;
+    align-items: center;
+    order: 1;
+    margin-right: auto;
 }
 
 .language-switch {
     display: flex;
-    float: right;
     align-items: center;
-    margin: 8px 12px 8px 4px;
+    order: 3;
+    margin-left: auto;
+    margin-right: 12px;
     border: 1px solid var(--Color-4);
     border-radius: 999px;
     overflow: hidden;
@@ -395,6 +416,27 @@ body.modal-open {
     color: var(--txt-1);
 }
 
+#project-link,
+#project-link.btn-primary {
+    background-color: var(--Color-8);
+    border-color: var(--Color-8);
+    color: var(--Color-1);
+    box-shadow: none;
+    text-decoration: none;
+}
+
+#project-link:hover,
+#project-link:focus,
+#project-link:active,
+#project-link.btn-primary:hover,
+#project-link.btn-primary:focus,
+#project-link.btn-primary:active {
+    background-color: var(--Color-3);
+    border-color: var(--Color-3);
+    color: var(--Color-1);
+    box-shadow: none;
+}
+
 .btn-PO.btn-primary:hover,
 .btn-PO.btn-primary:focus,
 .btn-PO.btn-primary:active {
@@ -735,7 +777,7 @@ body.modal-open {
     }
 
     .language-switch {
-        margin-right: 58px;
+        margin-right: 0;
     }
 
     .topnav-links {
