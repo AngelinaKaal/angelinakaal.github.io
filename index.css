@@ -788,7 +788,7 @@ body.modal-open {
 /* ------------------------------- ART GALLERY ---------------------------------------- */
 
 .art-main {
-    background-color: #d7d7d7;
+    background-color: var(--Color-3);
 }
 
 .art-gallery {
@@ -802,7 +802,7 @@ body.modal-open {
     align-items: center;
     gap: 0.75rem;
     margin-bottom: 0.75rem;
-    color: #252525;
+    color: var(--txt-1);
     font-family: var(--font-primary);
 }
 
@@ -816,9 +816,9 @@ body.modal-open {
 .art-toolbar input {
     min-width: min(24rem, 100%);
     padding: 0.35rem 0.5rem;
-    border: 1px solid #aaa;
-    background-color: #efefef;
-    color: #252525;
+    border: 1px solid var(--Color-2);
+    background-color: var(--Color-4);
+    color: var(--txt-1);
     font: inherit;
 }
 
@@ -836,8 +836,8 @@ body.modal-open {
     overflow: hidden;
     border: 0;
     border-radius: 0.35rem;
-    background-color: #aaa;
-    color: #fff;
+    background-color: var(--Color-2);
+    color: var(--Color-4);
     font: inherit;
     text-align: left;
     cursor: pointer;
@@ -852,9 +852,13 @@ body.modal-open {
 
 .art-thumbnail {
     display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
     flex: 0 0 auto;
-    aspect-ratio: 1.35 / 1;
-    background-color: #bdbdbd;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background-color: var(--Color-4);
 }
 
 .art-thumbnail img {
@@ -871,14 +875,15 @@ body.modal-open {
     flex: 0 0 auto;
     min-height: 2.3rem;
     padding: 0.55rem 0.7rem;
-    background-color: #929292;
+    background-color: var(--Color-8);
+    color: var(--Color-1);
     font-size: 0.8rem;
     line-height: 1.2;
 }
 
 .art-empty {
     padding: 2rem 0;
-    color: #252525;
+    color: var(--txt-1);
     font-family: var(--font-primary);
 }
 
@@ -889,7 +894,7 @@ body.modal-open {
     display: grid;
     padding: 1rem;
     place-items: center;
-    background-color: rgba(15, 15, 15, 0.84);
+    background-color: rgba(26, 29, 11, 0.84);
 }
 
 .art-modal-dialog {
@@ -897,9 +902,9 @@ body.modal-open {
     width: min(100%, 44rem);
     max-height: calc(100vh - 2rem);
     overflow: auto;
-    border: 2px solid #111;
-    background-color: #d7d7d7;
-    color: #252525;
+    border: 2px solid var(--Color-1);
+    background-color: var(--Color-4);
+    color: var(--txt-1);
     font-family: var(--font-primary);
 }
 
@@ -925,7 +930,7 @@ body.modal-open {
     min-height: 16rem;
     box-sizing: border-box;
     place-items: center;
-    background-color: #d7d7d7;
+    background-color: var(--Color-4);
     overflow: hidden;
 }
 
@@ -954,35 +959,35 @@ body.modal-open {
     align-items: center;
     gap: 0.65rem;
     padding: 0.55rem 1.25rem;
-    border-top: 1px solid #999;
-    background-color: #c6c6c6;
+    border-top: 1px solid var(--Color-2);
+    background-color: var(--Color-3);
     font-size: 0.8rem;
 }
 
 .art-modal-tools input {
     width: min(14rem, 45%);
-    accent-color: #555;
+    accent-color: var(--Color-8);
 }
 
 .art-modal-tools button {
     margin-left: auto;
     padding: 0.25rem 0.55rem;
-    border: 1px solid #777;
-    background-color: #e5e5e5;
-    color: #252525;
+    border: 1px solid var(--Color-2);
+    background-color: var(--Color-4);
+    color: var(--txt-1);
     font: inherit;
     cursor: pointer;
 }
 
 .art-modal-tools button:hover,
 .art-modal-tools button:focus-visible {
-    background-color: #fff;
+    background-color: var(--Color-8);
 }
 
 .art-modal-details {
     min-height: 4.5rem;
     padding: 0.75rem 1.25rem;
-    border-top: 2px solid #111;
+    border-top: 2px solid var(--Color-1);
 }
 
 .art-modal-details h2 {
@@ -1015,7 +1020,7 @@ body.modal-open {
 .art-modal-description {
     margin-top: 0.75rem;
     padding-top: 0.65rem;
-    border-top: 1px solid #999;
+    border-top: 1px solid var(--Color-2);
 }
 
 .art-modal-description h3 {
