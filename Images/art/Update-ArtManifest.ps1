@@ -10,7 +10,7 @@ if (Test-Path $metadataPath) {
     }
 }
 
-$items = Get-ChildItem $artFolder -File |
+$items = @(Get-ChildItem $artFolder -File |
     Where-Object { $_.Extension.ToLowerInvariant() -in @('.jpg', '.jpeg', '.png', '.webp', '.gif') } |
     Sort-Object Name |
     ForEach-Object {
@@ -28,8 +28,8 @@ $items = Get-ChildItem $artFolder -File |
             timeSpent = if ($details.timeSpent) { $details.timeSpent } else { '' }
             description = if ($details.description) { $details.description } else { '' }
         }
-    }
+    })
 
-$json = if ($items.Count -eq 0) { '[]' } else { @($items) | ConvertTo-Json -Depth 4 -Compress }
+$json = if ($items.Count -eq 0) { '[]' } else { ConvertTo-Json -InputObject $items -Depth 4 -Compress }
 Set-Content -Path $outputPath -Value "window.artItems = $json;" -Encoding UTF8
 Write-Host "Updated $($items.Count) artwork card(s) in art-data.js."
