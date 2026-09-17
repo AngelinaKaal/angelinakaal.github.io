@@ -385,6 +385,10 @@ function renderArtGallery() {
   artEmpty.hidden = visibleItems.length > 0;
 
   artGrid.querySelectorAll('[data-art-index]').forEach((card) => {
+    const title = card.querySelector('.art-card-title');
+    if (title.scrollHeight > title.clientHeight) {
+      card.classList.add('has-long-title');
+    }
     card.addEventListener('click', () => openArtModal(artItems[card.dataset.artIndex], card));
   });
 }

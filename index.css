@@ -832,6 +832,7 @@ body.modal-open {
 .art-card {
     display: flex;
     flex-direction: column;
+    position: relative;
     min-width: 0;
     padding: 0;
     overflow: hidden;
@@ -869,17 +870,33 @@ body.modal-open {
 }
 
 .art-card-title {
-    display: block;
+    display: flex;
+    align-items: center;
     position: static;
     width: 100%;
     box-sizing: border-box;
     flex: 0 0 auto;
+    height: 2.3rem;
     min-height: 2.3rem;
+    overflow: hidden;
     padding: 0.55rem 0.7rem;
     background-color: var(--Color-8);
     color: var(--Color-1);
     font-size: 0.8rem;
     line-height: 1.2;
+}
+
+.art-card.has-long-title .art-card-title {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.art-card.has-long-title {
+    box-sizing: border-box;
+    padding-bottom: 2.3rem;
 }
 
 .art-empty {
