@@ -829,7 +829,8 @@ body.modal-open {
 }
 
 .art-card {
-    display: block;
+    display: flex;
+    flex-direction: column;
     min-width: 0;
     padding: 0;
     overflow: hidden;
@@ -851,6 +852,7 @@ body.modal-open {
 
 .art-thumbnail {
     display: block;
+    flex: 0 0 auto;
     aspect-ratio: 1.35 / 1;
     background-color: #bdbdbd;
 }
@@ -863,6 +865,10 @@ body.modal-open {
 
 .art-card-title {
     display: block;
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 0 0 auto;
     min-height: 2.3rem;
     padding: 0.55rem 0.7rem;
     background-color: #929292;
