@@ -1,4 +1,9 @@
-Add-Type -AssemblyName System.Drawing
+try {
+    Add-Type -AssemblyName System.Drawing -ErrorAction Stop
+}
+catch {
+    Write-Warning 'System.Drawing is unavailable; using original images as previews.'
+}
 
 $artFolder = Split-Path -Parent $MyInvocation.MyCommand.Path
 $metadataPath = Join-Path $artFolder 'art-metadata.json'
@@ -84,18 +89,25 @@ $items = @(Get-ChildItem $artFolder -File |
         $fileName = $_.Name
         $previewPath = Join-Path $previewFolder $fileName
         if (-not (Test-Path $previewPath) -or ((Get-Item $previewPath).LastWriteTime -lt $_.LastWriteTime)) {
-            Resize-PreviewImage -sourcePath $_.FullName -destinationPath $previewPath
+            try {
+                Resize-PreviewImage -sourcePath $_.FullName -destinationPath $previewPath
+            }
+            catch {
+                Write-Warning "Could not create preview for $fileName; using the original image instead. $($_.Exception.Message)"
+            }
         }
 
         $metadataProperty = $metadata.PSObject.Properties[$fileName]
         $details = if ($metadataProperty) { $metadataProperty.Value } else { [PSCustomObject]@{} }
         $nlDetails = if ($details.nl) { $details.nl } else { [PSCustomObject]@{} }
         $defaultTitle = [System.IO.Path]::GetFileNameWithoutExtension($fileName) -replace '[-_]+', ' '
+        $imagePath = "Images/art/$fileName"
+        $previewUrl = if (Test-Path $previewPath) { "Images/art/previews/$fileName" } else { $imagePath }
 
         [ordered]@{
             title = if ($details.title) { $details.title } else { $defaultTitle }
-            image = "Images/art/$fileName"
-            preview = "Images/art/previews/$fileName"
+            image = $imagePath
+            preview = $previewUrl
             artist = if ($details.artist) { $details.artist } else { 'Angelina Kaal' }
             collection = if ($details.collection) { $details.collection } else { 'Other' }
             dateDrawn = if ($details.dateDrawn) { $details.dateDrawn } else { '' }

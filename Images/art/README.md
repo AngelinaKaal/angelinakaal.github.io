@@ -73,7 +73,7 @@ Your GitHub Pages workflow is:
 4. Open the repository's **Actions** tab and wait for **Update art manifest** to finish.
 5. Wait for GitHub Pages to deploy, then refresh the website.
 
-The action regenerates and commits `art-data.js`. The first run may require Actions to be enabled and the workflow's repository permission to allow it to write contents.
+The action regenerates and commits `art-data.js` together with any generated preview images. The first run may require Actions to be enabled and the workflow's repository permission to allow it to write contents.
 
 ## Metadata Fields
 
