@@ -1,6 +1,73 @@
+Add-Type -AssemblyName System.Drawing
+
 $artFolder = Split-Path -Parent $MyInvocation.MyCommand.Path
 $metadataPath = Join-Path $artFolder 'art-metadata.json'
 $outputPath = Join-Path $artFolder 'art-data.js'
+$previewFolder = Join-Path $artFolder 'previews'
+
+if (-not (Test-Path $previewFolder)) {
+    New-Item -Path $previewFolder -ItemType Directory -Force | Out-Null
+}
+
+function Resize-PreviewImage($sourcePath, $destinationPath) {
+    $lowerSource = $sourcePath.ToLowerInvariant()
+    $lowerDestination = $destinationPath.ToLowerInvariant()
+
+    if ($lowerSource.EndsWith('.webp') -or $lowerDestination.EndsWith('.webp')) {
+        Copy-Item -Path $sourcePath -Destination $destinationPath -Force
+        return
+    }
+
+    try {
+        $sourceImage = [System.Drawing.Image]::FromFile($sourcePath)
+    }
+    catch {
+        Copy-Item -Path $sourcePath -Destination $destinationPath -Force
+        return
+    }
+
+    try {
+        $maxWidth = 900
+        $maxHeight = 900
+        $scale = [Math]::Min([double]$maxWidth / $sourceImage.Width, [double]$maxHeight / $sourceImage.Height)
+
+        if ($scale -ge 1) {
+            Copy-Item -Path $sourcePath -Destination $destinationPath -Force
+            return
+        }
+
+        $newWidth = [Math]::Max(1, [int]([Math]::Round($sourceImage.Width * $scale)))
+        $newHeight = [Math]::Max(1, [int]([Math]::Round($sourceImage.Height * $scale)))
+
+        $resizedImage = New-Object System.Drawing.Bitmap($newWidth, $newHeight)
+        $graphics = [System.Drawing.Graphics]::FromImage($resizedImage)
+        $graphics.CompositingQuality = [System.Drawing.Drawing2D.CompositingQuality]::HighQuality
+        $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
+        $graphics.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::HighQuality
+        $graphics.PixelOffsetMode = [System.Drawing.Drawing2D.PixelOffsetMode]::HighQuality
+        $graphics.DrawImage($sourceImage, 0, 0, $newWidth, $newHeight)
+
+        $codecInfo = [System.Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() | Where-Object { $_.FormatDescription -eq 'JPEG' }
+        $encoderParameters = New-Object System.Drawing.Imaging.EncoderParameters(1)
+        $encoderParameters.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter([System.Drawing.Imaging.Encoder]::Quality, [long]80)
+
+        if ($lowerDestination.EndsWith('.png')) {
+            $resizedImage.Save($destinationPath, [System.Drawing.Imaging.ImageFormat]::Png)
+        }
+        elseif ($lowerDestination.EndsWith('.gif')) {
+            Copy-Item -Path $sourcePath -Destination $destinationPath -Force
+        }
+        else {
+            $resizedImage.Save($destinationPath, $codecInfo, $encoderParameters)
+        }
+
+        $graphics.Dispose()
+        $resizedImage.Dispose()
+    }
+    finally {
+        $sourceImage.Dispose()
+    }
+}
 
 $metadata = @{}
 if (Test-Path $metadataPath) {
@@ -15,6 +82,11 @@ $items = @(Get-ChildItem $artFolder -File |
     Sort-Object Name |
     ForEach-Object {
         $fileName = $_.Name
+        $previewPath = Join-Path $previewFolder $fileName
+        if (-not (Test-Path $previewPath) -or ((Get-Item $previewPath).LastWriteTime -lt $_.LastWriteTime)) {
+            Resize-PreviewImage -sourcePath $_.FullName -destinationPath $previewPath
+        }
+
         $metadataProperty = $metadata.PSObject.Properties[$fileName]
         $details = if ($metadataProperty) { $metadataProperty.Value } else { [PSCustomObject]@{} }
         $nlDetails = if ($details.nl) { $details.nl } else { [PSCustomObject]@{} }
@@ -23,6 +95,7 @@ $items = @(Get-ChildItem $artFolder -File |
         [ordered]@{
             title = if ($details.title) { $details.title } else { $defaultTitle }
             image = "Images/art/$fileName"
+            preview = "Images/art/previews/$fileName"
             artist = if ($details.artist) { $details.artist } else { 'Angelina Kaal' }
             collection = if ($details.collection) { $details.collection } else { 'Other' }
             dateDrawn = if ($details.dateDrawn) { $details.dateDrawn } else { '' }
