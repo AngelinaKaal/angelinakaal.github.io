@@ -366,14 +366,24 @@ function resetArtZoom() {
   renderArtZoom();
 }
 
+function populateArtFilter() {
+  const selectedCollection = artFilter.value;
+  const collections = [...new Set(artItems.map((item) => item.collection || 'Other'))].sort();
+  artFilter.innerHTML = [
+    `<option value="">${currentLanguage === 'nl' ? 'Alle collecties' : 'All collections'}</option>`,
+    ...collections.map((collection) => `<option value="${collection}">${currentLanguage === 'nl' ? (artItems.find((item) => item.collection === collection)?.nl?.collection || collection) : collection}</option>`)
+  ].join('');
+  artFilter.value = collections.includes(selectedCollection) ? selectedCollection : '';
+}
+
 function renderArtGallery() {
   if (!artGrid) {
     return;
   }
 
-  const query = artFilter.value.trim().toLowerCase();
+  const selectedCollection = artFilter.value;
   const visibleItems = artItems.filter((item) =>
-    `${getArtValue(item, 'title')} ${getArtValue(item, 'collection')} ${getArtValue(item, 'artist')}`.toLowerCase().includes(query)
+    !selectedCollection || (item.collection || 'Other') === selectedCollection
   );
 
   artGrid.innerHTML = visibleItems.map((item, index) => `
@@ -416,8 +426,10 @@ function closeArtModal() {
 }
 
 if (artGrid && artFilter && artModal) {
+  populateArtFilter();
   renderArtGallery();
   document.addEventListener('languagechange', () => {
+    populateArtFilter();
     renderArtGallery();
     if (!artModal.hidden) {
       const selectedIndex = Number(lastArtTrigger?.dataset.artIndex);
@@ -426,7 +438,7 @@ if (artGrid && artFilter && artModal) {
       }
     }
   });
-  artFilter.addEventListener('input', renderArtGallery);
+  artFilter.addEventListener('change', renderArtGallery);
   artModalClose.addEventListener('click', closeArtModal);
   artZoom.addEventListener('input', renderArtZoom);
   artZoomReset.addEventListener('click', resetArtZoom);

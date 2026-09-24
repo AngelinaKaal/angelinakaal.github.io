@@ -38,7 +38,9 @@
 			<div class="art-toolbar">
 				<h2 id="art-heading">Art</h2>
 				<label for="art-filter">Filter <span class="visually-hidden">artwork</span></label>
-				<input id="art-filter" type="search" placeholder="all/neurophase/jesse jester/other" autocomplete="off">
+				<select id="art-filter">
+					<option value="">All collections</option>
+				</select>
 			</div>
 			<div id="art-grid" class="art-grid" aria-live="polite"></div>
 			<p id="art-empty" class="art-empty" hidden>No artwork matches this filter.</p>
