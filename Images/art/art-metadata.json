@@ -507,9 +507,281 @@
         "collection": "Artfight",
         "dateDrawn": "July 2026",
         "timeSpent": "1 hour",
-        "description": "The image depicts a character drawn for Artfight in 2026.",
+        "description": "The image depicts a character drawn for Artfight in 2026. Drawn on my Huion Kamvas 13 in Krita",
         "nl": {
-            "title": "Jennie - Artfight 2026",
+            "title": "James, de koperen koning",
+            "artist": "Angelina Kaal",
+            "collection": "Minecraft",
+            "dateDrawn": "2025",
+            "timeSpent": "1 uur",
+            "description": "De afbeelding toont James als de koperen koning voor een Minecraft-server, waar dat mijn rol was. Getekend op mijn Huion H640P in Krita."
+        }
+    },
+
+        "CopperKing.png": {
+        "title": "Copper king James",
+        "artist": "Angelina Kaal",
+        "collection": "Minecraft",
+        "dateDrawn": "2025",
+        "timeSpent": "1 hour",
+        "description": "The image depicts James drawn as the copper king for a Minecraft server where that was my role. drawn on my Huion H640P in Krita",
+        "nl": {
+            "title": "Slaperige groep",
+            "artist": "Angelina Kaal en 3 vrienden",
+            "collection": "Persoonlijk werk",
+            "dateDrawn": "April 2026",
+            "timeSpent": "1 uur",
+            "description": "De afbeelding toont vier getekende personages. James, de roodharige, is door mij getekend en de anderen door hun respectievelijke eigenaars. Mijn deel is in Krita op mijn Huion Kamvas 13 getekend."
+        }
+    },
+
+        "SleepyGang.png": {
+        "title": "Sleepy Gang",
+        "artist": "Angelina Kaal and 3 friends",
+        "collection": "Personal work",
+        "dateDrawn": "April 2026",
+        "timeSpent": "1 hour",
+        "description": "The image depicts 4 characters drawn, James(the redhead) is drawn by me, and the others by their respective owners. My part is drawn in Krita on my Huion Kamvas 13.",
+        "nl": {
+            "title": "Dodelijke kus",
+            "artist": "Angelina Kaal",
+            "collection": "Sprio",
+            "dateDrawn": "Augustus 2026",
+            "timeSpent": "30 minuten",
+            "description": "De afbeelding toont een gemaskerd figuur dat James een dodelijke kus geeft, waardoor necrotisch gif zijn luchtwegen binnendringt. Getekend voor een zijverhaal dat momenteel Sprio heet. Getekend op mijn Samsung Tab S6 Lite in Krita."
+        }
+    },
+
+        "JamesAssault.png": {
+        "title": "Deadly Kiss",
+        "artist": "Angelina Kaal",
+        "collection": "Sprio",
+        "dateDrawn": "August 2026",
+        "timeSpent": "30 mins",
+        "description": "The image depicts a masked figure giving James a deadly kiss where necrotic poison will enter his airway. Drawn for a side story currently called sprio. Drawn on my Samsung Tab S6Lite in Krita.",
+        "nl": {
+            "title": "Myco Sporehelm",
+            "artist": "Angelina Kaal",
+            "collection": "DND",
+            "dateDrawn": "Juni 2026",
+            "timeSpent": "1 uur",
+            "description": "De afbeelding toont een paddenstoelenpersonage dat ik heb getekend voor een D&D-campagne waar ik aan meedoe. Getekend op mijn Huion Kamvas 13 in Krita."
+        }
+    },
+
+        "Myco.png": {
+        "title": "Myco Sporehelm",
+        "artist": "Angelina Kaal",
+        "collection": "DND",
+        "dateDrawn": "June 2026",
+        "timeSpent": "1 hour",
+        "description": "The image depicts a mushroom character drawn for a dnd campaign I am in. Drawn on my Huion Kamvas 13 in Krita.",
+        "nl": {
+            "title": "Paddle",
+            "artist": "Angelina Kaal",
+            "collection": "DND",
+            "dateDrawn": "2025",
+            "timeSpent": "2 uur",
+            "description": "De afbeelding toont een personage dat uit de hals doodbloedt. Dit is onderdeel van de achtergrond van een van mijn D&D-personages. Getekend in IbisPaintX op mijn telefoon."
+        }
+    },
+
+        "Paddle.png": {
+        "title": "Paddle",
+        "artist": "Angelina Kaal",
+        "collection": "DND",
+        "dateDrawn": "2025",
+        "timeSpent": "2 hours",
+        "description": "The image depicts a character bleeding to death from its neck. its part of the backstory for one of my DnD characters. Drawn in IbisPaintX on my phone.",
+        "nl": {
+            "title": "Egyptisch - Artfight 2026",
+            "artist": "Angelina Kaal",
+            "collection": "Artfight",
+            "dateDrawn": "Juli 2026",
+            "timeSpent": "30 minuten",
+            "description": "De afbeelding toont een personage dat ik voor Artfight in 2026 heb getekend."
+        }
+    },
+
+        "RichardPleaseStopChokingJamesToDeath.png": {
+        "title": "Richard in a fit of rage",
+        "artist": "Angelina Kaal",
+        "collection": "Sprio",
+        "dateDrawn": "2026",
+        "timeSpent": "30 minutes",
+        "description": "Left drawn by my friend Richard, Right drawn by me. Right is drawn on my Huion Kamvas 13 in Krita",
+        "nl": {
+            "title": "Richard in een woede-uitbarsting",
+            "artist": "Angelina Kaal",
+            "collection": "Sprio",
+            "dateDrawn": "2026",
+            "timeSpent": "30 minuten",
+            "description": "Het linkerdeel is getekend door mijn vriend Richard en het rechterdeel door mij. Het rechterdeel is getekend op mijn Huion Kamvas 13 in Krita."
+        }
+    },
+
+        "Roman.png": {
+        "title": "Roman",
+        "artist": "Angelina Kaal",
+        "collection": "Neurophase",
+        "dateDrawn": "2026",
+        "timeSpent": "1 hour",
+        "description": "The image depicts character for neurophase, hes an early concept of what James' husband might have looked like but it wasnt really giving 'vampire'",
+        "nl": {
+            "title": "Roman",
+            "artist": "Angelina Kaal",
+            "collection": "Neurophase",
+            "dateDrawn": "2026",
+            "timeSpent": "1 uur",
+            "description": "De afbeelding toont een personage voor Neurophase. Hij is een vroeg concept van hoe de echtgenoot van James eruit had kunnen zien, maar hij straalde niet echt 'vampier' uit."
+        }
+    },
+
+        "GroupSelfie.png": {
+        "title": "Group selfie",
+        "artist": "Angelina Kaal, 2 friends",
+        "collection": "Personal work",
+        "dateDrawn": "2026",
+        "timeSpent": "1 hour",
+        "description": "The image depicts my character and 2 of my friends characters(the middle being mine) taking a selfie together. I have only drawn my own character and put the image together as my friends sent in theirs. Drawn on my Huion Kamvas 13 in Krita.",
+        "nl": {
+            "title": "Groepsselfie",
+            "artist": "Angelina Kaal, 2 vrienden",
+            "collection": "Persoonlijk werk",
+            "dateDrawn": "2026",
+            "timeSpent": "1 uur",
+            "description": "De afbeelding toont mijn personage en de personages van twee vrienden terwijl ze samen een selfie maken. Het middelste personage is van mij. Ik heb alleen mijn eigen personage getekend en de afbeelding samengesteld nadat mijn vrienden die van hen hadden ingestuurd. Getekend op mijn Huion Kamvas 13 in Krita."
+        }
+    },
+
+        "Vamp.png": {
+        "title": "Vamp",
+        "artist": "Angelina Kaal",
+        "collection": "Neurophase",
+        "dateDrawn": "2026",
+        "timeSpent": "1 hour",
+        "description": "The image depicts a newer design for James' husband in Neurophase. This design might actually stick, I'm quite happy with it. Drawn on my Samsung Tab S6Lite in Krita.",
+        "nl": {
+            "title": "Vamp",
+            "artist": "Angelina Kaal",
+            "collection": "Neurophase",
+            "dateDrawn": "2026",
+            "timeSpent": "1 uur",
+            "description": "De afbeelding toont een nieuwer ontwerp voor de echtgenoot van James in Neurophase. Dit ontwerp blijft misschien bestaan; ik ben er behoorlijk tevreden mee. Getekend op mijn Samsung Tab S6 Lite in Krita."
+        }
+    },
+
+        "drinksfull.png": {
+        "title": "Cheers!",
+        "artist": "Angelina Kaal, 2 friends",
+        "collection": "Personal work",
+        "dateDrawn": "2026",
+        "timeSpent": "1 hour",
+        "description": "The image depicts 3 characters, the rightmost one being mine, me and my friends all drew our own characters. Drawn on my Huion Kamvas 13 in Krita.",
+        "nl": {
+            "title": "Proost!",
+            "artist": "Angelina Kaal, 2 vrienden",
+            "collection": "Persoonlijk werk",
+            "dateDrawn": "2026",
+            "timeSpent": "1 uur",
+            "description": "De afbeelding toont drie personages, waarvan het meest rechtse van mij is. Mijn vrienden en ik hebben ieder ons eigen personage getekend. Getekend op mijn Huion Kamvas 13 in Krita."
+        }
+    },
+
+        "artfight1.png": {
+        "title": "Egyptian - Artfight 2026",
+        "artist": "Angelina Kaal",
+        "collection": "Artfight",
+        "dateDrawn": "July 2026",
+        "timeSpent": "30 minutes",
+        "description": "The image depicts a character drawn for Artfight 2026. Drawn on my Huion Kamvas 13 in Krita.",
+        "nl": {
+            "title": "Demonische ogen - Artfight 2026",
+            "artist": "Angelina Kaal",
+            "collection": "Artfight",
+            "dateDrawn": "Juli 2026",
+            "timeSpent": "20 minuten",
+            "description": "De afbeelding toont een personage dat ik voor Artfight in 2026 heb getekend."
+        }
+    },
+
+        "demoneyes.gif": {
+        "title": "Demon eyes - Artfight 2026",
+        "artist": "Angelina Kaal",
+        "collection": "Artfight",
+        "dateDrawn": "July 2026",
+        "timeSpent": "20 minutes",
+        "description": "The image depicts a character drawn for Artfight 2026. Drawn on my Huion Kamvas 13 in Krita.",
+        "nl": {
+            "title": "Verjaardagskaart voor Kafka",
+            "artist": "Angelina Kaal",
+            "collection": "Persoonlijk werk",
+            "dateDrawn": "Mei 2026",
+            "timeSpent": "40 minuten",
+            "description": "De afbeelding toont een personage uit Honkai: Star Rail met een verjaardagstaart. Ik heb dit als verjaardagskaart voor een vriend getekend. Getekend op mijn Huion Kamvas 13 in Krita."
+        }
+    },
+
+        "kafkabdaycard.png": {
+        "title": "Kafka birthday card",
+        "artist": "Angelina Kaal",
+        "collection": "Personal work",
+        "dateDrawn": "May 2026",
+        "timeSpent": "40 minutes",
+        "description": "The image depicts a character from Honaki: Star Rail drawn with a birthday cake for a friend of mine as a birthday card. Drawn on my Huion Kamvas 13 in Krita.",
+        "nl": {
+            "title": "Kid als dienstmeisje",
+            "artist": "Angelina Kaal",
+            "collection": "Neurophase",
+            "dateDrawn": "2025",
+            "timeSpent": "30 minuten",
+            "description": "De afbeelding toont Kid uit mijn Neurophase-universum nadat hij een weddenschap verloor en die dag een dienstmeisjesjurk moest dragen."
+        }
+    },
+
+        "kid_maid.png": {
+        "title": "Kid as a maid",
+        "artist": "Angelina Kaal",
+        "collection": "Neurophase",
+        "dateDrawn": "2025",
+        "timeSpent": "30 minutes",
+        "description": "The image depicts Kid from my neurophase universe after he lost a bet and had to dress up in a maid dress for the day.",
+        "nl": {
+            "title": "Doe je ogen open - Artfight 2026",
+            "artist": "Angelina Kaal",
+            "collection": "Artfight",
+            "dateDrawn": "Juli 2026",
+            "timeSpent": "30 minuten",
+            "description": "De afbeelding toont een personage dat ik voor Artfight in 2026 heb getekend."
+        }
+    },
+
+        "openeyes.gif": {
+        "title": "Open your eyes - Artfight 2026",
+        "artist": "Angelina Kaal",
+        "collection": "Artfight",
+        "dateDrawn": "July 2026",
+        "timeSpent": "30 minutes",
+        "description": "The image depicts a character drawn for Artfight 2026. Drawn on my Huion Kamvas 13 in Krita.",
+        "nl": {
+            "title": "Tsukiry - Artfight 2026",
+            "artist": "Angelina Kaal",
+            "collection": "Artfight",
+            "dateDrawn": "Juli 2026",
+            "timeSpent": "30 minuten",
+            "description": "De afbeelding toont een personage dat ik voor Artfight in 2026 heb getekend."
+        }
+    },
+
+        "TSUKIRY.png": {
+        "title": "Tsukiry - Artfight 2026",
+        "artist": "Angelina Kaal",
+        "collection": "Artfight",
+        "dateDrawn": "July 2026",
+        "timeSpent": "30 minutes",
+        "description": "The image depicts a character drawn for Artfight 2026. Drawn on my Huion Kamvas 13 in Krita.",
+        "nl": {
+            "title": "Tsukiry - Artfight 2026",
             "artist": "Angelina Kaal",
             "collection": "Artfight",
             "dateDrawn": "Juli 2026",
