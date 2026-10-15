@@ -99,19 +99,19 @@ const projectData = {
   'little-mage': {
     title: 'Little Mage',
     text: 'Status: Finished\nGenre: Top down, arcade\nFocus: Avoiding enemies\nCurrent goal: Create a working prototype for a top down game, this should show that I\'ve understood the core C# mechanics. This was the first game I ever made.\nTeam setup: Solo project\nSchool assignment: Yes\nFor: Programming class\n\nWhat I am working on: I am building the player movement, enemy AI and spawning of items. The player was meant to have the ability to attack and kill said enemies but I did not have enough time. The project was a bit too ambitious for the time I had.\nWhat I want to improve: I should improve on time management and keep better track of the amount of time I spend on each task. If I had not tried to make the core mechanics perfect before making sure i had all the core mechanics, I would have been able to implement all core mechanics. \nHow I work: I made sure the character could move and not exit the bounds of the camera. Then I made the enemy AI before creating teh spawning item.\nConclusion: This project was a good show of my understanding of C# and that i still had a lot to improve upon. I took some of the things I learned here about my way of working and applied them to future projects.',
-    images: ['Images/LittleMage1.jpg', 'Images/LittleMage2.jpg'],
+    images: ['Images/LittleMage-1.png', 'Images/LittleMage-2.png'],
     gameUrl: 'https://gamejolt.com/games/little-mage/859012'
   },
   'strange-nights': {
     title: 'Strange Nights at Jesse Jester\'s',
     text: 'Status: Finished with missing animations\nGenre: Point and click, horror\nFocus: Atmosphere, interaction, environment\nCurrent goal: Bring my characters to life in a setting similar to that of the FNAF(Five Nights at Freddy\'s) franchise.\nTeam setup: Solo project\nSchool assignment: No\nFor: Personal project\n\nWhat I am working on: I am shaping the world, character presence, and mood so that the game feels tense and memorable. I created the environment and characters in Blender, and put it together in Unity.\nWhat I want to improve: I could improve on the atmosphere by adding more dynamic lighting, sounds, ambience and poses for the characters. Maybe add some sound cues when they move. And lastly, implement a night system, the code is there to increase the difficulty each night but I have not added the functionality to actually progress to the next night. The nights are currently neverending.\nHow I work: I created the characters first, they gave me a general idea of the world I would be building around them and what their areas would look like on the map.\nConclusion: This project was a passion project of mine, I wanted to create a game that was similar to FNAF but with my own characters and world. I learned a lot about creating a world and characters in Blender and putting them together in Unity. I could have improved on the general environment had I put some more effort in sound design and posing.',
-    images: ['Images/SNAJJ-Jesse.png', 'Images/SNAJJ-Jesse Render.png', 'Images/SNAJJ-Nightingale.png', 'Images/SNAJJ-Restaurant.png', 'Images/SNAJJ-HeighChart.png'],
+    images: ['Images/SNAJJ-Restaurant.png', 'Images/SNAJJ-HeighChart.png', 'Images/SNAJJ-Jesse.png', 'Images/SNAJJ-Jesse Render.png', 'Images/Art/SNAJJ-Seer.png', 'Images/SNAJJ-Nightingale.png', 'Images/Art/SNAJJ-MrSunshine.png'],
     gameUrl: 'https://gamejolt.com/games/snjj/858314'
   },
   'tb-d': {
     title: 'Neurophase - testing grounds',
     text: 'Status: Finished as testing grounds\nGenre: Testing grounds\nFocus: New ideas and experimentation\nCurrent goal: Create core mechanics for a game I wish to create in the future.\nTeam setup: Solo project\nSchool assignment: No\nFor: Personal project\n\nWhat I am working on: I am collecting inspiration and testing ideas for the next mechanic, theme, or gameplay loop.\nWhat I want to improve: I want to use this space to try new concepts and keep my creative direction evolving.\nHow I work: I explore ideas quickly, evaluate what feels unique, and build only when the concept has strong potential.\nConclusion: This project is intentionally open-ended so I can keep experimenting and develop the next idea with more clarity.',
-    images: ['Images/Neurophase1.jpg', 'Images/Neurophase2.jpg'],
+    images: ['Images/tbd-1.png', 'Images/tbd-2.png', 'Images/tbd-4.png', 'Images/tbd-5.png', 'Images/tbd-6.png', 'Images/tbd-7.png'],
     gameUrl: 'https://gamejolt.com/games/Neurophase-Testing-Grounds/817152'
   }
 };
