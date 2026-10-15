@@ -69,7 +69,7 @@ const projectData = {
   'art-sales': {
     title: 'Art Sales',
     text: 'Assignment start: June 2026\nMade for: DAATlab\nTime spent: a few days\nProject finished: Yes\n\nWhat I am proud of: This is the first visual I have made. While it could definitely be improved, it shows the information needed and is visually appealing. I am proud that I was able to create this visual from scratch and make it look good.\n\nWhat I could have improved: I could have improved the visual by using drillthroughs, bookmarks, and multiple pages to make it more inclusive and easier to navigate. I could also have improved it by using more advanced DAX formulas to make the visual more dynamic and interactive.\n\nCustomer requirements: The customer wanted a visual that shows the sales of art pieces over time, with the ability to filter by artist and art piece. The visual should also show total sales, profit/loss, and the performance of the art pieces and artists.\n\nHow I worked: I created a wireframe of the visual to get a general idea of how it should look and which DAX formulas I would need to use. I then made sure to import and clean the data before creating the visual. While working on the visual, I realised some of my plans were not feasible or were redundant.\n\nConclusion: I am proud of the visual I made. While it could definitely be improved, it shows the necessary information and is visually appealing. I am proud that I was able to create this visual from scratch and make it look good.',
-    images: ['Images/Artsales-1.png', 'Images/Artsales-2.png', 'Images/Artsales-3.png', 'Images/Artsales-4.png'],
+    images: ['Images/ArtSales-1.png', 'Images/ArtSales-2.png', 'Images/ArtSales-3.png', 'Images/ArtSales-4.png'],
     gameUrl: ''
   },
   'CBS': {
