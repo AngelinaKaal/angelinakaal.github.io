@@ -788,5 +788,22 @@
             "timeSpent": "1 uur",
             "description": "De afbeelding toont een personage dat ik voor Artfight in 2026 heb getekend."
         }
+    },
+
+        "pumpkin head.png": {
+        "title": "Pumpkin head - James",
+        "artist": "Angelina Kaal",
+        "collection": "Personal work",
+        "dateDrawn": "October 2026",
+        "timeSpent": "2 hours",
+        "description": "The image depicts my OC James with a rather agressive pumpkin stuck to his head. Drawn for halloween on my Huion Kamvas 13 with Krita.",
+        "nl": {
+            "title": "Pompoen hoofd - James",
+            "artist": "Angelina Kaal",
+            "collection": "Personal work",
+            "dateDrawn": "Oktober 2026",
+            "timeSpent": "2 uur",
+            "description": "De afbeelding toont mijn OC James met een best aggresieve pumpkin op zijn hoofd. Getekend voor halloween op mijn Huion Kamvas 13 met Krita."
+        }
     }
 }
