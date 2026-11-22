@@ -1,0 +1,211 @@
+Fist
+For those trained in literal hand to hand combat, each kick, punch, throw and gauge can be as dangerous as a dagger or club. This group can be considered the “natural” weapons that everyone possesses. This can vary from a Naga’s tail swipe, to a vampire’s bite, a dwarven headbut or a Garuda’s talon strike.
+
+Effect:(passive)  Everyone who uses their natural weapons can always be a little more careful and choose not to kill their opponents. This is great for knocking someone out for later questioning, taking a bandit in for the bounty or when you want to stop a fight without shedding blood.
+
+Fists (and other natural weapons) do 1 damage. 
+
+
+Knuckle Duster
+These can be made of wood, bronze, iron or even bone. They are meant to increase the lethality without it being obvious that one carries them. They can be concealed easily and with the right design can even be worn in one's daily business.
+
+Effect:(passive) This weapon never has to be drawn, while it may not come up in play often that one needs to draw their weapon, this little thing allows for instant violence should the situation require it and not give the opponent time to draw their own weapons.
+
+Damage
+This weapon does at least 2 damage, magical variations exist or can be requested from arcane smiths, wonder workers or shady item dealers.
+
+Club
+These are simple weapons to make, sometimes people also use them for torches. Most are made of hardwood, sometimes with some metal rivets, spikes or other such implements. People who use these are the poor or those who are otherwise not permitted to have forged weapons.
+
+Effect:(active) Clubs are long and light enough to strike at knees and ankles, some even have dedicated hooks for that, this allows them to make an enemy fall over prone.
+
+Damage: This weapon does 3 damage (Torches do an additional 1 damage)
+
+Mace
+Much like a club, but more professionally and a lot more dangerous. These are used by both the paupers as well as knights and other people who are paid for combat. Maces can have a wooden, metal or bone haft with a hefty head. Some have spikes, others are smooth. The main difference between these and clubs is that these are made from at least 2 different materials, increasing the weight of the head and the damage they do.
+
+Effect:(active) Mace impacts can cause terrible damage, aside from the spikes, the sheer weight of the head can cause bones to break on good hits. Broken bones, as expected, take a long time to heal if magic is not applied.
+
+Damage: 	This weapon does 4 damage, though they are rare, there are some magical imbued variations that can be requested at arcane smiths, wonder workers and spirit binders.
+
+
+Sling
+These handy little things can be used to throw rocks or metal bullets with far greater speed than anyone could ever do with bare hands. There are various types, lengths and materials used depending on where one is from. But they are always easy to conceal and if push comes to shove, you can just pick up some rocks for ammo.
+
+Effect:(passive) Slings fling their bullets with great speed and those bullets are very hard to see coming. This makes it far harder to dodge them. Any enemy has a -5 to their dodge roll
+
+Damage:	This weapon does 4 damage, special ammunition can be requested at alchemists, smiths, arcane smiths and wonder workers.
+
+Warbows
+These bows are designed for warfare, too strong for hunting and too heavy for a quick draw, at least for most people. For those trained in the ways of bow-warfare these weapons offer a terrifying power. 
+
+Effect: (passive) These weapons require serious training and skilled archers need to be strong enough to handle the immense draw weight. This allows the user to add an additional point of damage for every rank in condition, on top of their normal damage.
+
+Damage: 	This weapon does 5 damage, there are many special arrows and bows to be found throughout the world. Special arrows can be sought in the elflands, from skilled smiths and with the beast kin tribes.
+
+Hunting Bows
+One of the oldest hunting tools known in history, this bow can serve for peasants and hunters for defense of their village or to hunt deer and medium game.
+
+Effect: (passive) Useful for quick draws and light enough even for peasants to use, this bow makes a good tool for hunting animals and monsters, giving the user a +3 to their roll.
+
+Damage: This weapon does 4 damage, there are many special arrows and bows to be found throughout the world. Special arrows can be sought in the elflands, from skilled smiths and with the beast kin tribes.
+
+Crossbows
+ As technology advanced, so did the weapons of war. While a lone forrester can easily make a hunting bow, crossbows require more tools to make and maintain. However, it is far easier to learn how to aim and shoot. Where an archer might train years, a crossbow can be mastered in a few weeks. Only a few adventurers, knights and warriors choose not to at least have one in their travel chest.
+
+Effect: (passive) Because it is so easy to use, each rank in Ranged increases base point +1 to hit, making it very easy to use.
+
+Damage: 	This weapon does 4 damage, special ammunition may be sought in the dwarf lands, the demon realm and at skilled arcane smiths.
+
+Shortblades
+daggers, shortswords, tanto’s and other weapons fall in this category. Sometimes used on their own for Melee, but they are also used in the offhand for either a parry or an additional stabbing implement. Some of these weapons are made for cutting, others for thrusting, but they all do the same job, making you more dangerous.
+
+Effect: (passive) When using this weapon in the offhand you can try and attack with this as well as your main weapon (non two handed). If you hit you do ¼ damage of what it would normally do with a minimum of 1. 
+
+Damage:  This weapon does 3 damage when used as the main weapon. Magical variants can be requested at arcane smiths, and rumors go around of the Naga’s having a specialty of these types of weapons. Though only few such rumored examples have ever found their way into the rest of the world
+
+Javelins
+Also known as throwing spears or light spears, these are weapons for hunting game as well as war. They are not as heavy or sturdy as fighting spears and they are usually shorter, making it easier to be bundled up.
+
+Effect: (active) When hitting an enemy with the right angle and force, the impact of being hit can be enough to make them fall down prone.
+
+Damage: 	This weapon does 4 damage, special and magical variations can be usually found at arcane smiths, spirit binders, the Garuda crafters and there are some people claiming that the undead sometimes sell powerful throwing spears.
+
+
+Arming Swords
+Longswords, katana, shamshir, scimitar, sabres, cutlasses and all other cutting focused or cut-&-thrust weapons belong in this category, from noble knights to mercenaries, from pirates, merchant warriors and many others, these is the main category of “swords”. For the purpose of customization, these are grouped together.
+
+Effect:(active)These blades are dangerous enough against people in armor or those who carry shields, but for unarmored opponents these are even more dangerous, These weapons do double damage against opponents without armor or naturally thick hides/scales/fur.
+
+Damage: These weapons do 4 damage, many, oh so many magical variations can be requested in almost all the lands at Arcane smiths, wonder workers, the dwarf lands, elf lands, shortfolk planes, the Garuda and the Naga.
+
+Boomstick
+The “boomstick” was a weapon first invented by a group of alchemists and arcane smiths in the dwarf-lands. It can be fueled with either magically fueled fire stones, or an alchemical material. The fire stones are mined in the dwarf-lands as well as in the Eastern mountains while the alchemical material can be either some type of dust or strange gelatinous substance. Either way, it propels metal or sometimes stone bullets with tremendous force.
+
+Effect: (active) When an enemy is hit with sufficient skill and force this can slam them down on the floor. This was seen first at the “Schlacht auf dem Bauernhof” Where a line of dwarven “boomsticks” was used to throw down an imperial cavalry charge.
+
+Damage: This weapon does 6 damage, special ammunition can be requested by specialized alchemists, dwarven smiths and Magical adepts in the demon realm.
+
+Greatsword
+Large swords used for big sweeping arcs to thrusts in large formations. These weapons go by different names, but in essence they can only be used by both hands. It is unusual to see anyone but professional soldiers to go around with these battlefield beasts.
+
+Effect:(active) If struck with enough force, this blade has a chance of not just hurting someone, but even to lop off a limb. When these mighty blades connect, it is usually enough to stop the battle at that moment. This dismemberment can happen to both soldiers and mounts.
+
+Damage: This weapon does 7 damage, some magically charged blades can be bought in capitals of nations and strong military fortresses.
+
+Bola
+This throwing weapon is used for constrict people and game at range. Though they have weights, they are made purely for the capture of runaways, prisoners and by shady people doing shady things.
+
+Effect: (passive) Whenever this weapon connects it constricts the target, if the target is running they fall down, if the target is standing still, they will find movement and dodging to be more difficult.
+
+Damage: 	This weapon does 0 damage, magical variants may be found most often in the beast kin lands, in the Eastern mountains and in the grasslands around Khot.
+
+Spears and Lances
+ Ancient weapons of war and hunting, these are the proverbial pointy sticks as well as the forged weapons of knights. They have an excellent reach and are the most common weapon on the battlefield, both for foot soldiers as well as soldiers on horseback.
+
+Effect: (active) When this weapon is used on horseback during a charge, the rider transfers all the energy and speed of the horse into its target, tripling the damage.
+
+Damage: 	This weapon does 4 damage (unless used in charge) and magical variants can be found in all nations with arcane smiths, wonder workers and other crafters of the magnificent.
+
+Throwing Knives
+There are many designs, both simple and intricate, but in essence they are all small weapons that can be thrown at an enemy to distract and hurt them. Though rarely lethal on their own, many can be carried and they are not as expensive as daggers or other such weapons.
+
+Effect: (active) If the enemy is hit in the right place they can be made to drop whatever they are holding, or make them flinch and lose their focus.
+
+Damage: 	This weapon does 3 damage. There are some arcane smiths and spirit binders who can make these weapons return to the user a few times before the enchantment fails. 
+
+Pole weaponEvery culture and region has their own variation of this weapon, a long haft with an axe, hammer, spear or even short sword blade on the end, or multiple, or all of them. These weapons are the staple of guards and soldiers almost as much as spears.
+
+Effect: (active) their long hafts allow for very powerful strikes, When an enemy is hit from the right side it can even break open armor, rendering it useless (25% chance).
+
+Damage:  This weapon does 6 damage, magical variants can be requested at arcane smiths, though not many are found due to the perceived low status compared to other weapons.
+
+Throwing axeSmall handaxes, throwing axes, cleavers and other such blades are most often seen in the hands of the sea faring raiders, the beast-kin tribal lands and in the hands of foresters. They are easier and lighter to carry than a mace and can be thrown in a moment of need.
+
+Effect:(active) When an enemy is hit from the right angle and with enough force they fall prone, this effect counts both for melee and when thrown.
+
+Damage: 	This weapon does 5 damage, Magical variations may be requested at wonder workers and are sometimes found in old crypts of warriors of a time long past.
+
+Staff
+These weapons are often more decorative and magical in nature, but at the end of the day it is still a stick with some weight on the top. The most famous are found in the magocracy where mages rule the surrounding lands. There a staff is seen as a status symbol
+
+Effect:(passive) These staves and wands often have some sort of magical focus, be it a crystal, symbol or other imbued item at the end that allows a magic user to focus their magic. (+2 to hit for magical damage and effects)
+
+Damage: This weapon does 3 damage, many staves focus on particular types of magic to amplify, these can be found in any magic item shop worth its salt.
+
+Thrust Blade
+Commonly known as rapiers, these weapons have little to no cutting edge on the blade. They are primarily used for dueling by nobles and the wealthy. As with most weapons, each region and culture has their own variation and naming convention.
+
+Effect:(passive) These blades are so light and narrow that a skilled fighter can find the gaps in armor. This weapon ignores all damage reduction of heavy and medium armor. 
+
+Damage: 	This weapon does 5 damage, the most famous of rapiers was wielded 300 years ago by the ruling demon prince, it was said to be imbued with so many magical crystals, that when the demon prince struck her foe, the magical force erupted and caused an explosion on the place where now the “límni ékrixi” (explosion lake) can be found.
+
+Blowgun
+A hollow tube with a small mouth piece loaded with a small dart. A very basic but very potent weapon. It is very silent and it has been used throughout the years by many assassins, hunters and bounty hunters.
+
+Effect: (passive) Blowgun darts can easily be coated with any type of poison and potion and stored for considerable times.
+
+Damage: This weapon does 1 damage, but special poisons and potions can be bought at alchemists, healers, Beast kin hunters, spirit binders and at more shady places. Rumors about potent Magical poison also circulate the black markets, but they may be just that.
+
+Hookblade
+An exotic weapon that was brought over by the nomadic peoples from Khot. It has been adapted by various schools of martial arts and it is sometimes considered a special weapon for those of a certain rank within those schools.
+
+Effect: (active) When used properly it can disarm an opponent, making them drop whatever they are holding.
+
+Damage: 	This weapon does 4 damage, magical variants can be requested at an arcane smith or wonderworker, It can also be requested at Khot traders if waiting isn’t a problem.
+
+Fire Lance
+The precursor to the boomstick, This weapon doesn’t propel a bullet but rather emits a burst of flame. These weapons are also fueled by either fire-stones or similar alchemical substances. These however cannot be used as a boomstick since they will break. 
+
+Effect:(active) Though they are short ranged, the flames of a fire lance burn intensely and with the right kind of fuel can even set fire to whichever poor sod this is aimed at. When firing this towards animals or mounts, they will not wish to come closer, assuming they are not currently burning already.
+
+Damage: 	This weapon does 7 damage, special (sticky) fuel can be bought at alchemists and wonder workers, fire stone charges can be bought in the dwarf-lands and in the eastern mountains.
+
+Boomerang/Throwing stick
+These seemingly primitive weapons are primarily used for hunting, but in the right hands they can be just as dangerous to people. Due to their strange nature or sometimes enchantments they tend to curve a bit when thrown. Unless it is very light and not very dangerous, it does not return to the user however.
+
+Effect:(passive) The curve makes it harder to dodge in the fray of combat, this gives the user +1 point to hit for each rank in Ranged.
+
+Damage: This weapon does 6 damage, the truly returning variants may be found in the Beast kin lands and some say the Garuda of the Eastern mountains have enchanted ones that can return.
+
+Parry Dagger/Swordbreaker
+A defensive tool more than a weapon, specifically designed to parry and hold an enemy’s blade at bay. These items are always used in the off hand and have very little thrusting capability and no cutting edge at all.
+
+Effect:(passive) When using this weapon in the offhand all enemy melee attacks are rolled with a -6 to hit.
+
+Damage: 	These items do no damage against a resisting opponent
+
+Shakram
+These deadly weapons come in various sizes, from a little larger than a bracelet to the diameter of a lower arm. They are flung at enemies at range and cause grievous wounds. Some are simple, sharp metal rings while others may have reinforced centers and even grips for melee use.
+
+Effect:(active) When an enemy is with sufficient force and from the right angle they will be left bleeding, causing them to do double damage
+
+Damage: 	This weapon does 6 damage, magical variants may be found at arcane smiths, wonder workers and Spirit binders
+
+Whip
+These are not often seen in duels and even less on the battlefield. They are hard to master but do carry a certain intimidating aura. The cracking of a whip has left many a former slave and unprepared peasants taken aback.
+
+Effect (active): When hitting an opponent or their weapon in the right place it can whack whatever they are holding out of their hands.
+
+Damage: 	This weapon does 2 damage, magical varieties are usually found in the demon realm or in particular wonder workers. They also might be found in certain shops that don’t open in the morning. Most of these weapons are made on discrete requests.
+
+Flexible Weapon
+Sometimes called rope darts, meteor hammers, flying claw or chain whip. Much like the whips these are very exotic weapons that require a great deal of training to master. But when a proficient user fields this powerful weapon it can be enough to make even knights pause their advance
+
+Effect (active): Though short ranged these types of weapons can get incredible speeds on a well timed release, when hitting an enemy with such a release it can be enough to break armor, rendering it useless.
+
+Damage: 	This weapon does 4 damage, magical variants may be requested with the nomadic traders of Khot and some also speculate that some Naga warriors are skilled with these types of weapons.
+
+Shields
+Made from different material, having different names and defending against different weapons. Shields are a staple on both the battlefield and in some dueling cultures. They can be made from metal, wood, leather or more exotic materials like dragon scales and the like.
+
+Effect:(passive) Shields are an excellent defense against both ranged and melee dangers and will impose a -5 to the enemy’s to hit roll. Many cultures have come up with ways to also defend better against magical attacks. Such shields can be found in any shop that deals in imbued weapons and armor.
+
+Damage: 	This item does 0 damage naturally, but creative use is encouraged.
+
+Grenades
+The stuff of nightmares for every soldier and cityguard. These devices are weapons of war and can do tremendous harm. Grenades can be made with alchemy, by infusing magical power into specially prepared crystales or by various spirit binders. 
+
+Effect: Most grenades have some sort of safety mechanism that needs to be pushed, pulled or shifted before it is thrown. Some have an internal timer and others simply explode upon impact.
+
+Damage: Grenades generally do 25 damage to surrounding individuals. More powerful grenades can be bought but are either very illegal or unstable. Use with caution.

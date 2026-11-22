@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Base HTML page for Consequences" />
+    <title>Consequences - Skills</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <img src="../Images/Items/Logo.png" alt="Consequences logo" />
+      </a>
+      <h1>Consequences</h1>
+      <a href="../index.html" class="home-button">
+        <img src="../Images/Items/HouseIcon.png" alt="Home" />
+      </a>
+    </header>
+    <main class="selection-page">
+      <div class="selection-layout">
+        <div id="skillButtons" class="selection-buttons text-center p-3" aria-label="Skill buttons"></div>
+        <div id="skillDetails" class="selection-details text-start" aria-live="polite">
+          Select a skill to see its description.
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      const skillButtons = document.getElementById("skillButtons");
+      const skillDetails = document.getElementById("skillDetails");
+      const skillSectionNames = new Map([
+        ["general description", "General Description"],
+        ["skills", "Skills"],
+        ["ranks", "Ranks"]
+      ]);
+      const skillImageFiles = new Map([
+        ["Aeoliomancy", ["Aeoliomancy.png"]],
+        ["Alchemy", ["Alchemy.jpg"]],
+        ["Animal Insight", ["Animal-Insight.jpg"]],
+        ["Bardic Power", ["Bardic-Power.jpg"]],
+        ["Clairvoyance", ["Clairvoyance.jpg"]],
+        ["Cursing", ["Cursing.jpg"]],
+        ["Dodge", ["Dodge.jpg"]],
+        ["Durability", ["Durability.jpg"]],
+        ["Electromancy", ["Electromancy.jpg"]],
+        ["Elemental Armour", ["Elemental-armor.jpg"]],
+        ["Elemental Magics", ["Elemental-Magics.jpg"]],
+        ["Flight", ["Flight.jpg"]],
+        ["Geomancy", ["Geomancy.jpg"]],
+        ["Healing Magic", ["Healing-Magic.jpg"]],
+        ["Hydromancy", ["Hydromancy.jpg"]],
+        ["Invulnerability", ["Invulnerability.jpg"]],
+        ["Light Magic", ["Light-Magic.jpg"]],
+        ["Magehood", ["Magehood.jpg"]],
+        ["Magical Defence", ["Magical-Defence.jpg"]],
+        ["Martial Arts", ["Martial-Arts.jpg"]],
+        ["Pyromancy", ["Pyromancy.jpg", "Pyromancy-2.png"]],
+        ["Regeneration", ["Regeneration.jpg"]],
+        ["Shadow Magic", ["Shadow-Magic.jpg"]],
+        ["Shapeshift", ["Shapeshift.jpg"]],
+        ["Speed", ["Speed.jpg"]],
+        ["Spirit Summoning", ["Spirit-Summoning.jpg"]],
+        ["Strength", ["Strength.jpg"]],
+        ["Teleporting", ["Teleporting.jpg"]],
+        ["Time Magic", ["Time-Magic.jpg"]],
+        ["Vision", ["Vision.jpg"]]
+      ]);
+      let skillDescriptions = new Map();
+
+      function isSkillTitle(lines, index) {
+        const title = lines[index].trim();
+        if (!title || skillSectionNames.has(title.toLowerCase())) {
+          return false;
+        }
+
+        let nextLine = index + 1;
+        while (nextLine < lines.length && !lines[nextLine].trim()) {
+          nextLine++;
+        }
+        return nextLine < lines.length && lines[nextLine].trim().toLowerCase() === "general description";
+      }
+
+      function formatSkillName(name) {
+        return name.replace(/\b[a-z]/g, (letter) => letter.toUpperCase());
+      }
+
+      function parseSkillDescriptions(text) {
+        const lines = text.replace(/\r\n?/g, "\n").split("\n");
+        const descriptions = new Map();
+        let currentSkill = null;
+        let currentSection = null;
+
+        for (let index = 0; index < lines.length; index++) {
+          const line = lines[index];
+          const heading = line.trim().toLowerCase();
+
+          if (isSkillTitle(lines, index)) {
+            const name = formatSkillName(line.trim());
+            currentSkill = { sections: new Map() };
+            descriptions.set(name, currentSkill);
+            currentSection = null;
+            continue;
+          }
+
+          if (!currentSkill) {
+            continue;
+          }
+
+          if (skillSectionNames.has(heading)) {
+            currentSection = skillSectionNames.get(heading);
+            if (!currentSkill.sections.has(currentSection)) {
+              currentSkill.sections.set(currentSection, []);
+            }
+          } else if (currentSection) {
+            currentSkill.sections.get(currentSection).push(line);
+          }
+        }
+
+        return descriptions;
+      }
+
+      function capitalizeText(text) {
+        return text
+          .replace(/(^|[\r\n]|[.!?]\s+)([a-z])/g, (match, boundary, letter) =>
+            boundary + letter.toUpperCase())
+          .replace(/^([A-S]) rank\b/gim, (match, rank) => `${rank.toUpperCase()} Rank`);
+      }
+
+      function showSkillDescription(skillName) {
+        const description = skillDescriptions.get(skillName);
+        skillDetails.replaceChildren();
+
+        if (!description) {
+          skillDetails.textContent = `No description found for ${skillName}.`;
+          return;
+        }
+
+        for (const [sectionName, lines] of description.sections) {
+          const content = lines.join("\n").trim();
+          if (!content) {
+            continue;
+          }
+
+          const heading = document.createElement("h2");
+          heading.className = "content-section-heading";
+          heading.textContent = sectionName;
+
+          const sectionContent = document.createElement("div");
+          sectionContent.className = "content-section";
+          sectionContent.textContent = capitalizeText(content);
+
+          skillDetails.append(heading, sectionContent);
+        }
+
+        const imageFiles = skillImageFiles.get(skillName);
+        if (imageFiles) {
+          const images = document.createElement("div");
+          images.className = "selection-images";
+          for (const [index, imageFile] of imageFiles.entries()) {
+            const image = document.createElement("img");
+            image.src = `../Images/Skills/${imageFile}`;
+            image.alt = imageFiles.length > 1 ? `${skillName} image ${index + 1}` : skillName;
+            images.append(image);
+          }
+          skillDetails.append(images);
+        }
+      }
+
+      skillButtons.addEventListener("click", (event) => {
+        if (event.target instanceof HTMLButtonElement) {
+          showSkillDescription(event.target.textContent.trim());
+        }
+      });
+
+      fetch("../Skills.txt")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Could not load skill descriptions (${response.status}).`);
+          }
+          return response.text();
+        })
+        .then((text) => {
+          skillDescriptions = parseSkillDescriptions(text);
+          if (skillDescriptions.size === 0) {
+            throw new Error("No skill descriptions were found in Skills.txt.");
+          }
+
+          const buttons = document.createDocumentFragment();
+          for (const skillName of skillDescriptions.keys()) {
+            const button = document.createElement("button");
+            button.type = "button";
+            button.className = "btn btn-primary";
+            button.textContent = skillName;
+            buttons.append(button);
+          }
+          skillButtons.replaceChildren(buttons);
+        })
+        .catch((error) => {
+          console.error("Failed to load skill descriptions.", error);
+          skillDetails.textContent = window.location.protocol === "file:"
+            ? "Browsers block skill descriptions when this page is opened directly as a file. Open it through a local web server or GitHub Pages."
+            : "Skill descriptions could not be loaded. Check that Skills.txt is available.";
+        });
+    </script>
+  </body>
+</html>

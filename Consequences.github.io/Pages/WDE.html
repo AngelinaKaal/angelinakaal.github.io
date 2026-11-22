@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Base HTML page for Consequences" />
+    <title>Consequences - Weapon Damages & Effects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <img src="../Images/Items/Logo.png" alt="Consequences logo" />
+      </a>
+      <h1>Consequences</h1>
+      <a href="../index.html" class="home-button">
+        <img src="../Images/Items/HouseIcon.png" alt="Home" />
+      </a>
+    </header>
+    <main class="selection-page">
+      <div class="selection-layout">
+        <div class="weapon-controls">
+          <div id="weaponButtons" class="weapon-button-list text-center p-3" aria-label="Weapon buttons"></div>
+          <label class="weapon-select-label" for="weaponSelect">Choose a weapon</label>
+          <select id="weaponSelect" class="form-select weapon-select" aria-label="Choose a weapon" disabled>
+            <option value="" selected disabled>Select a weapon</option>
+          </select>
+        </div>
+        <div id="weaponDetails" class="selection-details text-start" aria-live="polite">
+          Select a weapon to see its description.
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      const weaponButtons = document.getElementById("weaponButtons");
+      const weaponSelect = document.getElementById("weaponSelect");
+      const weaponDetails = document.getElementById("weaponDetails");
+      const weaponItems = [
+        { name: "Fist", heading: "Fist", images: ["Fist.png"] },
+        { name: "Knuckle Duster", heading: "Knuckle Duster", images: ["Knuckle-Duster.png"] },
+        { name: "Club", heading: "Club", images: ["Club.png"] },
+        { name: "Mace", heading: "Mace", images: ["Mace.png"] },
+        { name: "Sling", heading: "Sling", images: ["Sling.png"] },
+        { name: "Warbows", heading: "Warbows", images: ["Warbow.png"] },
+        { name: "Hunting Bows", heading: "Hunting Bows", images: ["Hunting-Bow.png"] },
+        { name: "Crossbows", heading: "Crossbows", images: ["Crossbow.png"] },
+        { name: "Shortblades", heading: "Shortblades", images: ["Shortblade.png"] },
+        { name: "Javelins", heading: "Javelins", images: ["Javelin.png"] },
+        { name: "Arming Swords", heading: "Arming Swords", images: ["Arming-Sword.png"] },
+        { name: "Boomstick", heading: "Boomstick", images: ["Boomstick.png"] },
+        { name: "Greatsword", heading: "Greatsword", images: ["Greatsword.png"] },
+        { name: "Bola", heading: "Bola", images: ["Bola.png"] },
+        { name: "Spears and Lances", heading: "Spears and Lances", images: ["Spear.png"] },
+        { name: "Throwing Knives", heading: "Throwing Knives", images: ["Throwing-Knife.png"] },
+        { name: "Pole Weapon", heading: "Pole weapon", images: ["Pole-Weapon.png"] },
+        { name: "Throwing Axe", heading: "Throwing axe", images: ["Axe.png"] },
+        { name: "Staff", heading: "Staff", images: ["Staff.png"] },
+        { name: "Thrust Blade", heading: "Thrust Blade", images: ["Thrust-Blade.png"] },
+        { name: "Blowgun", heading: "Blowgun", images: ["Blowgun.png"] },
+        { name: "Hookblade", heading: "Hookblade", images: ["Hookblade.png"] },
+        { name: "Fire Lance", heading: "Fire Lance", images: ["Fire-Lance.png"] },
+        { name: "Boomerang/Throwing Stick", heading: "Boomerang/Throwing stick", images: ["Boomerang.png"] },
+        { name: "Parry Dagger/Swordbreaker", heading: "Parry Dagger/Swordbreaker", images: ["Parry-Dagger.png"] },
+        { name: "Shakram", heading: "Shakram", images: ["Shakram.png"] },
+        { name: "Whip", heading: "Whip", images: ["Whip.png"] },
+        { name: "Flexible Weapon", heading: "Flexible Weapon", images: ["Flexible-Weapon.png"] },
+        { name: "Shields", heading: "Shields", images: ["Shield.png"] },
+        { name: "Grenades", heading: "Grenades", images: ["Grenade-1.png", "Grenade-2.png"] }
+      ];
+      const weaponByHeading = new Map(
+        weaponItems.map((weapon) => [weapon.heading.toLowerCase(), weapon])
+      );
+      let weaponDescriptions = new Map();
+      let selectedWeapon = null;
+
+      function parseWeaponDescriptions(text) {
+        const normalizedText = text
+          .replace(/\r\n?/g, "\n")
+          .replace(/^Pole weapon(?=Every culture)/im, "Pole weapon\n")
+          .replace(/^Throwing axe(?=Small handaxes)/im, "Throwing axe\n");
+        const descriptions = new Map();
+        let currentWeapon = null;
+
+        for (const line of normalizedText.split("\n")) {
+          const weapon = weaponByHeading.get(line.trim().toLowerCase());
+          if (weapon) {
+            currentWeapon = { ...weapon, lines: [] };
+            descriptions.set(weapon.name, currentWeapon);
+          } else if (currentWeapon) {
+            currentWeapon.lines.push(line);
+          }
+        }
+
+        const missingWeapons = weaponItems.filter((weapon) => !descriptions.has(weapon.name));
+        if (missingWeapons.length > 0) {
+          throw new Error(`Missing weapon descriptions for: ${missingWeapons.map((weapon) => weapon.name).join(", ")}.`);
+        }
+
+        return descriptions;
+      }
+
+      function showWeaponDescription(weaponName) {
+        const weapon = weaponDescriptions.get(weaponName);
+        if (!weapon) {
+          weaponDetails.textContent = `No description found for ${weaponName}.`;
+          return;
+        }
+
+        const heading = document.createElement("h2");
+        heading.className = "content-section-heading";
+        heading.textContent = weapon.name;
+
+        const description = document.createElement("div");
+        description.className = "content-section";
+        description.textContent = weapon.lines.join("\n").trim();
+
+        const descriptionColumn = document.createElement("div");
+        descriptionColumn.className = "weapon-description";
+        descriptionColumn.append(heading, description);
+
+        const images = document.createElement("div");
+        images.className = "weapon-images";
+        for (const [index, imageFile] of weapon.images.entries()) {
+          const image = document.createElement("img");
+          image.src = `../Images/Weapons/${imageFile}`;
+          image.alt = `${weapon.name}${weapon.images.length > 1 ? ` image ${index + 1}` : ""}`;
+          images.append(image);
+        }
+
+        const content = document.createElement("div");
+        content.className = "weapon-detail-layout";
+        content.append(descriptionColumn, images);
+        weaponDetails.replaceChildren(content);
+      }
+
+      function selectWeapon(weaponName) {
+        selectedWeapon = weaponName;
+        if (weaponSelect.value !== weaponName) {
+          weaponSelect.value = weaponName;
+        }
+        if (weaponDescriptions.size > 0) {
+          showWeaponDescription(weaponName);
+        }
+      }
+
+      weaponButtons.addEventListener("click", (event) => {
+        if (event.target instanceof HTMLButtonElement) {
+          selectWeapon(event.target.textContent.trim());
+        }
+      });
+
+      weaponSelect.addEventListener("change", () => {
+        if (weaponSelect.value) {
+          selectWeapon(weaponSelect.value);
+        }
+      });
+
+      fetch("../WDE.txt")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Could not load weapon descriptions (${response.status}).`);
+          }
+          return response.text();
+        })
+        .then((text) => {
+          weaponDescriptions = parseWeaponDescriptions(text);
+          const buttons = document.createDocumentFragment();
+          const options = document.createDocumentFragment();
+          for (const weapon of weaponItems) {
+            const button = document.createElement("button");
+            button.type = "button";
+            button.className = "btn btn-primary";
+            button.textContent = weapon.name;
+            buttons.append(button);
+
+            const option = document.createElement("option");
+            option.value = weapon.name;
+            option.textContent = weapon.name;
+            options.append(option);
+          }
+          weaponButtons.replaceChildren(buttons);
+          weaponSelect.append(options);
+          weaponSelect.disabled = false;
+
+          if (selectedWeapon) {
+            showWeaponDescription(selectedWeapon);
+          }
+        })
+        .catch((error) => {
+          console.error("Failed to load weapon descriptions.", error);
+          weaponDetails.textContent = window.location.protocol === "file:"
+            ? "Browsers block weapon descriptions when this page is opened directly as a file. Open it through a local web server or GitHub Pages."
+            : "Weapon descriptions could not be loaded. Check that WDE.txt and its weapon images are available.";
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+Knuckleduster	
++5% elemental damage per 2 lvl to a max off 50% (Melee)
+
+Shining Sling	
+Infinite ammo, (Also throw harmless flare like lights) +3 base points to hit with Ranged
+
+Elven Warbow
++5% elemental damage per 2 lvl to a max off 50% (Ranged)
+
+Ogre's club
+This weapon can shrink to the size of a toothpick +20 damage
+
+Bow of the Wild
+Can shoot a magic whistling arrow that summons d4 forest creatures once per day (medium summons)
+
+Divine Mace
+Triple damage vs undead, Has “returning” ability after throw
+
+Bounty Hunter Crossbow
+Can shoot magical sticky webs [restrain target for d4 turns], +1 base point for attack.
+
+Duels-Dual
+Two short blades that do 1+½ damage per attack (as if two attacks)
+
+Lightning Bolt	
+eturning lightning javelin that stuns targets (25% chance)
+
+Demon Blade
+Grants Vampiric regeneration (1:1 ratio) , +1 base point to hit
+
+Dwarven Boomstick
+infinite dwarven shot 25% to prone enemy
+
+Dragon Slayer Greatsword
+Can dismember when rolled +5 to opposing roll
+
+Amazone Bola
+Throws spectral bola’s that cannot be broken without magic
+
+Paladin Lance	
+Negates mundane armor +3 to hit
+Double damage vs undead(Lich, undead, ghost, vampire, zombie ect.)
+
+Assassin's Dart
+Has poisoning effect, has returning ability (poison has 25% chance of restraining paralyze for a turn)
+
+Greatmaster's Pole Weapon
+Can prone enemies as well as break armor when roll +10 to opposing roll, +2 to dodge rolls
+
+Elemental Axe
+Has returning ability, does 20 elemental damage of choice
+
+Magi Staff
+increases spell damage by 20, gives any 1 D-tier spellcasting (elements, light, shadow, alchemy or cursing)
+
+Savage Hunting Club
+Has returning ability, +3 base points to hit (Melee + Ranged)
+
+Dueler’s rapier
+Causes bleed damage for 1 round (effectively doing double damage)
+
+Prowler Blowgun
+Infinite ammo, always poisoned (25% chance of knocking out the target)
+
+Eastern hookblade
+A successful Dodge a Melee attack allows to redirect it to a nearby enemy, disarms opponent on +10 roll
+
+Dragon firelance
+double damage, negates armor, infinite charges
+
+Grappler’s knife
++2 base points to Melee, does double damage when fighting armored opponents
+
+Fey bone Boomerang
+Can hit two targets due to teleporting properties, always returns +3 to hit base points (Melee, Ranged)
+
+Angelic Swordbreaker
+-10 to enemy roll, can never be disarmed, has 3 damage standard (can be used in offhand)
+
+Warrior princess chakram
+Has returning ability, can do nonlethal damage, can hit 1d4 targets. +3 to hit (Ranged)
+
+Slavers Whip
+double damage, disarm opponent if +5 to opposing roll
+
+Shifu’s rope dart
+Can disarm, break armor or restrain a foe if +5 to opposing roll
+
++3 base points to Ranged

@@ -1,0 +1,367 @@
+Beastkin
+general description
+Beast people, Wildermen, The Feral Ones. While not accurately, these people are humanoids infused with wild energies, making them look like partial animals. This can range from not only having strange ears and eyes, to more drastic forms. However all of them are bipedal, can speak and have opposable thumbs.
+
+Living location
+These people live in the wooded rolling hills to the east in their tribal wat. Some of them seek homes with other tribes, but most stay where they were born in groups that resemble each other. known and documented tribes are described with their animal counterpart, something that most beast kin find offensive.
+
+Tribes
+These are the known tribes:
+
+Apes
+Frogs
+Deer
+Feline(with tiger and cat subtypes)
+Lupine(with wolf and wild dog subtypes)
+Bovine
+Rabbit
+Many of these tribes have their own peculiarities and customs. Many of them are skilled in hunting, survival in their rugged lands and some say those who rise to prominence gain even greater prowess. That said, they are not inherently a war-like people and will only go to battle if their homes are threatened.
+Skills
+Beastfolk take 25% increases fire damage
+
+Ranks
+D Rank: +1 rank Awareness, +1 Rank Dodge, +1 rank Wilderness
+C Rank: +1 rank Awareness, +1 rank Sneak, +1 rank Wilderness, +1 rank Lore Alpha
+B Rank: +1 rank Sneak, +1 rank Condition, natural weapons do +4 damage
+A Rank: +1 rank Sneak, +1 rank Condition, +1 rank Lore Alpha
+S Rank: + S-rank melee, +1 Damage Soak, + C-rank Werebeast
+
+For the DM
+If a player wants to play a yet unrecorded tribe then they have more or less free reign with the design. Not all beast kin are born in their own lands, either voluntarily by employment or by means of debt slavery they may end up in different regions and build their family there.
+
+Demon
+general description
+Some call them cursed, others call them empowered. They call themselves 'The learned people'. Demons can look almost human to very much not human at all.
+Their society is fairly advanced with powerful magic, strong technology and a reasonably meritocratic upbringing, One of the prides and downfalls of many demons is their ability to communicate and manipulate. Not every demon is a Machiavellian strategist of course, but overall they are known for their smooth talks as well as occasional infighting.
+
+Those who reach the pinnacle of their king are known to be masters of fire magic as well as putting debilitating curses onto their foes.
+
+Skills
+Take 25% more light damage
+
+Ranks
+D Rank: +1 rank Lie, +1 rank Persuade, +1 rank Insight, +2 rank Lore Alpha
+C Rank: +1 rank Lie, +1 rank Persuade, +1 rank Insight, +2 rank Lore Beta
+B Rank: +1 rank Lie,. +1 rank Persuade, +1 rank Insight, +1 rank Flight
+A Rank: immune to non magical damage, +1 rank Decorum, +2 rank Lore Gamma
+S Rank: + C-rank Pyromancy, + C-rank Cursing, +2 rank Decorum, +8 Damage Soak
+
+For the DM
+Players are encouraged to make their own type of demon, with or without horns, with or without tail. Some people notice a similarity in looks between demons and beast kin, this need not be a problem. In-world people can most often tell the difference, unless there is a mixed parentage.
+
+Draconic
+general description
+Mighty and rare, these people were once in olden times touched by dragon magic, or in other cases, a dragon took human form and took a mortal mate.
+These individuals rarely grow up among their own and there may be generations where the draconic heritage has a natural affinity with a certain element(see magic types).
+
+Living location
+Draconic individuals can grow up anywhere, from the mountains to the biggest cities. Many pursue positions of power within their own society driven by their draconic ambition. This isn't always a bad thing. many have been recorded to be loyal generals, diligent nobles and most often very wealthy
+
+Skills
+Resistant to their own magic type but take 25% increase damage of the opposing type(if you choose to be a lightning type dragon, you get to choose your own weakness.)
+
+Ranks
+D Rank: take half damage of their chosen element
+C Rank: dragon shape(small dragon form), dragon flight(is this different from normal flight?), +1 rank Lore Alpha, +20 HP
+B Rank: immunity to their own element, +1 rank Dodge, +1 rank Decorum
+A Rank: +1 rank Dodge, +1 rank Condition, +1 rank Decorum
+S Rank: Dragon form (huge dragon), immune to non magic weapons, +1 rank Decorum
+
+For the DM
+Like demons and beast kin, players are encouraged to make their own draconic character. It can be very humanoid to almost a dragon in human form. Most in-world people respect draconic individuals
+
+Dwarf
+general description
+Renowned for their mountain homes, their masterful crafting and their physical sturdiness. Dwarves have built many castles, cities, bridges and tunnels. Their technology is on par with that of the demons and many imperial cities are home to at least a few families of dwarves. Because they are so numerous, it is difficult to pinpoint their exact culture or customs. Each city is different after all and so are dwarves.
+What can be said about dwarves in general is that they are often hardworking, diligent and strong. Nor all dwarves stand behind the forge, there are dwarven farmers, mages and writers. And in each of those fields, they put as much effort and car into whatever it is they bring onto the world. It is also said they are as stealth as a dwarf in the night.
+
+Skills
+the max stealth rank they can achieve is rank B
+
+Ranks - version 1
+D Rank: + D-rank Durability, +1 rank Mechanics and Craft, +1 rank Condition, +1 rank Scavenge and Loot
+C Rank: +1 rank Melee, +1 HP per level, +1 rank Mechanics and Craft
+B Rank: +1 rank Haggle, +1 rank Decorum, +1 rank Lore Beta
+A Rank: +1 to Mechanics rolls, +1 rank Lore Beta, +1 rank Durability
+S Rank: +2hp per level, +1 rank Melee, +5 Damage Soak
+
+Ranks - Version 2
+D rank: +1 rank Mechanics and Crafts, +1 rank Condition, +1 rank Scavenge and Loot
+C rank: +1 tier Melee, +1 hp/level, +1 rank Lore Beta
+B rank: +1 rank Haggle, +1 rank Decorum, +1 rank Mechanics and Crafts
+A rank: +10 relation dwarf, +1 to mechanics rolls, +1 rank Lore Beta
+S rank: +10 relation dwarf, +2 hp/level. +1 rank Melee, +5 Damage Soak
+
+For the DM
+While dwarves are often depicted as drunken Scottish blacksmiths who like to hold a grudge, players are encouraged to change up this stereotype.
+
+Elf
+general description
+Elves are best known for their longevity and their homes that are often integrated into natural surroundings. aside from that, they are skilled archers and some speculate that they were once touched by light spirits. How old elves can truly become is still unknown, most die either in war, magical experiments, or simply leave after having spent almost a thousand years in their nation. The elves are one of the few nations that actually have good relations with the beast kin tribes. This might be because their innate magical prowess that often seem to come from natural sources.
+
+Elves differ from humans in that they have pointy ears, some larger than others. They tend to be a bit smaller than humans and are often skinny, inhumanely so at times. However if an elf hides their ears, they can pass for human more often than not
+
+Skills
+take 25% increased shadow magic damage
+
+Ranks - version 1
+D Rank: Elven Longevity (what is this?), +1 rank Ranged, +1 rank Awareness
+C Rank: +1 rank Animal Handling, +1 rank Sneak, +1 rank |Lore Gamma
+B Rank: +1 rank Energy Level, +1 rank Wilderness, +1 rank Awareness
+A Rank: + D-rank 1 Elemental Magics, +1 rank Ranged, +1 rank Decorum
+S Rank: + B-rank previous chosen magic, + S-rank Ranged, + S-rank Melee, +1 rank Decorum
+
+Ranks - version 2
+D rank: elven longecity, +1 rank Ranged, +1 rank Awareness
+C rank: +1 rank Animal Handling, +1 rank Sneak, +1 rank Lore Gamma
+B rank: +1 rank Energy Level, +1 rank Wilderness, +1 rank Awareness
+A rank: + D-rank Geomancy/Aeoliomancy/Pyromancy/Hydromancy, +1 rank Ranged, +1 rank Decorum
+S rank: +B-rank previous chosen magic, + S-rank Ranged/Melee, +1 Decorum
+
+Garuda
+General Description
+They live in small but close knight villages called Roosts. As a people thew Garuda are simple, but by no means primitive, many opt for a life of travel and exploration as for them a mountain is a resting point rather than an obstacle. This means that they can be found in small numbers in all nations, doing all kinds of jobs. Aside from the expected scouting and being messengers. Many adventure guilds and groups are keen to have a few Garuda on hand, their keen senses and sharp claws can be as deadly as a blade. They only wear light armour that allows them to flu at great speeds.
+
+Ranks
+D Rank: +B rank Flight, +1 rank Dodge, +1 rank Conflict Handling, +1 rank Lore Alpha
+C Rank: +1 rank Insight, +1 rank Melee, +1 rank Awareness, +1 rank Ranged
+B Rank: +1 rank Ranged, +1 rank Melee, +1 rank Dodge, +1 rank Initiative, +1 rank Wilderness, + A rank Flight
+A Rank: +1 rank Awareness, +1 rank Condition, +1 rank Conflict Handling
+S Rank: + B-rank Aeoliomancy, , +1 rank Elecrtomancy, +6 Damage Soak, +1 rank Decorum, use all armour when flying, + S-rank Flight
+
+Ranks - version 2
+D rank: Wings(Flight), +1 rank Dodge, +1 rank Conflict Handling, +1 rank Lore Alpha
+C rank: +1 rank Insight, +1 rank Melee, +1 rank Awareness, +1 rank Ranged
+B rank: +1 Ranged, +1 rank Melee, +1 rank Dodge, +1 rank Initiative, +1 rank Wilderness
+A rank: +1 rank Awareness, +1 rank Condition, +1 rank Conflict Handling
+S Rank: B-rank Aeoliomancy and Electromancy, +6 Damage Soak, +1 rank Decorum, Use all armour for flying, S-rank Flight
+
+Giant
+General Description
+Giants are sometimes thought to be some kind og sub-type of demons, but their unusual size really stes them apart. Giants can be twice as tall as a human, but most 'only' one or two heads taller. Giants live in forests and are well known for their strength but also for their intricate crafts. While not as mechanical or magical as Dwarves or Elves, the giants have a cultural price in their art. As a species this strong, tall and often imposing, they can always find a place in any mercenary group, adventure guild or even a knight's retinue if they prove themselves loyal.
+
+In the past, giants were often seen as dumb beasts who only enjoyed fighting, but since the last century, new inroads have been made to their remote nations and scholars have found that they in general have a very complex social structure and that only the aggressive ones were sent away.
+
+Ranks
+D Rank: +1 rank Condition, +1 rank Melee, +1 rank Lore Alpha
+C Rank: +1 rank Condition, +1 rank Melee, +1 rank Lore Gamma
+B Rank: + D-rank Healing Magic, + D-rank Magical Defence
+A Rank: +4 HP/Level, +1 Lore Gamma, +1 rank Condition
+S Rank: +8 Damage Soak, + B-rank Pyromancy or Geomancy, + B-rank Invulnerability
+
+Green Folk
+general description
+These people are hybrids of people and trees, plants and even fungi, both tropical and temperate. Most don't wander very far from their small knit villages called groves or a copse. These people come from different sub variations, with each their own regional nuances. In general they do live in fertile places and they tend to avoid deserts.
+Due to their nature, their barklike skin and their needle or leaf-like hair, they do take +25% damage from fire while also taking -25% from hydromancy.
+Green people live somewhat secluded, but are no strangers to cities or busy places. They communities can bloom and whither through the seasons where they will migrate temporarily for trade, festivals and the exchange of stories and setting up meetings for their young ones.
+
+Skills
+you can choose one regional variation:
+Coniferous: -25% damage from hydromancy per 25 elvers(until immunity)
+Mangrove: B-rank also gives D-rank Hydromancy
+Fire-oil: B-rank also gives D-rank Pyromancy and no extra damage from fire
+Fungi/Nightshade: B-rank also gives D-rank Cursing and Poison immunity
+Cacti/Bramble: Reflect 50% damage of attack and Restrain does [Level] damage
+Medicinal: B-rank also gives D-rank Healing Magic
+Cordyceps: B-rank also gives D-rank Undead without damage penalties
+
+Ranks
+D Rank: +1 rank Condition, +1 rank Conflict Handling, +1 Lore Alpha
+C Rank: + D-rank Durability, +1 rank Dodge, +1 rank Lore Beta
+B Rank: +1 rank Wilderness, +1 rank Conflict Handling, +8 Damage Soak
+A Rank: + C-rank Regeneration, +1 rank Decorum, +1 rank Lore Beta & Lore Alpha & Lore Gamma
+S Rank: + dendronic form 3x/day for a scene, + A-rank Strength, Invulnerability & Magical Defense
+
+Naga
+General Description
+Naga's live in the south eastern region.
+Its a mysterious and mountainous place where only a few adventurers go. Tales of their strange mafic and technology are always abundant in the empire. Naga's are serpentine creatures with humanoid torso's, arms and heads. Some are said to also possess a poisonous bite, but these rumours have never been denied or confirmed by the Naga's themselves. Their strange physicality changes many cultural aspects, for one the complete lack of shoes and boots, but also in their architecture and their philosophy.
+From towering spires to elegant sloping hallways, these people have a mindset truly different from most others. They can be seen diving for longer than any man as well as burrowing underground in some cases. It is documented however that Naga's are warm blooded and can live in cooler climates compared to full lizards and snakes. The only other thing that is documented is that they are generally not resistant to lightning magic and the variations therein, taking +25% damage overall.
+
+Skills
++25% damage(all or only lightning?)
+
+Ranks - Version 1
+D Rank: +1 rank Dodge, snake form: Cannot be proned, can use constricting bind on a single opponent
+C Rank: +1 rank Dodge, +1 rank Awareness, +1 rank Sneak, +2 Damage Soak
+B Rank: +1 rank Sneak, +1 rank Lore Gamma, +1 rank Energy Level, +2 Damage Soak
+A Rank: + D-rank Hydromancy/Geomancy, +1 rank Energy Level, +2 Damage Soak
+S Rank: + B-rank Hydromancy/Geomancy, +2 Damage Soak
+
+Ranks - Version 2
+D Rank: +1 rank Dodge, snake form: Cannot be proned, can use constricting bind on a single opponent
+C Rank: +1 rank Dodge, +1 rank Awareness, +1 rank Sneak, +2 Damage Soak
+B Rank: +1 rank Sneak, +1 rank Lore Gamma, +1 rank Energy Level, +2 Damage Soak
+A Rank: + D-rank Hydromancy/Geomancy, +10 relation Beast kin +2 Damage Soak
+S Rank: + B-rank Hydromancy/Geomancy, +10 relation beast kin, +2 Damage Soak
+
+Short FolkGeneral Description
+Short folk are generally half the size of a human or elf. They live on the fertile planes that stretch from between the nag-lands into the empire. They are well known for their elaborate feasts, meals and luxury drinks. They are not as culturally different from humans or even dwarves or elves, but they are still very much their own people, outside the rule of the empire.
+
+In the sprawling short folk towns it is not unusual to see other races, they sometimes may even join one of the many councils that govern the towns, but even within town there are various councils. On paper the short folk towns are the most democratic and free, though this often leaves room for political infighting, corruption and hoc militia's to stave off whatever problems there may be. Due to their materialistic outlook on life, short folk don't do much in terms of magics, this lack of education in that regard often hampers those enthusiasts, barring short folk from gaining more than rank B in any (elemental/light/shadow) magical skill.
+
+Skills
+cannot get above B rank in any magical skill
+
+Ranks - version 1
+D Rank: +1 rank Sneak, +1 rank Haggle, +1 rank Medical, +1 rank Lore Alpha
+C Rank: +1 rank Insight, +1 rank Persuade, +1 rank Guidance, +1 rank Lore Beta
+B Rank: +1 rank Sneak, +1 rank Persuade, +1 rank Entertain, +1 rank Decorum
+A Rank: +1 rank Ranged, +1 rank Insight, + C-rank Speed, +1 rank Lore Gamma
+S Rank: +5 spirit tears/month, +2 rank(?) Guidance, +1 rank Speed, +1 rank Streetwise
+
+Ranks - version 2
+D Rank: +1 rank Sneak, +1 rank Haggle, +1 rank Medical, +1 rank Lore Alpha
+C Rank: +1 rank Insight, +1 rank Persuade, +1 rank Guidance, +1 rank Lore Beta
+B Rank: +1 rank Sneak, +1 rank Persuade, +1 rank Entertain, +1 rank Decorum
+A Rank: +1 rank Ranged, +1 rank Insight, + +10 relation short folk, +1 rank Lore Gamma
+S Rank: +5 spirit tears/month, +2 rank(?) Guidance, +10 relation short folk, +1 rank Streetwise
+
+Blessed form
+General Description
+People with this trait are not a race, they are a group, they are... blessed.
+This blessing can come from the gods, spirits and some scholars suggest even something that lies outside the stars entirely. While there aren't many, most of them have risen to prominence and fame. Each of these blessed are known for their insight into their fellows as they seem to 'feel' what others are thinking. Animals likewise seem to also like these individuals. When they become more and more powerful, they can sometimes sprout wings and fly like birds. It is not a mystery that many temples have done everything they can to bind these charismatic people to them, hopefully furthering their own goal in the world. As these blessed ones seem to be often touched by some divine, spiritual or eldritch light, they are noticeably weaker against shadow magic and its effects.
+
+Skills
+25% more damage from shadow magic
+
+Ranks
+D Rank: +1 rank Insight, +1 rank Melee, +1 rank Condition, +1 rank Lore Alpha
+C Rank: +1 rank Insight, +1 rank Conflict Handling, +1 rank Decorum, +1 rank Lore Alpha
+B Rank: +1 rank Insight, +1 rank Conflict Handling, + D-rank Light Magic, , +1 rank Lore Gamma
+A Rank: +1 rank Insight, +1 rank Conflict Handling, +1 rank Healing Magic, +1 Flight
+S Rank: +1 rank Insight, +1 rank Conflict Handling, +1 rank Animal Handling, +1 rank Persuade, +1 rank Medical, +2 rank Decorum, +10 Damage Soak
+
+Werebeast
+General Description
+Some say that this particularly powerful beast kin gain a new set of powers. Others say that it is a curse, or a blessing by some long forgotten spirit or deity. Those who are afflicted by it or gained its power know better. It is not a curse, it is a promise.
+
+Were-beasts can be beast kin, it can be a short folk, it can be anyone and anything. Becoming this is a crystallization of your physical prowess in bestial form. It can be a gift or an active choice to pursue this path, and in that sense, no two were-beasts are the same, even within the same "group" if there would be one. One werewolf may be lanky and tall with long claws and red glowing eyes, while the other may be bulky and more the same size as a human. Unlike beast kin, were-beasts are almost always formed after a predator of some type. Within beast kin it doesn't even have to be the same type that their natural form is.
+
+Skills
+Take 50% more dmg from silver weapons.
+
+Ranks - version 1
+D Rank: +10 dmg when in beast form, +2 Damage Soak, +1 rank Wilderness
+C Rank: +1 hp/level, +1 rank Awareness, +1 rank Animal Handling, +2 Damage Soak
+B Rank: +1 hp/level, +1 rank Awareness, +1 rank Animal Handling, +1 rank Condition
+A Rank: +1 rank Animal Handling, +1 rankm Awareness, +4 Damage Soak, +1 rank Wilderness, immune to non magical weapons while in beast form
+S Rank: +1 rank Awareness, +2 Damage Soak, +10 dmg from claws in beast form, + s-rank Wilderness
+
+Ranks - version 2
+D Rank: +10 dmg when in beast form, +2 Damage Soak, +1 rank Wilderness
+C Rank: +1 hp/level, +1 rank Awareness, +1 rank Animal Handling, +2 Damage Soak
+B Rank: +1 hp/level, +1 rank Awareness, +1 rank Animal Handling, +1 rank Condition
+A Rank: +1 rank Animal Handling, +1 rankm Awareness, +4 Damage Soak, +1 rank Wilderness, immune to non magical weapons while in beast form
+S Rank: +1 rank Awareness, +2 Damage Soak, +10 dmg from claws in beast form, +20 relation to beast kin, + s-rank Wilderness
+
+Fey
+General Description
+Part spirit, part mortal, these beings exist in the twilight between worlds. They are respected by beast kin and elves, feared by others. Some of their powers seem strange and their behaviour can be unpredictable, but they are all powerful beings. These fey, fairies or faeries, regardless of the spelling, are unique creatures who are prone to inhuman behaviour. Be it through never telling lies, to never telling the truth. Some appear quite normal until something sets off their inner fey.
+
+Skills
+Choose a single act to never do or never miss upon a trigger, failing would mean a loss of fey related rank increases for the number of days rolled by the rank dice in the form. [D-rank = D6, etc]. After those days, all ranks and powers are returned.
+
+Ranks - version 1
+D Rank: +1 rank Lie, +1 rank Insight, +1 rank Lore Alpha
+C Rank: +1 rank Lie, +1 rank Insight, + D-rank Teleporting, +1 rank Lore Gamma
+B Rank: +1 rank Lie, +1 rank Insight, +1 rank Persuade, + C-rank Flight
+A Rank: +1 rank Lie, +1 rank Insight, +1 rank Persuade, +1 rank Decorum
+S Rank: + B-rank Shapeshift, +8 Damage Soak
+
+Ranks - version 2
+D Rank: +1 rank Lie, +1 rank Insight, +1 rank Lore Alpha
+C Rank: +1 rank Lie, +1 rank Insight, + D-rank Teleporting, +1 rank Lore Gamma
+B Rank: +1 rank Lie, +1 rank Insight, +1 rank Persuade, + C-rank Flight
+A Rank: +1 rank Lie, +1 rank Insight, +1 rank Persuade, +1 rank Decorum
+S Rank: + B-rank Shapeshift, +8 Damage Soak, +10 relation to beast kin and elves
+
+for the GM
+Players choosing this form can adhere to any of the 'traditional' fey lore they find online, but it is advised to talk over these choices with the GM to make sure that everyone sort of knows what to expect from a fey player. Also GM's should not use a fey's weakness as an ever rpesent stick to force the Fey-player into difficult situations.
+
+Ghost
+General Description
+Death is not always the end This is the first lesson that ghosts learn. There are various names for theses souls that continue to function even without their body; spectre, ghost, apparition, lost soul, some people even call them 'new spirits'. However they come to be, they retain almost all their memories, abilities, magic and personality.
+
+What ghosts are most known for, is that they are partial, or completely ethereal. They have n no physical substance, yet they can still touch, hold and if they really want to, be held. In this way they are very hard to wound and the more powerful among them require blessed or imbued weapons to even hurt them at all. Though attacking a ghost is at one's own peril, since those who have learned to exist with their new form have found that they can curse the would be attacker. Those who are known for hunting and banishing ghosts are often priests or those who have a strong connection to gods.
+
+Skills
+Take 25% more Light Damage.
+
+Ranks
+D Rank: Take half damage from non magical weapons
+C Rank: glide through walls(not earth and cliffs)
+B Rank: + A-rank Flight, +1 rank Lore Alpha
+A Rank: + C-rank Cursing, +1 rank Decorum
+S Rank: no damage from nonmagical weapons, free movement(through objects), +1 rank Decorum, +11 Damage Soak
+
+Vampire
+General Description
+There are myths and legends about these beings, stalkers of the night. They are most certainly undead, and they most certainly drink blood, and they most certainly prefer to be out during the night. And while they are more powerful at night, they can and do operate during the day. Any vampires during their long existence become wealthy and influential. On the other hand, if you dont have your own mansion after 500 years of work you need to rethink what you are doing. Vampires can but don't require food as mortals do, but they do need blood; some drink every night, others onmly drink a tasteful wine glass each month. Some are suave smooth talkers while others are far more savage and inhumane.
+
+Skills
+deal 10% more dmg at night
+deal 10% less dmg during the day
+
+Ranks
+D Rank: +1 rank Threaten, +1 rank Energy Level
+C Rank: +1 rank Initiative, +1 rank Persuade, +1 rank Animal Handling
+B Rank: + Shapeshift(wolf/bat/raven), + vampiric healing(heal 50% of damage caused)
+A Rank: +2 rank Sneak, +2 rank Lore Alpha, +1 rank Persuade, +1 rank Decorum
+S Rank: +1 ranks all traits, +2 rank Decorum, +10 Damage Soak
+
+Lich
+General Description
+Liches are also called necromancers. Any lich will be quick to point out that not all liches are necromancers and not all necromancers are liches. They are undead however and always quite capable magic users. Some use powerful shadow magic to become undead, others have raised or helped others to return to their bodies after death. Some liches are no more than just their former skeleton while others do retain some kind of sinew around them, this seems to be a random occurrence rather than a tightly controlled process.
+
+Like any other undead, they are not inherently 'evil' or malevolent, but they are touched in shadow magic, making them, if anything, less human. In history there have been a few notable liches on the side of humans, dwarves and elves to aid as advisors and arcane lore keepers. Having the centuries of experience behind them. Most liches are raised in the necropolis and taught how to keep their undead form in good condition.
+
+Unlike as in other media, liches in this system have no phylactery or soul stone to make sure they come back after they are destroyed, they are in essence, a powerful magic user turned undead.
+
+Skills
+Take 25% more light dmg
+
+Ranks
+D Rank: undead form(no need to eat, drink or breathe), speak to the dead
+C Rank: D-rank Spirit Summoning, D-rank Aeoliomancy+Geomancy+Pyromancy+Hydromancy+Electromancy
+B Rank: Takes half dmg from non-magical weapons, +1 rank Lore Gamma
+A Rank: + B-rank Aeoliomancy+Geomancy+Pyromancy+Hydromancy+Electromancy+Shadow Magic+Light Magic
+S Rank: Death touch 5.day (150 dmg upon touch), +1 rank Decorum, +10 Damage Soak
+
+UndeadGeneral Description
+Not all undead are liches or vampires, some undead are just... undead. They are, or were often powerful warriors, great thinkers or perhaps a dear friend. How or why they are raised is as diverse as the numbers of them, In life they had to be full of energy and experience however. Expert in the necropolis have found out that not everyone can be raised as sentient undead, it required the to-be raised to have had some power. What can generally be said about these undead, often rising to the ranks of death knights or dark paladins, is that they learn how to become effective warriors, keeping themselves and their friends in good order.
+
+Skills
+take 25% more light dmg
+
+Ranks
+D Rank: +1 rank Threaten, +1 rank Condition, + undead form(no need to eat/drink/breathe)
+C Rank: +1 rank Melee, +1 rank Condition, +1 rank Lore Beta, +1 rank Lore Gamma
+B Rank: + D-rank Strength, +1 rank Melee, +1 rank Condition, +5 Damage Soak
+A Rank: +1 rank Melee, +1 rank Dodge, +1 hp/level, +5 Damage Soak
+S Rank: Immune to non-magical weapons, + C-rank Magical Defense, +5 Damage Soak, +1 rank Decorum
+
+Succubus
+General Description
+A very particular brand and subgroup among demons. These demons are known for inciting lust and debauchery in others. That is, however, not entirely correct. Succubi (and incubi for their male variants) require a minimum of physical touch and intimacy as much as they need food and drink. Succubi thrive in social environments, because there they can 'feed'. This feeding almost never results in death or illness on their victims. Rather a prudent succubus feeds in small parts on one person, or a bit more on many. After feeding a 'victim' might feel a bit tire, but nothing that a lazy day at the inn wont fix.
+
+Skills
+Take 25% more Ice/Cold/Hydro dmg
+
+Ranks
+D Rank: +1 rank Persuade, +1 rank Lie, +1 rank Entertain, + steal vitality(during non combat you can heal by feeding), +1 rank Streetwise
+C Rank: +1 rank Energy Level, +1 rank Persuade, +1 rank Entertain, +1 rank Lore Alpha
+B Rank: +1 rank Energy Level, +1 rank Persuade, +1 rank Entertain, +1 rank Lore Gamma
+A Rank: +1 rank Sneak, +1 rank all social skills, +1 rank Lore Gamma
+S Rank: +1 rank all social skills, +8 Damage Soak
+
+Witch
+General Description
+There are plenty of stories about old hags who brew foul potions, but in truth, most witches are an integral part of any village they inhabit. From brewing potions for the sick, to helping with familiar quarrels. These rather than the local magistrates prevent most of the problems before they become significant. There are of course also less friendly witches who do only further their own agenda. The term 'witch' is often seen as women, and most of them are, but by no means exclusively. Some imperial scholars believe that witches make up the majority of mages in the world, but many don't possess great power, usually enough to get by, or not even that. Those that do have great power however are respected, feared and an overall blessing to have around... if they stand by your side.
+
+Ranks
+D Rank: +1 rank Insight, +1 rank Medical, +1 rank Lore Beta, +1 rank Streetwise
+C Rank: +1 rank Haggle, +1 rank Decorum, +1 rank Conflict Handling
+B Rank: + D-rank Alchemy, + D-rank Spirit Summoning(familiar), +1 rank Lore Beta
+A Rank: + C-rank Magical Defense, +1 rank Medical, +1 rank Insight, +1 rank Lore Gamma
+S Rank: + B-rank Alchemy, + B-rank Cursing, + B-rankSpirit Summoning, + Animated flying object

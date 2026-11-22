@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Base HTML page for Consequences" />
+  <title>Consequences - Races</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../Styles.css" />
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <img src="../Images/Items/Logo.png" alt="Consequences logo" />
+    </a>
+    <h1>Consequences</h1>
+    <a href="../index.html" class="home-button">
+      <img src="../Images/Items/HouseIcon.png" alt="Home" />
+    </a>
+  </header>
+  <main class="selection-page">
+    <div id="sharedContainer" class="selection-layout">
+      <div id="raceButtons" class="selection-buttons text-center p-3">
+        <button class="btn btn-primary">
+          Beast Kin
+        </button>
+        <button class="btn btn-primary">
+          Demon
+        </button>
+        <button class="btn btn-primary">
+          Draconic
+        </button>
+        <button class="btn btn-primary">
+          Dwarf
+        </button>
+        <button class="btn btn-primary">
+          Elf
+        </button>
+        <button class="btn btn-primary">
+          Fey
+        </button>
+        <button class="btn btn-primary">
+          Garuda
+        </button>
+        <button class="btn btn-primary">
+          Ghost
+        </button>
+        <button class="btn btn-primary">
+          Giant
+        </button>
+        <button class="btn btn-primary">
+          Green Folk
+        </button>
+        <button class="btn btn-primary">
+          Lich
+        </button>
+        <button class="btn btn-primary">
+          Naga
+        </button>
+        <button class="btn btn-primary">
+          Short Folk
+        </button>
+        <button class="btn btn-primary">
+          Succubus
+        </button>
+        <button class="btn btn-primary">
+          Undead
+        </button>
+        <button class="btn btn-primary">
+          Vampire
+        </button>
+        <button class="btn btn-primary">
+          Were-beast
+        </button>
+        <button class="btn btn-primary">
+          Witch
+        </button>
+      </div>
+      <div id="selectionDetails" class="selection-details text-start" aria-live="polite">
+        Select a race to see its description.
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script>
+    const raceButtons = document.getElementById("raceButtons");
+    const selectionDetails = document.getElementById("selectionDetails");
+    const sourceRaceNames = new Map([
+      ["beastkin", "Beast Kin"],
+      ["demon", "Demon"],
+      ["draconic", "Draconic"],
+      ["dwarf", "Dwarf"],
+      ["elf", "Elf"],
+      ["garuda", "Garuda"],
+      ["giant", "Giant"],
+      ["green folk", "Green Folk"],
+      ["naga", "Naga"],
+      ["short folk", "Short Folk"],
+      ["blessed form", null],
+      ["werebeast", "Were-beast"],
+      ["fey", "Fey"],
+      ["ghost", "Ghost"],
+      ["vampire", "Vampire"],
+      ["lich", "Lich"],
+      ["undead", "Undead"],
+      ["succubus", "Succubus"],
+      ["witch", "Witch"]
+    ]);
+    const raceImageFiles = new Map([
+      ["Beast Kin", ["Beast-Kin.png"]],
+      ["Demon", ["Demon.png"]],
+      ["Draconic", ["Draconic.png"]],
+      ["Dwarf", ["Dwarf.png", "Dwarf-2.jpg"]],
+      ["Elf", ["Elf.png", "Elf-2.jpg"]],
+      ["Fey", ["Fey.png", "Fey-2.jpg"]],
+      ["Garuda", ["Garuda.png", "Garuda-2.jpg"]],
+      ["Ghost", ["Ghost.png", "Ghost-2.jpg"]],
+      ["Giant", ["Giant.png", "Giant.jpg"]],
+      ["Green Folk", ["Green-folk.png", "Green-Folk-2.jpg"]],
+      ["Lich", ["Lich.png", "Lich-2.jpg"]],
+      ["Naga", ["Naga.png", "Naga.jpg"]],
+      ["Short Folk", ["Short-Folk.png", "Short-Folk-2.jpg"]],
+      ["Succubus", ["Succubus.png", "Succubus.jpg"]],
+      ["Undead", ["Undead.png", "Undead-2.jpg"]],
+      ["Vampire", ["Vampire.png", "Vampire-2.jpg"]],
+      ["Were-beast", ["Were-Beast.png", "Werebeast-2.jpg"]],
+      ["Witch", ["Witch.png", "Witch.jpg"]]
+    ]);
+    const sectionNames = new Map([
+      ["general description", "General Description"],
+      ["living location", "Living Location"],
+      ["tribes", "Tribes"],
+      ["skills", "Skills"],
+      ["ranks", "Ranks"],
+      ["for the dm", "For the DM"],
+      ["for the gm", "For the GM"]
+    ]);
+    let raceDescriptions = new Map();
+    let selectedRace = null;
+
+    function parseRaceDescriptions(text) {
+      const descriptions = new Map();
+      const normalizedText = text
+        .replace(/\r\n?/g, "\n")
+        .replace(/^Short FolkGeneral Description$/gim, "Short Folk\nGeneral Description")
+        .replace(/^UndeadGeneral Description$/gim, "Undead\nGeneral Description");
+      let currentRace = null;
+      let currentSection = null;
+
+      for (const line of normalizedText.split("\n")) {
+        const heading = line.trim().toLowerCase();
+        if (sourceRaceNames.has(heading)) {
+          const label = sourceRaceNames.get(heading);
+          currentRace = label
+            ? { sections: new Map() }
+            : null;
+          if (label) {
+            descriptions.set(label, currentRace);
+          }
+          currentSection = null;
+          continue;
+        }
+
+        if (!currentRace) {
+          continue;
+        }
+
+        if (sectionNames.has(heading)) {
+          currentSection = sectionNames.get(heading);
+          if (!currentRace.sections.has(currentSection)) {
+            currentRace.sections.set(currentSection, []);
+          }
+        } else if (/^ranks\s*-\s*version\s+(.+)$/i.test(line.trim())) {
+          currentSection = "Ranks";
+          if (!currentRace.sections.has(currentSection)) {
+            currentRace.sections.set(currentSection, []);
+          }
+          const version = line.trim().match(/^ranks\s*-\s*version\s+(.+)$/i)[1];
+          currentRace.sections.get(currentSection).push(`Version ${version}`);
+        } else if (currentSection) {
+          currentRace.sections.get(currentSection).push(line);
+        }
+      }
+
+      return descriptions;
+    }
+
+    function capitalizeText(text) {
+      return text
+        .replace(/(^|[\r\n]|[.!?]\s+)([a-z])/g, (match, boundary, letter) =>
+          boundary + letter.toUpperCase())
+        .replace(/^([A-S]) rank\b/gim, (match, rank) => `${rank.toUpperCase()} Rank`);
+    }
+
+    function showRaceDescription(raceName) {
+      const description = raceDescriptions.get(raceName);
+      selectionDetails.replaceChildren();
+
+      if (!description) {
+        selectionDetails.textContent = `No description found for ${raceName}.`;
+        return;
+      }
+
+      for (const [sectionName, lines] of description.sections) {
+        const content = lines.join("\n").trim();
+        if (!content) {
+          continue;
+        }
+
+        const heading = document.createElement("h2");
+        heading.className = "content-section-heading";
+        heading.textContent = sectionName;
+
+        const sectionContent = document.createElement("div");
+        sectionContent.className = "content-section";
+        sectionContent.textContent = capitalizeText(content);
+
+        selectionDetails.append(heading, sectionContent);
+      }
+
+      const imageFiles = raceImageFiles.get(raceName);
+      if (imageFiles) {
+        const images = document.createElement("div");
+        images.className = "selection-images";
+        for (const [index, imageFile] of imageFiles.entries()) {
+          const image = document.createElement("img");
+          image.src = `../Images/Races/${imageFile}`;
+          image.alt = imageFiles.length > 1 ? `${raceName} image ${index + 1}` : raceName;
+          images.append(image);
+        }
+        selectionDetails.append(images);
+      }
+    }
+
+    raceButtons.addEventListener("click", (event) => {
+      if (event.target instanceof HTMLButtonElement) {
+        selectedRace = event.target.textContent.trim();
+        if (raceDescriptions.size > 0) {
+          showRaceDescription(selectedRace);
+        }
+      }
+    });
+
+    fetch("../RaceDescriptions.txt")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Could not load race descriptions (${response.status}).`);
+        }
+        return response.text();
+      })
+      .then((text) => {
+        raceDescriptions = parseRaceDescriptions(text);
+        if (selectedRace) {
+          showRaceDescription(selectedRace);
+        }
+      })
+      .catch((error) => {
+        console.error("Failed to load race descriptions.", error);
+        selectionDetails.textContent = window.location.protocol === "file:"
+          ? "Browsers block race descriptions when this page is opened directly as a file. Open it through a local web server or GitHub Pages."
+          : "Race descriptions could not be loaded. Check that RaceDescriptions.txt is available.";
+      });
+  </script>
+</body>
+
+</html>

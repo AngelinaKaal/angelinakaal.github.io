@@ -1,0 +1,411 @@
+Aeoliomancy
+General Description
+Wind magic, the power over storms and hurricanes. At least when properly trained, like any other element it begins with a puff of wind, enough to blow out a candle or close a door at range. These magic users are most coveted by the ocean faring people to stave off storms and to ensure a speedy wind along the way. Most of the aeoliomancers are garuda who become attuned to wind currents from a young age. These Garuda and others are most often employed by sailors on the ocean, but no ruler or adventurers guild would turn down a wind mage to add to their ranks.
+
+Wind magic ccan do many things, from flinging objects at great distances, creating a breeze to push a ship onward, to knocking arrows out fo the air. While there is no way to mechanically enforce such actions, players are encouraged to become creative with this magic. As with all forms of magic, the way one casts spells is up to the player to set the tone and vibe.
+
+Skills
+Ranks
+D Rank: 10 dmg per atk, + small convenience of air and wind(?), +1 rank Lore Beta
+C Rank: 20 dmg per atk + sustained blasts of air
+B Rank: 30 dmg per atk(+10 without Magehood)
+A Rank: 40 dmg per atk(50 if various elements are combined)
+S Rank: elemental form(immune to non-magical weapons, 60 dmg without Magehood)
+
+Alchemy
+General Description
+These people are inventors and crafters of magical items. They make things or perform rituals that can temporarily help others. This power usually requires some preparation, but it can make or break a plan. These rituals usually have a shelf life of a few days and the results can be carried around on a person. They differ from arcane smiths, wonder workers or spirit binders. In the way that they cannot store magic in items for a longer period, this ability would require lengthy training and settling down for longer periods. How the Alchemist flavours these items, potions or other is up to the player in question. They cannot make magical items and weapons though. This skill purely allows the player to boost different stats for some time, or permanent if they are world-class. Players cannot make magical items like in the shops for money, since that would go against the adventuring nature of the game.
+
+Ranks
+D Rank: make items that improve an ability to a D-rank for a minute/scene, +1 rank Lore Beta
+C Rank: make items that improve an ability to a C-rank for a day, +1 rank Lore Beta
+B Rank: make items that improve an ability to a B-rank for a day, +1 rank Lore Beta
+A Rank: make items that improve an ability to a B-rank for a week, +1 rank Lore Beta
+S Rank: make items that improve an ability to an A-rank permanently
+
+CAN ONLY HAVE ONE ACTIVE AT A TIME
+
+Animal Insight
+General Description
+According to the imperial library there are some who gain mastery over animals. the majority of these become masters of the hunt, falconry experts or horse whisperers. But some take this further, these may be called druids, wise-folk or go by other yet unknown names in the wilderness, if they even have a term for themselves. They can commune, call and command animals of all kinds. Those who reach the pinnacle are thought to be one with the land, hearing the birds, speaking to the bees and putting requests at the mouths of fish.
+
+This power allows a character to talk to animals, to call out for them and befriend them. most of the time these contact moments will be of a short duration. A character can ask any and all reasonable requests and some unreasonable. though few animals will throw themselves into a fire for no good reason. t should be no problem to have a few permanent companions. to streamline the abilities of these animals, talk to your GM beforehand on what sort of animals you would like to work with. then the GM will only work out the physical stats (rather than a full character sheet for them). Smaller animals may have a very limited effect or move in swarms. a butterfly for example will not have any measurable effect aside from flavour, while a rat or something may only do a single point of damage. aside form combat, animals can be extremely versatile in their application, from scouting to delivering messages and a while heap of other things the system isn't designed for. players are encouraged to be creative but also to be reasonable in terms of what to expect from a simple bird, dog, dolphin or a dozen flies.
+
+Ranks
+D Rank: speak with animals. +1 rank Animal Handling
+C Rank: +1 rank Animal Handling, call nearby animals(shouting range)(birds/lizards)
+B Rank: +1 rank Animal Handling, gain "magical per"(be creative)(fish)
+A Rank: S-rank Animal Handling, +2 rank Sneak, +2 rank Condition, (insects)
+S Rank: Animal king (become trustworthy to all animals until you att
+
+Bardic power
+General Description
+Minstrels, musicians, orators, public speakers
+
+Diplomats, teachers, and all those who wish to sway a crowd.
+This 'power' is thought of as magic by some and a skill by others.
+Those who have mastered this skill is, as natural as breathing, a part of who they are.
+They use sounds, words or gestures to work their power. Some to dissuade others from fighting, others to inspire before combat. Some make their lives easy and filled with wealth.
+This is the best power for all those who would prefer to not get their or other's hands dirty but to solve things with words.
+On social interactions in this setting: it is important to know for both players and the GM that even having S+-tier persuade, you cannot mind control people. For instance you cannot steal a crown in the throne room and then "tell people that you are allowed". It has to be somewhere in the realm of reason and logic. A guard can be tricked to go off duty because his captain ordered it. A barmaid won't just go to bed with anyone because they ask nicely. This system specifically has no means to brainwash or mind control people, that is to ensure agency at least to some degree for everyone involved, please respect that wish.
+
+Ranks
+D Rank: +1 basepoint to all social rolls, +1 rank Lore Alpha
+C Rank: +1 basepoint to all social rolls, +1 rank Lore Alpha
+B Rank: D-rank Shadow Magic, D-rank Light Magic(combined to make illusions), +1 rank Lore Alpha
+A Rank: C-rank Cursing, Flair magic, charm 1/day, charm 1/day(prevents or stops fights until attacked)
+S Rank: A-rank on all social skills, charm 3/day, +1 rank Lore Alpha
+
+Clairvoyance
+General Description
+On fair grounds there will be mystically clad women trying to convince village girls to give them a few bowls to predict the future. Many of these are frauds who just have good insight, and can tell whatever a foolish villager wants to hear. But sometimes they are the real deal, and their words can be both terrifying as well as giving solace. The power to predict events before they happen and perhaps change them is something kings and emperors desire.
+This is why almost every ruler has at least one clairvoyant in their court. Naturally this power isn't water tight and sometimes omens and prophecies are so vague they might as well not be there. Any aspiring clairvoyant would have little problem finding a patron, especially if their predictions tend to come true.
+
+This power has undefined mechanics outside of the given increases in ranks. The GM is encouraged to let clairvoyant characters roll (the dice according to rank) every now and then to give hints and tips on what may be. As with all powers, the way one predicts the future is fully up to the player. You can read it in a crystal ball, in flames, by spilling blood or making a small sacrifice to whatever spirit you think helps you. Expect some help but not clear cut answers.
+
+Ranks
+D Rank: +1 rank Initiative, +1 rank (standing?)
+C Rank: +1 rank Persuade, +1 rank Melee, +1 rank Medical
+B Rank: +1 rank Lie, +1 rank Melee, +1 rank Dodge
+A Rank: +1 rank Haggle, +1 rank Melee, +1 rank Dodge
+S Rank: +1 rank Insight, +1 rank Melee, +1 rank Dodge, +1 rank Rang
+
+Cursing
+General Description
+Often described as the foulest of mages. They also go by many names, hexers, blighters aberrant mages, dark ones. These people are able to bring down even the strongest warrior to their knees.
+
+Many courts secretly employ these people to whittle down diplomats and guests. Making it harder for them to lie or perhaps cast spells of their own. One thing all these mages have in common, is that in order for their magic to work, they need to either see a target, or have something that belongs to them, something personal or even a piece of their body, blood, hair or tears, these items are called 'tokens'.
+
+roll = energy level (offender) vs condition or energy level (victim)
+
+Ranks
+D Rank: down tier 1 ability of a nearby person, +1 rank Lore Gamma
+C Rank: down tier 2 abilities of a person who's token you have, +1 rank Lore Alpha
+B Rank: down tier all traits of a person who's token you have, +1 rank Lore Beta
+A Rank: double down tier 1 section of skills of 1 person(personal, social or traits)
+S Rank: double down tier all abilities of 1D4 people
+
+Dodge
+General Description
+In the list of those who have magical abilities that exceed others, there are variations of said powers.
+Yet the ability to dodge more and faster is more often seen. In the imperial library there are compilations on these people, both the honourable and the infamous. Though there is no statistics yet, there is a general consensus among scholars that many learn to keep themselves safe in battle.
+
+Ranks
+D Rank: +1 tier Dodge +1 tier Awareness
+C Rank: +1 tier Dodge +1 tier Awareness
+B Rank: +1 tier Dodge +take half damage from non magical weapons
+A Rank: + S+ tier Dodge
+S Rank: + B tier Magical Defense
+
+Durability
+General Description
+Iron skin, bones of steel, rock hard muscles. That is how these types are often described, and it isn't always wrong. Rather that they have a vitality that is so far beyond that of most people, that they seem indestructible. This means that some may have tough skin and are not bothered by a mere punch, or it could mean that they transfer this vitality into willpower and manager to keep fighting even after many wounds and battles.
+
+This power isn't as flashy or as flexible as others, but it offers a flat increase in hit points which can never be a bad thing. make sure to keep this in mind whenever you level up.
+
+Ranks
+D Rank: +20 hp
+C Rank: +1 hpo per lvl extra
+B Rank: +1hp per lvl extra
+A Rank: +1 hp per lvl extra
+S Rank: +1hp per lvl extra
+
+Electromancy
+General Description
+Lightning mages, these mages control one of the most potent forces.
+Starting from small shocks, growing to paralyzing punches, all the way to almost godly lightning bolts and thunderstorms. Electromancers are hired most often by adventure guilds, mercenaries, but some are employed as bounty hunters, since they can capture people without killing them. Every magic has the potential to be non lethal as well as extremely lethal. Electromancers just have a better grip on that than most other mages.
+Lightning magic is a very effective element, however, its final rank, to turn into a lightning form is one of the more spectacular variations.
+
+The biggest downside of electromancy is that is has very few uses outside of combat, unlike water magic which can sustain a group in the hottest desert, or air magic which can propel a ship to its safe harbour, lightning magic is relatively useless, as there are no electrical devices or networks within the game world(unless you make your own setting of course.)
+
+Ranks
+D Rank: 10 dmg per atk, small ways to start a fire or zap bugs, +1 rank Lore Beta
+C Rank: 20 dmg per atk
+B Rank: 30 dmg per atk, paralyzing shock, (vs condition roll, beat it by 10)
+A Rank: 40 dmg per atk, 50 dmg if various elements combined
+S Rank: elemental form (immune to non-magical weapons), 60 dmg without Magehood
+
+Elemental armour
+General Description
+Elemental armours are usually for those who fight in the front line. It is protection from within, never having to worry about putting on a heavy suit. It starts with a small puff of an element, be it any of the standard five, or light or shadow. It then grows until the user can become one with the elements, gaining complete immunity from it.
+Interestingly, some powerful fighters have been known to have multiple layers of elemental shields, becoming nigh unstoppable. While the shield technically doesn't stop the user from getting wounded, it reflects a portion of the damage given. According to myths, one user had mastered all five elements and even the lightest punch would throw the attacker back into a nearby wall, with a myriad of wounds.
+
+Multiple elemental armours can be used at the same time, their reflective and protective qualities do stack, making the user to be deadly even if he doesn't attack. given a level 50 character can have up to 4 s-rank skills, if these were all elemental armour, any attack landed on the user would return double damage to the attacker in a mixture of various elements.
+
+Skills
+The minimum reflection is always one damage.
+
+Ranks
+D Rank: resistance to first element, +1 rank Condition, +1 rank Lore Beta
+C Rank: resistance to second element, reflect 25% of received damage
+B Rank: immunity to first element, reflect 50% of received damage, +1 rank Energy Level
+A Rank: immunity to second chosen element, reflect full attack damage
+S Rank: +3 rank Threaten, +1 rank Melee, one with element(either elemental form)
+
+Elemental Magics
+General Description
+All elemental magics work about the same way, with each rank you do the amount of damage that is listed. they DO NOT STACK. Only when you reach A-rank in any of these skills you become able to combine the elements to do more damage, and that is always listed as such.
+
+When you reach S-rank you get the ability to temporarily become part of the element, or change your body into said element. when you mic various elements they may have different effect that are up to the GM to decide. Players are encouraged to be creative with this though. Mixing fire and water to become scalding fog, or fire and earth to become a pyroclastic mud mass is both allowed and encourage. This transformation cannot be sustained for hours at a time but roughly a combat length, give or take a few minutes. It is possible to simply recast the spell again, since the system doesn't work with spell slots or mana. To keep the game fair and fun, do keep in mind that continuous magic use will eventually tire out your character.
+Magic is mostly the realm of visualisation, this means that whatever your character can visualize ( within some limitations) can be done, fiery balls, sand being pressured into solid rock or a strong wind picking up. You cannot however cast spells where you cannot see, like on the other sides of a wall, inside someone's body and other such things. Combining the "vision" power will allow you to cast spells at 25% strength if the spell needs top travel further than 1000 steps, these long ranged spells are less accurate. you cannot shoot a spell over the horizon, this is to prevent the 'I scry on m opponent while they sleep and burn them' tactic.
+
+Fighting Magic with Magic:
+It is permissible for a magic user to use their magic to 'Dodge' an attack. The mage does need to match or surpass the to-hit roll from their opponent and their spell wont cause damage, merely to ensure them not getting hit.
+
+Mixing of elemental magics
+When you reach A-rank in any elemental magic(fire, earth, wind, lightning) and have any other magic ability that does damage(elements + light/shadow) you can combine them to increase the damage. This is not available for people who have Magehood as they don't attune to any element specifically. Furthermore, if you reach A-rank in any magic that does damage, your magic inflicts additional conditions and misery upon your foes. These effects happen when you roll and have 10 points higher than the opponents dodge.
+
+Earth magic hardens to the point where is breaks non magical armour
+Air magic knocks the opponent prone
+Fire magic sets a target ablaze, doing half damage extra in the next turn
+Electric magic stuns the target for their turn, making them unable to dodge
+Water magic disarms the target, causing anything they hold to fly away out of their grasp
+Light magic blinds the enemy, causing them to have a -6 to their dodge
+Shadow magic blinds the opponent, causing them to have -3 on any of their attacks
+you can only choose 1 effect to be active at a time, depending on which element you have
+
+Flight
+General Description
+To conquer the sky has always been a dream of many. Only the Garuda and dragons were supposed to tule that domain. Until they no longer were. Some people grew wings, others used sheer magic. Flight is a difficult thing to master anad wings take time to grow strong. This is why so few people manage to be able to do more than jusst fly over a castle wall or on a low cliff. It is said that those who do, experience a freedom no human, elf, dwarf or short folk has ever experienced.
+
+When designing a character that flies, or can learn to fly, it is important to know that there is no mechanical difference between wingless flight or to actually grow wings. A character can also use certain items to fly, be it a broom, mortar and pestle or something else altogether.
+
+Ranks
+D Rank: no fall damage
+C Rank: Flight for a short distance(1 turn)
+B Rank: Flight for a medium distance(5 turns)
+A Rank: permanent active flight(can slowly carry one person)
+S Rank: high speed (long sustained travel is possible, can carry 1 other person comfortably)
+
+Geomancy
+General Description
+Earth mages, rock movers and geomancers.
+These people are as much part of the earth, of the world as they can be. Many of them are dwarves, but they come from all species and all walks of life. They can shape the earth, shift sand and those of great power can even press glass out of the ground.
+
+Geomancy doesn't allow for the creation of sand, dirt or rocks, but there are only a few places in the world where these cannot be found. A few of the mighty dwarven strongholds are said to have been drawn from the rock by magic alone. And as a testament to this power, none of those ancient forts have ever been breached.
+
+Geomancers can choose which type of rock, stone or dirt they specialize in. It will often serve them well to carry a small pouch with the stuff in case they end up in a fight. Though thy can always manipulate the soil around them. As a general rule, you should see every dimension being unlocked after B-rank, first a wall or enclosure, A-rank can make roofs and S-rank can shape interiors. At least withing reasonable time. If given enough time even a B-rank geomancer could make a decent home for themselves, provided they don't mind stone or sand beds of course.
+
+Ranks
+D Rank: 10 dmg per atk, small convenience of earth, +1 rank Lore Beta
+C Rank: 20 dmg per atk, make small hills or holes
+B Rank: 30 dmg per atk (+10 without Magehood), shape temporary shelter
+A Rank: 40 dmg per atk, 50 dmg if combines with other elements
+S Rank: Elemental form (immune to non-magical weapons, take double dmg from opposing element), 60 dmg without Magehood, shape building(bigger buildings cost more time)
+
+Healing Magic
+General Description
+Perhaps one of the most sought after magic by everyone. From small villages to bustling cities, having someone who can mend wounds will never fear to have a welcoming home. Many of these magical healers come from the theocratic island in the northern sea, where worship of the healing deity is strongest. This magic is not intrinsically tied to deities or even spirits, but it is more common to see people with that affinity there than anywhere else. A character cannot heal themselves or others if they are brought down to 0 hit points or otherwise knocked out. The form and flavour is up to the player, if it hurts, feels good, feels weird or what other minor side effects it has.
+
+Ranks
+D Rank: heal self 10hp/turn, +1 rank Lore Beta, +1 rank Medical
+C Rank: heal other 1hp/turn, +1 rank Lore Beta, +1 rank Medical
+B Rank: heal other 10hp/turn, heal self 20hp/turn, +1 rank Lore Beta
+A Rank: heal other 40hp/turn, get 25% of all healing self, +1 rank Medical
+S Rank: resurrection 1/day, heal 5 targets at the same time
+
+Hydromancy
+General Description
+Water is one of the primary sources off all life. Nothing can last without it. Hydromancers know this all too well, They can shape and draw water out of thin air. Some can also change the temperature of water, or its density./ In some arcane circles these are known as cryomancers or ice-mages.
+Water mages are also a staple on sea and river travel, as well of course in those harsh and dry environments as on the khot-steppes and the tall Eastern mountains.
+
+Most water mages form bullets or spears made from water or ice to hurl at their enemies. Those who are exceptionally powerful and cruel have been seen to form water bubbles around their enemies to slowly drown them. Like all elemental mages, they can be employed from the highest advisory roles, to the lowest criminal gangs.
+
+The limitations of water magic is that a mage cannot control water inside other people, blood, brain fluid and the like are off limits. However the saliva on someone's tongue can be frozen fi you feel particularly nasty.
+
+Ranks
+D Rank: 10 dmg per atk, small convenience of water, +1 rank Lore Beta
+C Rank: 20 dmg per atk, create drinking water
+B Rank: 30 dmg per atk, create water for attacks, ( +10 without Magehood)
+A Rank: 40 dmg per atk, 50 dmg if various elements are combined
+S Rank: elemental form (immune to non-magical weapons, 60 dmg without Magehood)
+
+Invulnerability
+General Description
+There is being strong and beefy, and there is this. People with this ability can just take so much more damage. Some train years in monasteries to achieve this, others infuse themselves with magic.
+Masters of this ability have been known to stand in dragon's breath and have their armour melted off, while they stood steady. Some of them were duellists of great renown, or mages of great power. The most famous one would be Bärbel der Kurze, a dwarven lady who was both famous for her slender form, her dancing as well as standing up to a dozen knights who wanted to kidnap her.
+
+This ability can come in many forms, and as with almost all abilities, players are encouraged to be creative with the source or form this ability takes. As long as it doesn't change anything mechanically, feel free on how to interpret on why your character is so sturdy.
+
+Ranks
+D Rank: +2 rank Dodge
+C Rank: +1 hp/level
+B Rank: Take half damage from attacks
+A Rank: Immune to non-magical weapons
+S Rank: + 1D4 rounds of invulnerability per day(this doesnt mean you cannot be pushed or tackled)
+
+Light Magic
+General Description
+These mages are often seen as 'good' or 'helpful', and in many cases that is correct, from a certain perspective. To the central empire, these mages were long seen as the best weapon against the undead and demons with their shadow magic. however, seen from the demon side...
+Light magic is not in itself a good thing, it is a type of element or concept that is anathema to darkness. However many people fear the dark and relish the light. The most powerful of these mages can create a burst of light so powerful it destroys or turns away undead and demons.
+
+Ranks
+D Rank: +1 rank Persuade, create small light, +1 rank Lore Gamma
+C Rank: +1 rank Persuade, +1 rank Energy Level
+B Rank: 20 dmg per atk, blinding light for 1 turn, +1 rank Dodge
+A Rank: Lightbeam - all light infused spells do double dmg vs undead/demon types
+S Rank: 2nd dawn, 40 dmg per attack, 50 if various elements are combined, 60 dmg without Magehood
+
+Magehood
+General Description
+What is magic exactly? how does it work? This question has been plaguing scholars and mages for centuries. The answer isnt simple because there may not be an answer to begin with. Some say it is built on visualization, some say it is the proper ritual and incantation and still others claim it is an innate power that not many individuals can manifest, at least not on noticeable levels. Magehood is a school of thought, more than an ability, that allows an individual to lean the basics of all elemental magic as well as to learn a new form of magic. Something new in the world. Those who reach the arch-mage rank are said to command the most impressive arsenal ad variation of spells. Feel free to describe how your character casts spells. This only allows the character to use said magics. they do not get the same tier increases as with elemental magics.
+
+Ranks
+D Rank: magic bolt (10 damage per rank)
+C Rank: D-rank all spell forms - Pyromancy+Electromancy+Hydromancy+Aeoliomancy+Geomancy+Light Magic+Shadow Magic
+B Rank: C-rank all spell forms
+A Rank: B-rank all spell forms
+S Rank: A-rank all spell forms, 100 damage signature spell 3/day
+
+Magical Defence
+General Description
+There are many magical ways to defend oneself. But how to defend against magic? this has been an issue for knights and common foot soldiers for centuries, since magic was first shown to be more than fairy tales. The best and easier to access defence against magic is the work of arcane smiths, wonderworkers and spirit benders. A more permanent and high level defence however, is the ability to reject the workings of magic. this is a rare ability but very effective against those who solely rely on mafic. it is theorized that these people send out magical aura's that are in counter-resonance of that which comes towards them, the more down to earth people simply say that magic has little hold on these people.
+
+this magic immunity can come in many forms, a protective shell made of soul stuff, a magic barrier that just stops magic from certain levels, or even that the person devours the magic that hits them.
+
+Ranks
+D Rank: half damage from D-rank magic
+C Rank: half damage from C-rank magic, immune to D-rank magic
+B Rank: half damage from B-rank magic, immune to C-rank magic
+A Rank: half damage from A-rank magic, immune to B-rank magic
+S Rank: half damage from A-rank magic
+
+Martial Arts
+General Description
+When all else fails, there is still 'you'. This represents every form of combat that doesn't require magic or complex contraptions. from the simple and elegant militia spear and shield, tot he hidden techniques of the rope dart and hook sword. Every knight, soldier, mercenary but also the temple trained monks and ruffians in the street are in some way part of this group. those who excel in it will rise to prominence and those who do not may still be looked upon with honour and fear among the common people. where mage hood is the pinnacle of elemental understanding, martial arts is about the physical and psychological. those handful of people who manager to reach the top of this tall mountain are nothing short but amazing and near undefeatable. even mages will think twice to look down upon these masters of martial arts.
+
+Ranks
+D Rank: +1 rank Melee, +1 rank Initiative, +1 rank Conflict Handling
+C Rank: +1 rank Melee, +1 rank Initiative
+B Rank: +1 rank Dodge, +1 rank Melee, +1 rank Initiative, +1 rank Condition, all wielded weapons become magic
+A Rank: +1 rank Dodge, +1 rank Melee, +1 rank Initiative, +1 rank Conflict Handling
+S Rank: S-rank Melee, S-rankRanged, +20 dmg in non magic
+
+Pyromancy
+General Description
+Fire magic, pyromancy, fire bending, whichever name you give it, it is creating, manipulating or dousing flames. Like all magical forms it starts small with some sparks or a small gust. But once the pyromancer gets to their full strength, they can quite literally turn a town to ash. Like all magic users, they are sought after by rulers who want to enlist them, and at the same time make sure they don't run amok in their domains.
+
+Pyromancers can create fire from nothing as well as snuff out flames. the way they manipulate flames differs, some garuda train to become flaming talon monks and guide the fire with swipes and kicks, while an imperial mage may simply speak an incantation. Players are encouraged to describe the way that they control these flames. It doesn't matter too much in terms of mechanics, but it does add more flavor to a character, and sets the tone for other players to understand what the pyromancer is all about.
+
+Ranks
+D Rank: 10 dmg per atk, + small convenience of flames(?), +1 rank Lore Beta
+C Rank: 20 dmg per atk + sustained flames
+B Rank: 30 dmg per atk (+10 without Magehood)
+A Rank: 40 dmg per atk(50 dmg if various elements are combined)
+S Rank: elemental form(immune to non-magical weapons, 60 dmg without Magehood)
+
+Regeneration
+General Description
+Every living being heals from non lethal wounds to some extent. Some creatures can regrow a tail, or survive losing a limb, maybe even two. But it is an entirely different matter for any creature to be run through with a blade. And be up on your feet again the next day with as much as a small scar. People who have this ability are renowned for pushing through unbearable circumstances. To be able to heal any wound or unintended effect upon their body. Some of these individuals make it to great old ages, far beyond what the rest of their kin manages. While others feel like this power makes them invulnerable and end up dead due to overconfidence. There doesn't seem to be a middle ground. All regeneration ranks stack rather than replace. Additionally, once a day a character with this power can come back from the brink of death, assuming they haven't been turned into jelly or aren't thrown into a volcano.
+
+Ranks
+D Rank: + regen 1hp/turn, +1 rank Medical
+C Rank: + regen 1hp/turn, +1 rank Lore Beta
+B Rank: + regen 3hp/turn, resistant to poison (50% roll)
+A Rank: + regen 5hp/turn, immune to poison
+S Rank: + regen 5hp/turn, immune to C-rank cursing, +2 Damage Soak
+
+Shadow Magic
+General Description
+This magic is often seen as 'evil', but that is not true.
+Shadow magic hides, keeps safe, but that aspect can be frightening. The majority of shadow magic users are undead and demons, traditional enemies. At least from the perspective of the Central Empire and other nations. According to the demons, this magic was designed to hide their location from vengeful humans who couldn't tolerate others.
+In these peaceful days, such prejudice is less seen, but it hasn't disappeared entirely. shadow mages may be monitored more closely to see if they dont commit evil acts, and they are less likely to be promoted. Recent studies however keep proving more and more that shadow magic is not some demonic power that corrupts, simply a flavour of magic that you can or cannot have affinity with.
+
+more advanced shadow magic can help one escape or infiltrate by 'jumping shadows'. Something many "Shadow agencies" and 'internal gendarmes' would love to add in their ranks.
+
+Ranks
+D Rank: +1 rank Threaten, +1 rank Sneak, +1 rank Lore Beta
+C Rank: 15 dmg per atk, +1 rank Threaten, +1 rank Sneak
+B Rank: 20 dmg per atk, +1 rank Dodge, +1 rank Melee
+A Rank: +1 rank Sneak, + D-rank Teleporting
+S Rank: 40 dmg per atk(50 without Magehood), + C-tier Teleporting, shadow form(S+ rank Sneak)
+
+Shapeshift
+General Description
+Scholars think that they may be a different species. Commoners think that they may be spirits or mythical creatures. Many of them are Fey or Vampires, but by no means all of them are. Individuals who manage to be able to shapeshift are exactly that, individuals. They are all unique and they all have their own reason for seeking out a particular power as this. Some do it to escape a life of servitude, others to gain power and priviledge. While the upright may seek this to fight ffor their cause without undue bloodshed, less morally handicapped may do it to spread chaos. There have been relatively few shapeshifters who were identified as such, most often because their movements would be tracked as much as possible by opponents. The most famous was a short folk, the records are not clear if they were born a man or a woman, or something in between. In their most used form they went by the name 'Luss'. They went on countless political and diplomatic missions, often openly posing as a member of the species they were visiting. Their insight and knowledge about local culture and customs was said to be the most expanded in their time. Shapeshifting can change one's body in any of the existing forms but doesn't come with benefits. As such a shortfolk shapeshifter wont get the ability to to fly if changing into a Garuda, but they will also not suffer the weaknesses of one. Shapeshifting is only a cosmetic change and cannot mimic a ghost's etherealness. It it important to ask your GM if they allow clothes to also shift along with the form. This may differ per table. A last request to players is: "Be nice to your GM". Don't go and try to destroy nations willy-nilly for the sake of it. After all, a game needs to be fun for everyone.
+
+Ranks
+D Rank: Change superficially within your own species and form
+C Rank: change gender
+B Rank: change species
+A Rank: +1 rank to all social abilities
+S Rank: +1 rank to all social abilities + take the appearance of all forms
+
+Speed
+General Description
+Some people can get a first punch, some people can throw two punches first, but only a small group can throw four punches before anyone can react. These people have no group name, some are mercenaries, others are tournament fighters. Others may be sword saints or complete bandits who are just really good at what they do. This power allows people to move first, move fast and hit more often than anyone else on the field. it isn't just swordsmen or warriors who can unlock this incredible speed either. some mages can just shoot off so many more spells than their colleagues can.
+
+Like many other powers this is both an active and passive one. While it is very useful, you can't use it for long distance travel. Think of it as a short sprint across a plazxa or to get around a group of people rather than a sustained high speed marathon.
+
+Ranks
+D Rank: +1 rank Initiative, +1 rank Melee, +1 rank Lore Beta
+C Rank: +1 rank Dodge, +1 rank Melee
+B Rank: +1 rank Initiative, +1 rank Melee, +1 rank Dodge
+A Rank: +1 rank Dodge, + D-rank Teleporting
+S Rank: + S-rank Dodge(an enemy cannot dodge 1 attack per fight)
+
+Spirit Summoning
+General Description
+Summoners are a rare type of mages, some call themselves spirit binders, necromancers, elemental guides or voices of the gods. Regardless of their flavour and the exact type of spirits, beings and creatures that they summon, they can somehow call forth something that wasn't there before. They don't create these beings but call on them. Often they make pacts with both weak and strong beings, these pacts can be short or long term but in most cases they are mutually beneficial. Necromancers are a specialist subtype who speak to the departed through faint threads, asking the fallen or sometimes forcing the fallen to inhabiting their bodies once more to do their bidding.
+
+Spirit binders often search for more local spirits to aid them, either to imbue a weapon for a fight or to help them with more mundane but difficult tasks. that is the core of all summoners, they ask, bribe, beg or otherwise coerce help from spirits. The general rule is that the more powerful spirits will only help for a shorter time, while weaker spirits fight along with the summoner, they move on the same place and initiative other and have their own separate actions. when the summoner dies, the summons disappear.
+
+Creature stats
+Weak: 20hp, 5dmg, D6 dodge/melee/ranged
+medium: 50hp, 10(magical) dmg, D10 dodge/melee/ranged
+strong: 150 hp, 25(elemental) dmg, half dmg from non-magical weapons
+
+Ranks
+D Rank: summon 1 weak creature for 1 fight/small task, +1 rank Lore Alpha
+C Rank: summon 2 weak creatures for 1 fight/small task, +1 rank Lore Gamma
+B Rank: summon 1 medium creature for a day(or 3 weaker ones)
+A Rank: summon 1 strong creature for a day or long task(or multiple weaker ones)
+S Rank: summon one permanent strong creature and multiple weaker ones for a long task or day
+
+Strength
+General Description
+The world is full of strong and capable people, but some are just outliers, they are strong beyond ordinary people. These individuals are blessed to be stronger than anyone could ever be, or should be. Some of these are big hulking figures with muscles for days, while other are more lean. Maybe they trained, maybe they were infused with magic, or perhaps the gods had their hands in these matters. Each has their own story, but those who do reach this pinnacle of strength are indeed strong enough to bend metal with their hands, strong enough to punch through a solid door(powers are cumulative)
+
+Ranks
+D Rank: +1 rank Melee, +1 rank Condition
+C Rank: +5 melee/thrown dmg
+B Rank: +1 rank Melee, +1 rank Condition
+A Rank: +5 melee/thrown dmg, +20 health
+S Rank: +15 melee/thrown dmg, +1 rank Melee, +1 rank Condition
+
+Teleporting
+General Description
+In any sort of business, transport is always a bottleneck. What if that no longer is the case? Messages can be sent within an instant. Important people no longer need to brave the dangerous roads and can remain safe. It is quite the dream of many people to never have to commute to work, to not take the slow and rickety cart to the next city with a load of milk that might as well be butter by the time you arrive. Teleportation is an impressive and magic consuming ability. the amount of magic required to transport someone from one place to the next makes it so expensive. but for those lucky few who have figured out how to do it by themselves, they are one of the most travelled people in the world.
+
+The build up of the teleportation power makes you able to make small jumps at first, maybe this allows you to make small jumps, handy in a short sprint but difficult to maintain over long distances. The stronger you grow, the faster and further you can jump. As a general narrative rule you should consider that the further you transport, the longer the incantation or preparation is. When you reach the pinnacle of this power, you may not need to prepare to jump into a chaotic combat situation, bit to traverse to the other side of the country you will still need a moment's focus. As a rule: You cannot teleport to a place you have never seen before. This does work in combination with the vision power. It is very hard to take (actively) unwilling people with you since their struggle will disrupt your magic.
+
+Ranks
+D Rank: Teleport within the same room, +1 rank Lore Beta
+C Rank: combat teleport ( get in or out of range of someone in an instant), teleport within the same building
+B Rank: teleport within the same city, take 1D4 willing people with you
+A Rank: take 1D8 willing people with you, +1 rank Lore Beta
+S Rank: teleport to every place you visited, take 1D20 willing people with you
+
+Time Magic
+General Description
+Once things are said, they can never be retracted That is what common sense dictates. But then again, who does common sense think it is? Time is a very difficult thing to master, but those who manage it, will find it pliable, and sometimes even stretchy. Time travel, as in actively going back and changing a great deal of things is not possible. But it is possible to go back a small moment, to just before you said something or to better avoid an incoming blow. Though this takes a lot of energy from the time mage. As a general rule, with this magic one can go back a "moment", this is undefined on purpose to allow for a narrative to make sense. This 'moment' can never be a full conversation, but it can be a few lines of dialogue or a single turn in combat.
+
+Ranks
+D Rank: +1 rank Initiative, +1 rank Melee, +1 rank Lore Beta
+C Rank: +1 rank Initiative, +1 rank Insight, +1 rank Entertain, +1 rank Lore Beta
+B Rank: +1 rank Initiative, +1 rank Lie, +1 rank Persuade, +1 rank Lore Beta
+A Rank: +1 rank Initiative, paralyze(magic or melee to hit, lasts for 2 rounds, no save)
+S Rank: not being hit 3/day, A-rank Lore Beta
+
+Vision
+General Description
+To see people with different eyes can be unsettling. Even more when you realize that they may see emotions or weapons hidden on you. There are various names for these phenomena; Demon eye, God-eye, second sight and others. This ability grants the user, or wearer, to see hidden things, to see too far for the naked eye to be seen or to see through illusions and the like. The most powerful in history have been said to cause those who were caught in their stare to combust into dark, all consuming flames. Though that may have been a combination of powers, scholars haven't reached consensus on that part.
+
+The expression of this power can vary between the not obvious and the very obvious. Having an entirely different coloured eye or just normal eyes that are magically better. Players are encouraged to flavour their eyes in a way that would suit the character, with chancing colours or bleeding or something else entirely. It is advised to use scrying creatively, but only a few times a day on a handful of people. Though it is fair to use far reaching effects through a combination of scry and cursing or scry and war bows.
+
+Ranks
+D Rank: +1 rank Ranged, +1 rank Dodge, +2 rank Awareness, +1 rank Wilderness
+C Rank: +1 rank Insight, +1 rank Dodge, +2 rank Awareness, +1 rank Streetwise
+B Rank: +1 rank Insight, +1 rank Ranged, +1 rank Dodge, scry in the same village
+A Rank: +1 rank Insight, +1 rank Ranged, +1 rank Dodge, ++1 rank Initiative, scry in the same city
+S Rank: +1 rank Insight, +1 rank Ranged, +1 rank Dodge, +1 rank Initiative, scry in same nation
