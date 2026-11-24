@@ -85,5 +85,4 @@ double damage, disarm opponent if +5 to opposing roll
 
 Shifu’s rope dart
 Can disarm, break armor or restrain a foe if +5 to opposing roll
-
 +3 base points to Ranged

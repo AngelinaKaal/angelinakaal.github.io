@@ -13,71 +13,39 @@
 
 <body>
   <header>
-    <a href="../index.html">
+    <a href="../cons-index.html">
       <img src="../Images/Items/Logo.png" alt="Consequences logo" />
     </a>
     <h1>Consequences</h1>
-    <a href="../index.html" class="home-button">
+    <a href="../cons-index.html" class="home-button">
       <img src="../Images/Items/HouseIcon.png" alt="Home" />
     </a>
   </header>
   <main class="selection-page">
     <div id="sharedContainer" class="selection-layout">
-      <div id="raceButtons" class="selection-buttons text-center p-3">
-        <button class="btn btn-primary">
-          Beast Kin
-        </button>
-        <button class="btn btn-primary">
-          Demon
-        </button>
-        <button class="btn btn-primary">
-          Draconic
-        </button>
-        <button class="btn btn-primary">
-          Dwarf
-        </button>
-        <button class="btn btn-primary">
-          Elf
-        </button>
-        <button class="btn btn-primary">
-          Fey
-        </button>
-        <button class="btn btn-primary">
-          Garuda
-        </button>
-        <button class="btn btn-primary">
-          Ghost
-        </button>
-        <button class="btn btn-primary">
-          Giant
-        </button>
-        <button class="btn btn-primary">
-          Green Folk
-        </button>
-        <button class="btn btn-primary">
-          Lich
-        </button>
-        <button class="btn btn-primary">
-          Naga
-        </button>
-        <button class="btn btn-primary">
-          Short Folk
-        </button>
-        <button class="btn btn-primary">
-          Succubus
-        </button>
-        <button class="btn btn-primary">
-          Undead
-        </button>
-        <button class="btn btn-primary">
-          Vampire
-        </button>
-        <button class="btn btn-primary">
-          Were-beast
-        </button>
-        <button class="btn btn-primary">
-          Witch
-        </button>
+      <div class="selection-controls">
+        <label class="selection-select-label" for="raceSelect">Choose a race</label>
+        <select id="raceSelect" class="form-select selection-select" aria-label="Choose a race">
+          <option value="" selected disabled>Select a race</option>
+          <option>Beast Kin</option>
+          <option>Demon</option>
+          <option>Draconic</option>
+          <option>Dwarf</option>
+          <option>Elf</option>
+          <option>Fey</option>
+          <option>Garuda</option>
+          <option>Ghost</option>
+          <option>Giant</option>
+          <option>Green Folk</option>
+          <option>Lich</option>
+          <option>Naga</option>
+          <option>Short Folk</option>
+          <option>Succubus</option>
+          <option>Undead</option>
+          <option>Vampire</option>
+          <option>Were-beast</option>
+          <option>Witch</option>
+        </select>
       </div>
       <div id="selectionDetails" class="selection-details text-start" aria-live="polite">
         Select a race to see its description.
@@ -88,7 +56,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script>
-    const raceButtons = document.getElementById("raceButtons");
+      const raceSelect = document.getElementById("raceSelect");
     const selectionDetails = document.getElementById("selectionDetails");
     const sourceRaceNames = new Map([
       ["beastkin", "Beast Kin"],
@@ -206,6 +174,8 @@
         return;
       }
 
+      const text = document.createElement("div");
+      text.className = "selection-text";
       for (const [sectionName, lines] of description.sections) {
         const content = lines.join("\n").trim();
         if (!content) {
@@ -220,8 +190,12 @@
         sectionContent.className = "content-section";
         sectionContent.textContent = capitalizeText(content);
 
-        selectionDetails.append(heading, sectionContent);
+        text.append(heading, sectionContent);
       }
+
+      const layout = document.createElement("div");
+      layout.className = "selection-content-layout";
+      layout.append(text);
 
       const imageFiles = raceImageFiles.get(raceName);
       if (imageFiles) {
@@ -233,16 +207,15 @@
           image.alt = imageFiles.length > 1 ? `${raceName} image ${index + 1}` : raceName;
           images.append(image);
         }
-        selectionDetails.append(images);
+        layout.append(images);
       }
+      selectionDetails.append(layout);
     }
 
-    raceButtons.addEventListener("click", (event) => {
-      if (event.target instanceof HTMLButtonElement) {
-        selectedRace = event.target.textContent.trim();
-        if (raceDescriptions.size > 0) {
-          showRaceDescription(selectedRace);
-        }
+    raceSelect.addEventListener("change", () => {
+      selectedRace = raceSelect.value;
+      if (raceDescriptions.size > 0) {
+        showRaceDescription(selectedRace);
       }
     });
 
