@@ -1,3 +1,4 @@
+Magic Weapons
 Knuckleduster	
 +5% elemental damage per 2 lvl to a max off 50% (Melee)
 
@@ -38,14 +39,14 @@ Amazone Bola
 Throws spectral bola’s that cannot be broken without magic
 
 Paladin Lance	
-Negates mundane armor +3 to hit
+Negates mundane armour +3 to hit
 Double damage vs undead(Lich, undead, ghost, vampire, zombie ect.)
 
 Assassin's Dart
 Has poisoning effect, has returning ability (poison has 25% chance of restraining paralyze for a turn)
 
 Greatmaster's Pole Weapon
-Can prone enemies as well as break armor when roll +10 to opposing roll, +2 to dodge rolls
+Can prone enemies as well as break armour when roll +10 to opposing roll, +2 to dodge rolls
 
 Elemental Axe
 Has returning ability, does 20 elemental damage of choice
@@ -66,10 +67,10 @@ Eastern hookblade
 A successful Dodge a Melee attack allows to redirect it to a nearby enemy, disarms opponent on +10 roll
 
 Dragon firelance
-double damage, negates armor, infinite charges
+double damage, negates armour, infinite charges
 
 Grappler’s knife
-+2 base points to Melee, does double damage when fighting armored opponents
++2 base points to Melee, does double damage when fighting armoured opponents
 
 Fey bone Boomerang
 Can hit two targets due to teleporting properties, always returns +3 to hit base points (Melee, Ranged)
@@ -84,5 +85,125 @@ Slavers Whip
 double damage, disarm opponent if +5 to opposing roll
 
 Shifu’s rope dart
-Can disarm, break armor or restrain a foe if +5 to opposing roll
+Can disarm, break armour or restrain a foe if +5 to opposing roll
 +3 base points to Ranged
+
+Magic Armour
+Assassins garb
++B-tier shadow magic  + A tier Sneak
+Light armour
+
+Sky dancer armour
++1 tier dodge, +1 tier sneak, +1 initiative, -50% air/lighting damage  
+Light armour
+
+Were beasts pelt
++D-tier durability, +A tier condition
+Light armour
+
+Bodhisattva's tunic
++2 hp regen/ turn, +2 tier Insight, +2 tier medical
++2 tier energy level
+Light armour
+
+Priest vestment
+C-tier light magic, C-tier healing
+Light armour
+
+Elemental chainmail
+Does ½ retribution damage of single element
+Medium armour
+
+Fey armour
++C-Tier Flight, +C-Tier Teleport
+Medium armour
+
+Symbiotic armour
++1 tier dodge, break bone immunity, invisible
++2 damage soak
+Medium armour
+
+Skeletal armour
++3 base points intimidate, speak with dead
+-50%  shadow magic damage
+Medium armour
+
+Beast kin breastplate
++C tier durability, +5 Natural claws/beak/weapon
+Medium armour
+
+Adamantine plate
++5 to dodge, +1 Decorum, +D-tier durability
+Heavy armour
+
+Dwarven power armour
++2 Tier Melee, +5 melee damage, +10 relations
+Heavy armour
+
+Demon plate
++2 Decorum, +3 base point intimidate
+5 fire retribution 
+Heavy armour
+
+Dragon plate
++ immunity to all elemental damag
+Heavy armour
+
+Death knight armour
++ Speak with dead +C durability, +1 hp regen/turn, immune to C-tier light magic                                                                         Heavy armour
+*all magical armour have the unbreakable trait
+
+Magical Utility Items
+Ever full platter
+A box or plate that always seems to have fresh food to serve 8 people, gives everyone who eats +10 hp for a day.
+
+Wonderful garment
+A plain blanket with a hole through it, once worn it can take the shape of any sort of clothes, dresses and garments, offers no protection, +1 to lie, +1 to entertain, +1 persuade
+
+Travel bag
+A bag that can stuff a lot more inside than should be possible, can only fit things inside that pass through the opening.
+
+Amulet of health
+increase wearers health by 5/lvl
+
+Purse of Purchase
+Magically provides 50% of all the purchases, no refunds possible
+
+Speedy boots
++2 to initiative, also allows for the running up on vertical surfaces for a short while
+
+Magic timepiece
+Timepiece that can stop time for 20 seconds  1/day
+
+invisibility cloak
+Cloak that allows the wearer to become invisible for an hour, invisibly stops functioning when the wearer deals damage. After revealing you can become invisible again within 6 seconds.
+
+Appearing door
+A door handle that magically makes a door appear. Behind the door is a comfortable modern apartment with 4 bedrooms, a kitchen and a bathroom. (windows, internet and TV not included)
+
+Tumbleweed
+a small round vine-like plant the size of a fist that grows into a rapid self moving cart with space for 8 people or cargo at will, after it reaches its destination it changes back and leaves all cargo or people safely on the ground. [Speed is triple that of on foot]
+
+Demon-eye
+Allows the owner to see through shapeshifts, illusions and through darkness and fog
+
+Appraisal-eye
+Allows the owner to see/estimate the level of others and their most outstanding skills
+
+Ring of mime
+A small unassuming ring that allows the wearer to create invisible, unmovable barriers that last for a short time (1 turn). Can be used to “step into the sky”
+
+Fey Compass
+Points at whatever is desired to be found.
+
+Farseer monocular
+A tube with glasses on each end, can be used to scry as far as the horizon reaches, 
+
+Healing flask
+A small flask with a magical healing ointment (heals 5hp), cures illnesses and drives off C-tier cursing and below. (limitless use)
+
+knobbed wizard’s staff
+This magnificent wizards staff is useless in battle, but it increases magical damage by 50%
+
+Mage-bane
+A talisman that halves all magical damage (after normal resistances) and makes the wearer immune to all C-tier cursing and below. It also reduces magical healing by half
