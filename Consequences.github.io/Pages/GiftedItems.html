@@ -18,23 +18,24 @@
         <img src="../Images/Items/HouseIcon.png" alt="Home" />
       </a>
     </header>
-    <main class="selection-page">
-      <div class="selection-layout">
-        <div class="selection-controls">
-          <label class="selection-select-label" for="giftedItemSelect">Choose a gifted magical item</label>
-          <select id="giftedItemSelect" class="form-select selection-select" aria-label="Choose a gifted magical item" disabled>
-            <option value="" selected disabled>Select a gifted magical item</option>
-          </select>
-        </div>
-        <div id="giftedItemDetails" class="selection-details text-start" aria-live="polite">
-          Select a gifted magical item to see its effect.
-        </div>
+    <main>
+      <div class="gifted-items-table-container mx-4 my-5">
+        <table class="gifted-items-table">
+          <thead>
+            <tr class="Table-Header">
+              <th scope="col">Item name</th>
+              <th scope="col">Description/effect</th>
+            </tr>
+          </thead>
+          <tbody id="giftedItemsTableBody">
+            <tr><td colspan="2">Loading gifted magical items...</td></tr>
+          </tbody>
+        </table>
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
-      const itemSelect = document.getElementById("giftedItemSelect");
-      const itemDetails = document.getElementById("giftedItemDetails");
+      const giftedItemsTableBody = document.getElementById("giftedItemsTableBody");
       let giftedItems = [];
 
       function parseGiftedItems(text) {
@@ -48,25 +49,22 @@
           }));
       }
 
-      function showGiftedItem(name) {
-        const item = giftedItems.find((entry) => entry.name === name);
-        if (!item) {
-          itemDetails.textContent = `No description found for ${name}.`;
-          return;
+      function renderGiftedItems() {
+        const rows = document.createDocumentFragment();
+        for (const item of giftedItems) {
+          const row = document.createElement("tr");
+          const nameCell = document.createElement("th");
+          nameCell.scope = "row";
+          nameCell.textContent = item.name;
+
+          const descriptionCell = document.createElement("td");
+          descriptionCell.textContent = item.description;
+
+          row.append(nameCell, descriptionCell);
+          rows.append(row);
         }
-
-        const heading = document.createElement("h2");
-        heading.className = "content-section-heading";
-        heading.textContent = item.name;
-
-        const description = document.createElement("div");
-        description.className = "content-section";
-        description.textContent = item.description;
-
-        itemDetails.replaceChildren(heading, description);
+        giftedItemsTableBody.replaceChildren(rows);
       }
-
-      itemSelect.addEventListener("change", () => showGiftedItem(itemSelect.value));
 
       fetch("../GiftedItems.txt")
         .then((response) => {
@@ -77,29 +75,16 @@
         })
         .then((text) => {
           giftedItems = parseGiftedItems(text);
-          const options = document.createDocumentFragment();
-
-          for (const item of giftedItems) {
-            const option = document.createElement("option");
-            option.value = item.name;
-            option.textContent = item.name;
-            options.append(option);
-          }
-
-          itemSelect.replaceChildren(
-            Object.assign(document.createElement("option"), {
-              value: "",
-              textContent: "Select a gifted magical item",
-              disabled: true,
-              selected: true
-            }),
-            options
-          );
-          itemSelect.disabled = false;
+          renderGiftedItems();
         })
         .catch((error) => {
           console.error("Failed to load gifted items.", error);
-          itemDetails.textContent = "Gifted magical items could not be loaded.";
+          const errorRow = document.createElement("tr");
+          const errorCell = document.createElement("td");
+          errorCell.colSpan = 2;
+          errorCell.textContent = "Gifted magical items could not be loaded.";
+          errorRow.append(errorCell);
+          giftedItemsTableBody.replaceChildren(errorRow);
         });
     </script>
   </body>

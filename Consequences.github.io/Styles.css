@@ -130,6 +130,29 @@
         flex: 1;
         min-width: 0;
       }
+      .gifted-items-table-container {
+        width: min(100%, 90rem);
+        overflow-x: auto;
+      }
+      .gifted-items-table {
+        width: 100%;
+        min-width: 36rem;
+        border-collapse: collapse;
+      }
+      .gifted-items-table th:first-child {
+        width: 25%;
+      }
+      .gifted-items-table th,
+      .gifted-items-table td {
+        text-align: left;
+        vertical-align: top;
+      }
+      .gifted-items-table tbody tr:nth-child(odd) {
+        background-color: #f5f7fa;
+      }
+      .gifted-items-table tbody tr:nth-child(even) {
+        background-color: #e1e8f0;
+      }
       .selection-images {
         display: flex;
         flex-direction: column;
