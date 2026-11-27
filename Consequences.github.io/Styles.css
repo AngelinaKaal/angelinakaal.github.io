@@ -134,6 +134,24 @@
         width: min(100%, 90rem);
         overflow-x: auto;
       }
+      .gifted-items-main {
+        align-items: flex-start;
+      }
+      .responsive-table-main {
+        align-items: flex-start;
+      }
+      .shelf-bought-items-main {
+        align-items: flex-start;
+      }
+      #giftedItemsTables {
+        width: min(100%, 90rem);
+        min-width: 0;
+        margin: 0 auto;
+      }
+      .shelf-bought-items-table {
+        width: min(100%, 90rem);
+        margin: 0 auto;
+      }
       .gifted-items-table {
         width: 100%;
         min-width: 36rem;
@@ -141,6 +159,8 @@
       }
       .gifted-items-table th:first-child {
         width: 25%;
+        overflow-wrap: normal;
+        word-break: normal;
       }
       .gifted-items-table th,
       .gifted-items-table td {
@@ -210,6 +230,226 @@
         }
       }
       @media (max-width: 767.98px) {
+        .responsive-table-page header,
+        .gifted-items-page header,
+        .shelf-bought-items-page header {
+          gap: 0.5rem;
+          padding: 0.75rem;
+        }
+        .responsive-table-page header img,
+        .gifted-items-page header img,
+        .shelf-bought-items-page header img {
+          width: 3.25rem;
+          height: 2.75rem;
+        }
+        .responsive-table-page header h1,
+        .gifted-items-page header h1,
+        .shelf-bought-items-page header h1 {
+          flex: 1;
+          min-width: 0;
+          font-size: clamp(1.5rem, 6vw, 2rem);
+        }
+        .responsive-table-main {
+          padding: 1rem;
+        }
+        .mobile-card-table {
+          display: block;
+          width: 100%;
+          min-width: 0;
+          margin: 0 auto;
+          border-collapse: separate;
+          border-spacing: 0;
+        }
+        .mobile-card-table tbody {
+          display: block;
+        }
+        .mobile-card-table tr {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 0.75rem;
+          border: 1px solid #00070f;
+        }
+        .mobile-card-table tbody tr:nth-child(odd) {
+          background-color: #f5f7fa;
+        }
+        .mobile-card-table tbody tr:nth-child(even) {
+          background-color: #e1e8f0;
+        }
+        .mobile-card-table th,
+        .mobile-card-table td {
+          display: block;
+          width: 100%;
+          padding: 0.625rem 0.75rem;
+          border: 0;
+          text-align: left;
+          overflow-wrap: anywhere;
+        }
+        .mobile-card-table th:not(:first-child),
+        .mobile-card-table td:not(:first-child) {
+          border-top: 1px solid #c5ced8;
+        }
+        .mobile-card-table th::before,
+        .mobile-card-table td::before {
+          display: block;
+          margin-bottom: 0.2rem;
+          font-size: 0.75rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #4b5563;
+        }
+        .abilities-table tr.Table-Header,
+        .success-failure-table tr:first-child {
+          display: none;
+        }
+        .abilities-table td:nth-child(1)::before {
+          content: "Ability";
+        }
+        .abilities-table td:nth-child(2)::before {
+          content: "Explanation";
+        }
+        .abilities-table td:nth-child(3)::before {
+          content: "Examples";
+        }
+        .abilities-table tr:last-child td:nth-child(1)::before {
+          content: "Level";
+        }
+        .abilities-table tr:last-child td:nth-child(2)::before {
+          content: "Details";
+        }
+        .success-failure-table td:nth-child(1)::before {
+          content: "Roll";
+        }
+        .success-failure-table td:nth-child(2)::before {
+          content: "Result";
+        }
+        .effects-conditions-table th:first-child {
+          font-size: 1rem;
+        }
+        .effects-conditions-table th:nth-child(2)::before {
+          content: "Description";
+        }
+        .leveling-chart-table tr:first-child th:first-child::before {
+          content: none;
+        }
+        .leveling-chart-table tr:not(:first-child) th:first-child::before {
+          content: "Level";
+        }
+        .leveling-chart-table th:nth-child(2)::before {
+          content: "Progression";
+        }
+        .leveling-chart-table th:nth-child(3)::before {
+          content: "Details";
+        }
+        .gifted-items-main {
+          padding: 1rem;
+        }
+        #giftedItemsTables h2 {
+          font-size: 1.5rem;
+        }
+        .gifted-items-table-container {
+          overflow: visible;
+        }
+        .gifted-items-table {
+          min-width: 0;
+        }
+        .gifted-items-table thead {
+          display: none;
+        }
+        .gifted-items-table tbody,
+        .gifted-items-table tr,
+        .gifted-items-table th,
+        .gifted-items-table td {
+          display: block;
+          width: 100%;
+        }
+        .gifted-items-table tbody tr {
+          margin-bottom: 0.75rem;
+          border: 1px solid #00070f;
+        }
+        .gifted-items-table tbody th,
+        .gifted-items-table tbody td {
+          border: 0;
+          padding: 0.625rem 0.75rem;
+          overflow-wrap: anywhere;
+        }
+        .gifted-items-table tbody th {
+          overflow-wrap: normal;
+          word-break: normal;
+        }
+        .gifted-items-table tbody th:first-child {
+          width: 100%;
+        }
+        .gifted-items-table tbody th::before,
+        .gifted-items-table tbody td::before {
+          content: attr(data-label);
+          display: block;
+          margin-bottom: 0.2rem;
+          font-size: 0.75rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #4b5563;
+        }
+        .gifted-items-table tbody td {
+          border-top: 1px solid #c5ced8;
+        }
+        .shelf-bought-items-main {
+          padding: 1rem;
+        }
+        .shelf-bought-items-table {
+          display: block;
+          border-collapse: separate;
+          border-spacing: 0;
+        }
+        .shelf-bought-items-table tr:first-child {
+          display: none;
+        }
+        .shelf-bought-items-table tr:not(:first-child) {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 0.75rem;
+          border: 1px solid #00070f;
+          background-color: #f5f7fa;
+        }
+        .shelf-bought-items-table tr.TableIllegal {
+          background-color: #f9a7a7;
+        }
+        .shelf-bought-items-table tr:not(:first-child) th {
+          display: block;
+          width: 100%;
+          padding: 0.625rem 0.75rem;
+          border: 0;
+          text-align: left;
+          overflow-wrap: anywhere;
+        }
+        .shelf-bought-items-table tr:not(:first-child) th:nth-child(1) {
+          order: 1;
+          font-size: 1rem;
+          overflow-wrap: normal;
+          word-break: normal;
+        }
+        .shelf-bought-items-table tr:not(:first-child) th:nth-child(2) {
+          order: 3;
+          border-top: 1px solid #c5ced8;
+          font-weight: 400;
+        }
+        .shelf-bought-items-table tr:not(:first-child) th:nth-child(2)::before {
+          display: block;
+          margin-bottom: 0.2rem;
+          font-size: 0.75rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #4b5563;
+        }
+        .shelf-bought-items-table tr:not(:first-child) th:nth-child(2)::before {
+          content: "Effect";
+        }
+        .shelf-bought-items-table tr:not(:first-child) th:nth-child(3) {
+          order: 2;
+          padding-top: 0;
+          font-weight: 400;
+          overflow-wrap: normal;
+          word-break: normal;
+        }
         .selection-layout {
           flex-direction: column;
         }
